@@ -1,34 +1,76 @@
 @import 'variables.scss';
 
-.App {
-  // text-align: center;
-}
-
-.hamburgerMenu{
-  display: none;
-}
-
 .navbar{
   display: grid;
-  grid-template-columns: 7% 30% 50% 15%;
-  grid-template-rows: 10vh 0 0 0 ;
+  height:fit-content;
   background-color: black;
   overflow: hidden;
-  // margin: 0;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 
-  ul{
-    display: none;
+  li{
+    position: relative;
+    padding: 7px 0;
+    font-size: larger;
+    font-weight: 400;
+    
+  }
+
+  li::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: white;
+    transition: width 0.5s ease 0s, left 0.5s ease 0s;
+    width: 0;
+  }
+
+  li:hover::after {
+    width: 100%; 
+    left: 0; 
+  }
+
+  li.icons::after{
+    content: none;
+  }
+
+  .fa, .fab{
+    text-decoration: none;
+    color: white;
+  }
+
+  .fa-youtube-play:hover{
+    color:red;
+  }
+
+  .fa-instagram:hover{
+    color: violet;
+  }
+
+  .fa-facebook:hover{
+    color:rgb(91, 91, 211);
+  }
+
+  .fa-tiktok:hover{
+    color: rgb(74, 222, 233);
   }
 }
 
-@media screen and (max-width: $mobile) {
+@media screen and (max-width: $mobileTablet) {
   .navbar {
-  
+    grid-template-columns: 10% 25% 45% 20% ;
+    grid-template-rows: 12vh;
+
     img{
       grid-column: 2;
       grid-row: 1;
-      width: 100%;
+      width: 150px;
+      // padding: 30px;
     }
 
     .hamburgerMenu{
@@ -36,6 +78,8 @@
       grid-column: 4;
       grid-row: 1;
       width: 30px;
+      margin: auto;
+      // padding-right: 100px;
       background-color: transparent;
       cursor: pointer;
       
@@ -48,37 +92,92 @@
       }
     }
     
-    ul{
-      grid-row: 2/5;
-      grid-column: 1/5;
-      display: block;
+    .optionList{
+      width:100%;
+      margin: 0;
+      position: fixed;
+      top:11vh;
+      overflow-x: hidden;
+      left:0;
+      transition: 0.5s;
       background-color: black;
-      width: 100%;
-      padding: 0;
 
-      li{
-        margin: 15px 0 15px 0;
-        text-align: center;
-        color:white;
-        list-style-type: none;
+      ul{
+        padding: 0;
+        display: block;
+        background-color: black;
+        margin: 0;
+
+        li{
+          display: block;
+          width:fit-content;
+          margin: 15px auto;
+          text-align: center;
+          color:white;
+          list-style-type: none;
+        }
+
+        .icons{
+          font-size: 25px;
+          padding:0;
+          display: inline-block;
+          margin-left:25px;
+          margin-right: 25px;
+          margin-bottom: 40px;
+        }
       }
     }
-
   }
 
   
 
 }
 
-@media screen and (max-width: $tablet) {
-  .navbar img{
-    // height: 100px;
+@media screen and (min-width: $laptop) {
+  .hamburgerMenu{
+    display: none;
   }
-}
 
-@media screen and (max-width: $laptop) {
-  .navbar img{
-    // height: 100px;
+  .navbar{
+    grid-template-columns: 5% 15% 15% 65%;
+    grid-template-rows: 13vh;
+
+    img{
+      width:180px;
+      grid-column: 2;
+      grid-row: 1;
+      // background-size:contain;
+    }
+    
+    .optionList{
+      height: auto;
+      display: block;
+      grid-column: 4;
+      grid-row:1;
+
+      ul{
+        // grid-row: 1;
+        // grid-column: 4/9;
+        background-color: black;
+        width: 100%;
+        padding: 0;
+        margin: auto;
+
+        li{
+          display: inline-block;
+          margin: 15px 20px 15px 20px;
+          text-align: center;
+          color:white;
+          list-style-type: none;
+        }
+      }
+    }
+  
+  
+  
+  
+  
+  
   }
 }
 
