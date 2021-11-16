@@ -19,7 +19,6 @@ export default function Nav(){
             </div>
             
             <NavOptions isOpen={hamburgerOpen}/>
-            
         </div>
     )
 }

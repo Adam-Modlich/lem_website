@@ -10,23 +10,27 @@ export default function NavOptions({isOpen}){
           <li>Projekty</li>
           <li>Zaufali nam</li>
           <li>Kontakt</li>
-          <li className="icons"><a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook"></a></li>
-          <li className="icons"><a href="https://www.instagram.com/lemwroclaw/" className="fa fa-instagram"></a></li>
-          <li className="icons"><a href="https://www.youtube.com/channel/UCKeV5Mi90jYVxipqL6RhEyg" className="fa fa-youtube-play"></a></li>
-          <li className="icons"><a href="https://www.facebook.com/LEMWroclaw" className="fab fa-tiktok"></a></li>
+          <li className="iconsMobile">
+            <a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/lemwroclaw/" className="fa fa-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCKeV5Mi90jYVxipqL6RhEyg" className="fa fa-youtube-play"></a>
+            <a href="https://www.facebook.com/LEMWroclaw" className="fab fa-tiktok"></a>
+          </li>
         </ul>
       </div>
+      <ul className="icons">
+        <li ><a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook"></a></li>
+        <li ><a href="https://www.instagram.com/lemwroclaw/" className="fa fa-instagram"></a></li>
+        <li ><a href="https://www.youtube.com/channel/UCKeV5Mi90jYVxipqL6RhEyg" className="fa fa-youtube-play"></a></li>
+        <li ><a href="https://www.facebook.com/LEMWroclaw" className="fab fa-tiktok"></a></li>
+      </ul>
       <style jsx>{`
-
-          .navbar{
-            grid-template-rows: ${ isOpen ? '13vh' : '13vh'};
-          }
           
           .optionList{
-            height: ${ isOpen ? '35vh' : '0'};
+            height: ${ isOpen ? '55vh' : '0'};
           }
 
-          li{
+          .optionList li{
             display: ${ isOpen ? 'block' : 'none'};
           }
 

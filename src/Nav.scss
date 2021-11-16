@@ -10,33 +10,37 @@
   text-align: center;
 
   li{
-    position: relative;
-    padding: 7px 0;
     font-size: larger;
     font-weight: 400;
-    
   }
 
-  li::after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.5s ease 0s, left 0.5s ease 0s;
-    width: 0;
-  }
+  .optionList{
+    li{
+      position: relative;
+      padding: 7px 0;
+    }
 
-  li:hover::after {
-    width: 100%; 
-    left: 0; 
-  }
+    li::after{
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: white;
+      transition: width 0.5s ease 0s, left 0.5s ease 0s;
+      width: 0;
+    }
 
-  li.icons::after{
-    content: none;
+    li:hover::after {
+      width: 100%; 
+      left: 0; 
+    }
+
+    .iconsMobile::after{
+      content: none;
+    }
   }
 
   .fa, .fab{
@@ -63,8 +67,8 @@
 
 @media screen and (max-width: $mobileTablet) {
   .navbar {
-    grid-template-columns: 10% 25% 45% 20% ;
-    grid-template-rows: 12vh;
+    grid-template-columns: 5% 20% 60% 10% 5%;
+    grid-template-rows: 13vh;
 
     img{
       grid-column: 2;
@@ -117,16 +121,21 @@
           list-style-type: none;
         }
 
-        .icons{
+        a{
           font-size: 25px;
           padding:0;
           display: inline-block;
           margin-left:25px;
           margin-right: 25px;
-          margin-bottom: 40px;
+          margin-bottom:40px;
         }
       }
     }
+    
+    .icons{
+      display: none;
+    }
+  
   }
 
   
@@ -139,7 +148,7 @@
   }
 
   .navbar{
-    grid-template-columns: 5% 15% 15% 65%;
+    grid-template-columns: 5% 15% 5% 50% 5% 20% 2.5%;
     grid-template-rows: 13vh;
 
     img{
@@ -156,8 +165,6 @@
       grid-row:1;
 
       ul{
-        // grid-row: 1;
-        // grid-column: 4/9;
         background-color: black;
         width: 100%;
         padding: 0;
@@ -171,8 +178,31 @@
           list-style-type: none;
         }
       }
+      
+      .iconsMobile{
+        display: none;
+      }
     }
   
+  .icons{
+    height: auto;
+    display: block;
+    grid-column: 6;
+    grid-row: 1;
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+
+      li{
+        display: inline-block;
+        margin: 15px 20px 15px 20px;
+        text-align: center;
+        color:white;
+        list-style-type: none;
+      }
+    
+  }
   
   
   
