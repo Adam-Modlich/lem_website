@@ -2,8 +2,9 @@
 
 
 .mainSite{
+    padding-top: 100px;
     width: 100%;
-    height:87vh;
+    height:100%;
     // background: rgb(17,33,52);
     // background: linear-gradient(90deg, rgba(17,33,52,1) 0%, rgba(33,52,78,1) 17%, rgba(56,82,111,1) 35%, rgba(101,127,159,1) 57%, rgba(153,179,213,1) 76%, rgba(179,207,244,1) 96%);
     background: rgb(26,45,68);
@@ -13,11 +14,24 @@
     background-size: cover;
 }
 
+.description{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+
+    h1{
+        font-size: 50px;
+        font-weight: 900;
+    }
+}
+
 @media screen and (min-width: $laptop){
     .projects{
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
-        // vertical-align: middle;
         width:100%;
         height: 100%;
     }
@@ -26,14 +40,59 @@
     .slidesContainer{
         display: flex;
         align-items: center;
-        justify-content: center;
-        width: 68%;
-        // padding-bottom: 4%;
-        // height:100%;
+        justify-content: center;        
     }
 
+    @media (max-aspect-ratio: 9/5){
+        .slidesContainer{
+            width:80%;
+        }
+        .projects{
+            flex-direction: column;
+        }
+            .slides{
+                padding: 0%;
+                height:60vh;
+                width: auto;
+                margin-bottom: -12vh;
+
+    
+                img{
+                    max-width:100%;
+                    max-height: 100%;
+                }
+    
+            }    
+
+            .description{
+                width: 60%;
+            }
+        }
+    
+        @media screen and (min-aspect-ratio: 9/5) {
+            .slidesContainer{
+                width: 68%;
+            }
+            
+            .slides{
+                padding: 0%;
+                height:50%;
+                width: auto;
+    
+                img{
+                    max-width:100%;
+                    max-height: 100%;
+                }
+                
+            }   
+            
+            .description{
+                width: 30%;
+                padding-right: 2%;
+            }
+        }
+
     .slides{
-        // padding-left:2%;
         padding-bottom: 4%;
 
         img{
@@ -43,19 +102,14 @@
 
     }    
 
-    .description{
-        // margin: 25% auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
-    }
 }
 
 @media screen and (max-width: $mobileTablet) {
     .projects{
         display: flex;
+        flex-direction: column;
         align-items: center;
+        justify-content: center;
         width:100%;
         height: auto;
     }
@@ -63,24 +117,12 @@
 
     .slidesContainer{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        // width: 100%;
-        // padding-top: 4%;
-        // padding-bottom: 4%;
-        // height:60%;
     }
 
-    @media screen and (min-height: 570px){
-
-    .projects{
-        flex-direction: column;
-    }
+    @media screen and (min-height: 700px){
         .slides{
-            height:500px;
-            width: auto;
-            // margin-top: 13vh;
-            // margin-bottom: 10vh;
+            margin-top: -6vh;
+            margin-bottom: -6vh;
 
             img{
                 max-width:100%;
@@ -90,29 +132,23 @@
         }    
     }
 
-    @media screen and (max-height:570px) {
-        .projects{
-            flex-direction: row;
-        }
+    @media screen and (max-height:700px) {
         .slides{
-            // margin-top: 13vh;
-            margin-bottom: 10vh;
+            height:50%;
+            width: auto;
 
             img{
-                width:auto;
-                height: 400px;
+                align-items: center;
+                justify-content: center;
+                max-width:100%;
+                max-height: 100%;
             }
 
         }    
     }
 
     .description{
-        // padding-top: 5%;
-        // margin: 25% auto;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        width: 30%;
+        width: 60%;
     }
 
 }

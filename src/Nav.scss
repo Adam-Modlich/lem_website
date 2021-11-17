@@ -1,7 +1,10 @@
 @import 'variables.scss';
 
 .navbar{
-  display: grid;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  display: grid;  
   height:fit-content;
   background-color: black;
   overflow: hidden;
@@ -68,12 +71,12 @@
 @media screen and (max-width: $mobileTablet) {
   .navbar {
     grid-template-columns: 5% 20% 60% 10% 5%;
-    grid-template-rows: 13vh;
+    grid-template-rows: 100px;
 
     img{
       grid-column: 2;
       grid-row: 1;
-      width: 150px;
+      width: 180px;
       // padding: 30px;
     }
 
@@ -100,7 +103,7 @@
       width:100%;
       margin: 0;
       position: fixed;
-      top:11vh;
+      top:100px;
       overflow-x: hidden;
       left:0;
       transition: 0.5s;
@@ -149,7 +152,7 @@
 
   .navbar{
     grid-template-columns: 5% 15% 5% 50% 5% 20% 2.5%;
-    grid-template-rows: 13vh;
+    grid-template-rows: 100px;
 
     img{
       width:180px;

@@ -1,6 +1,8 @@
 import './MainPage.scss';
 import Nav from './Nav.js';
 import SSVpicture from './pictures/SSV.jpg';
+import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
+
 
 
 export default function mainPage(){
@@ -21,7 +23,8 @@ export default function mainPage(){
                     </div>
                 </div>
                 <div className="description">
-                    <p>costam costam</p>
+                    <h1>FAST AND <br/>FURIOUS SSV</h1>
+                    <LoremIpsum p={1} />    
                 </div>
             </div>
 

@@ -27,7 +27,7 @@ export default function NavOptions({isOpen}){
       <style jsx>{`
           
           .optionList{
-            height: ${ isOpen ? '55vh' : '0'};
+            height: ${ isOpen ? '400px' : '0'};
           }
 
           .optionList li{
