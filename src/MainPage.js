@@ -23,6 +23,7 @@ export default function mainPage(){
                     </div>
                 </div>
                 <div className="description">
+                    <h4>NEWEST PROJECT</h4>
                     <h1>FAST AND <br/>FURIOUS SSV</h1>
                     <LoremIpsum p={1} />    
                 </div>
