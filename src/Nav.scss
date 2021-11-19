@@ -8,6 +8,7 @@
   height:fit-content;
   background-color: black;
   overflow: hidden;
+  // border-bottom: 1px solid white;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -100,11 +101,13 @@
     }
     
     .optionList{
+      scroll-behavior: smooth;
       width:100%;
       margin: 0;
       position: fixed;
       top:100px;
       overflow-x: hidden;
+      overflow: hidden;
       left:0;
       transition: 0.5s;
       background-color: black;

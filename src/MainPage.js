@@ -1,11 +1,11 @@
 import './MainPage.scss';
 import Nav from './Nav.js';
-import SSVpicture from './pictures/SSV.jpg';
-import { LoremIpsum, Avatar } from 'react-lorem-ipsum';
-
-
+import { LoremIpsum} from 'react-lorem-ipsum';
+import ChangePicture from './ChangePicture';
+import SSVpicture from './pictures/SSVv2.jpg';
 
 export default function mainPage(){
+
     return(
         <>
         <Nav />
@@ -13,13 +13,8 @@ export default function mainPage(){
             <div className="projects">
                 <div className="slidesContainer">
                     <div className="slides">
-                        <img className="SSV" src={SSVpicture}></img>
-                    </div>
-                    <div className="slides">
-                        <img className="Photon"></img>
-                    </div>
-                    <div className="slides">
-                        <img className="Cos"></img>
+                        <img className="picture" src={SSVpicture}></img>
+                        {/* <img className="Photon" src={PhotonPicture}></img> */}
                     </div>
                 </div>
                 <div className="description">
@@ -27,6 +22,7 @@ export default function mainPage(){
                     <h1>FAST AND <br/>FURIOUS SSV</h1>
                     <LoremIpsum p={1} />    
                 </div>
+                <ChangePicture />
             </div>
 
 
@@ -42,3 +38,4 @@ export default function mainPage(){
         </>
     )
 }
+
