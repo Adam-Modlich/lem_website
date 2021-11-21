@@ -8,10 +8,13 @@
   height:fit-content;
   background-color: black;
   overflow: hidden;
-  // border-bottom: 1px solid white;
   align-items: center;
   justify-content: center;
   text-align: center;
+  animation-name: hoverout;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  z-index: 3;
 
   li{
     font-size: larger;
@@ -66,6 +69,31 @@
 
   .fa-tiktok:hover{
     color: rgb(74, 222, 233);
+  }
+}
+
+.navbar:hover{
+  border-bottom: 1px solid white;
+  animation-name: hoverin;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hoverin {
+  from{
+    border-bottom: none;
+  }
+  to{
+    border-bottom: 1px solid white;
+  }
+}
+
+@keyframes hoverout {
+  from{
+    border-bottom: 1px solid white;
+  }
+  to{
+    border-bottom: 0px;
   }
 }
 
