@@ -1,4 +1,4 @@
-import SSVpicture from './pictures/SSVv2.jpg';
+import SSVpicture from './pictures/SSV.jpg';
 import PhotonPicture from './pictures/photonv2.jpg';
 import './MainPage.scss';
 // import { LoremIpsum} from 'react-lorem-ipsum';

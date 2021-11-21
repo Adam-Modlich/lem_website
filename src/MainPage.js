@@ -1,7 +1,7 @@
 import './MainPage.scss';
 import Nav from './Nav.js';
 import ChangePicture from './ChangePicture';
-import SSVpicture from './pictures/SSVv2.jpg';
+import SSVpicture from './pictures/SSV.jpg';
 import { LoremIpsum} from 'react-lorem-ipsum';
 
 

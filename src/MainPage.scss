@@ -7,9 +7,10 @@
     height:100%;
     // background: rgb(26,45,68);
     // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
-    background: black;
-    background-color: black;
+    // background: black;
+    // background-color: black;
     // background: linear-gradient(to right, #000000 63%, #3333cc 100%);
+    background-image: url(./pictures/tłov3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -153,7 +154,7 @@
         }
         .projects{
             margin-top: -5vh;
-            flex-direction: column;
+            flex-direction: row;
         }
             .slides{
                 width:80%;
@@ -231,7 +232,7 @@
 
     @media screen and (min-height: 700px){
         .slides{
-            margin-top: -10vh;
+            margin-top: -4vh;
             // margin-bottom: -6vh;
 
             img{

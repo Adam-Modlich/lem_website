@@ -6,7 +6,7 @@
   width: 100%;
   display: grid;  
   height:fit-content;
-  background-color: black;
+  // background-color: black;
   overflow: hidden;
   align-items: center;
   justify-content: center;
@@ -101,6 +101,7 @@
   .navbar {
     grid-template-columns: 5% 20% 60% 10% 5%;
     grid-template-rows: 100px;
+    background-color: black;
 
     img{
       grid-column: 2;
@@ -199,7 +200,7 @@
       grid-row:1;
 
       ul{
-        background-color: black;
+        // background-color: black;
         width: 100%;
         padding: 0;
         margin: auto;
@@ -223,7 +224,7 @@
     display: block;
     grid-column: 6;
     grid-row: 1;
-    background-color: black;
+    // background-color: black;
     width: 100%;
     padding: 0;
     margin: auto;
