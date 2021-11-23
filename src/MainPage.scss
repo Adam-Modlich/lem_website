@@ -10,11 +10,43 @@
     // background: black;
     // background-color: black;
     // background: linear-gradient(to right, #000000 63%, #3333cc 100%);
-    background-image: url(./pictures/tłov3.jpg);
+    background-image: url(./pictures/tłov7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.slidesAnimation1{
+    animation-name: imageFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+.slidesAnimation2{
+    animation-name: imageFromLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+}
+
+#picture1{
+    visibility: visible;
+}
+
+#picture2{
+    visibility: hidden;
+}
+
+@keyframes imageFromLeft {
+    from{
+        left: -30px;
+        opacity: 0;
+    }
+    to{
+        left:0px;
+        opacity: 1;
+    } 
+}
+
 
 .description{
     position: relative;
@@ -23,8 +55,6 @@
     left: 0;
     color: white;
     text-align: left;
-    align-items: center;
-    justify-content: center;
 
     .paragraph1{
         position: absolute;
@@ -32,7 +62,6 @@
         animation-name: descriptionFromRight;
         animation-duration: 2s;
         animation-timing-function: ease;
-        // left: 0;
     }
 
     #para1{
@@ -46,7 +75,6 @@
         animation-name: descriptionFromRight;
         animation-duration: 2s;
         animation-timing-function: ease;
-        // left: 0;
     }
 
     #para2{
@@ -88,25 +116,9 @@
     h4{
         font-weight: 1000;
         letter-spacing: 5px;
-        color: rgb(148, 38, 38);
+        color: rgb(255, 66, 66);
     }
 }
-
-
-// @keyframes FadeInOut {
-//     0%{
-//         opacity: 1;
-//     }
-//     45%{
-//         opacity: 1;
-//     }
-//     55%{
-//         opacity: 0;
-//     }
-//     100%{
-//         opacity: 0;
-//     }
-// }
 
 .projectImagesButt {
     position: fixed;
@@ -127,11 +139,9 @@
 
     #imageSSV{
         background: white
-        // background-size: 100% 200%;
     }
     #imagePhoton{
         background: black;
-        // background-size: 100% 200%;
     }
 
 }
@@ -139,81 +149,39 @@
 @media screen and (min-width: $laptop){
     .projects{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width:100%;
-        height: 100%;
+        height: 83vh;
     }
-
-    @media (max-aspect-ratio: 9/5){
-        .slidesContainer{
-            display: flex;
-            justify-content: center;
-            width:100%;
-        }
-        .projects{
-            margin-top: -5vh;
-            flex-direction: row;
-        }
-            .slides{
-                width:80%;
-                padding: 0%;
-                height:60vh;
-                width: auto;
-                margin-bottom: -6vh;
-
     
-                img{
-                    max-width:98%;
-                    max-height: 98%;
-                }
-    
-            }    
-
-            .description{
-                width: 50%;
-                height:300px;
-            }
-        }
-    
-    @media screen and (min-aspect-ratio: 9/5) {
-        .slidesContainer{
-            // padding-top: 3%;
-            width: 64%;
-            height:auto;
-        }
-        
-        .slides{
-            padding: 0%;
-            height:100%;
-            width: auto;
-
-            img{
-                max-width:100%;
-                max-height: 100%;
-            }
-            
-        }   
-        
-        .description{
-            width: 30%;
-            margin-right: 6%;
-            height: 300px;
-        }
-    }
-
     .slides{
-        padding-bottom: 4%;
+        position: relative;
+        z-index: 1;
+        top:0%;
+        left: 0;
+        height: 700px;
+        width: 70%;
 
         img{
-            max-width:100%;
-            max-height: 100%;
+            position: absolute;
+            top: 50%;
+            transform:translate(0%,-50%);
+            width: 100%;
+            height: auto;
         }
+        
+    }   
+    
+    .description{
+        width: 30%;
+        margin-right: 6%;
+        height: 300px;
+    }
+    
+}  
 
-    }    
-
-}
 
 @media screen and (max-width: $mobileTablet) {
     .projects{
@@ -225,15 +193,9 @@
         height: auto;
     }
 
-
-    .slidesContainer{
-        display: flex;
-    }
-
     @media screen and (min-height: 700px){
         .slides{
             margin-top: -4vh;
-            // margin-bottom: -6vh;
 
             img{
                 max-width:100%;

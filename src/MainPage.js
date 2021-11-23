@@ -2,6 +2,7 @@ import './MainPage.scss';
 import Nav from './Nav.js';
 import ChangePicture from './ChangePicture';
 import SSVpicture from './pictures/SSV.jpg';
+import PhotonPicture from './pictures/photonv2.jpg';
 import { LoremIpsum} from 'react-lorem-ipsum';
 
 
@@ -12,12 +13,12 @@ export default function mainPage(){
         <Nav />
         <div className="mainSite">
             <div className="projects">
-                <div className="slidesContainer">
+                {/* <div className="slidesContainer"> */}
                     <div className="slides">
                         <img id="picture" src={SSVpicture}></img>
-                        {/* <img className="Photon" src={PhotonPicture}></img> */}
+                        <img id="picture2" src={PhotonPicture}></img>
                     </div>
-                </div>
+                {/* </div> */}
                 <div className="description">
                     <p id="para1">
                         <h4>NEWEST PROJECT</h4>
