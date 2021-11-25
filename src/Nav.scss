@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
 .navbar{
+  font-family: 'Shippori Antique', sans-serif;
   position: fixed;
   top: 0%;
   width: 100%;
@@ -11,7 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  z-index: 3;
+  z-index: 99;
 
   li{
     font-size: larger;
@@ -19,9 +20,16 @@
   }
 
   .optionList{
+
     li{
       position: relative;
       padding: 7px 0;
+
+      a{
+        text-decoration: none;
+        color: white;
+      }
+
     }
 
     li::after{
@@ -87,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: $mobileTablet) {
+@media screen and (max-width: $Tablet) {
   .navbar {
     grid-template-columns: 5% 20% 60% 10% 5%;
     grid-template-rows: 100px;
@@ -233,10 +241,10 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
-  .navbar img{
-    // height: 300px;
-  }
-}
+// @media screen and (max-width: $mobile) {
+//   .navbar img{
+//     // height: 300px;
+//   }
+// }
 
 

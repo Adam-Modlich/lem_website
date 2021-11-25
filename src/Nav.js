@@ -2,7 +2,20 @@ import picture from '../src/pictures/lem_logo_white.jpg';
 import Hamburger from './Hamburger.js';
 import NavOptions from './NavOptions.js';
 import { useState } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
 
+const linkStyle = {
+    gridColumn: "2",
+    gridRow: "1",
+    width: "180px",
+  
+  };
 
 export default function Nav(){
     const[hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -13,7 +26,7 @@ export default function Nav(){
 
     return(
         <div className="navbar">
-            <img src={picture}></img>
+            <Link to="/" style={linkStyle}><img src={picture}></img></Link>
             <div className="hamburgerMenu" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>
             </div>

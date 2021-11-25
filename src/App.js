@@ -1,5 +1,13 @@
-import MainPage from './MainPage.js';
-
+import MainPage from './mainPage/MainPage.js';
+import AboutUs from './AboutUs/aboutUs';
+import Nav from './Nav.js';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  NavLink,
+} from "react-router-dom";
 
 function App() {
 
@@ -10,9 +18,20 @@ function App() {
   document.body.style = "background:black"
 
   return (
-    <header>
-      <MainPage />
-    </header>       
+    <>
+    <Router> 
+    <Nav/>
+      <Routes>
+        <Route exact path="/aboutus" element={<AboutUs/>}/>
+        <Route exact path="/" element={<MainPage/>}/>
+        {/* <Route exact path="/" component={Achivements}/> */}
+        {/* <Route exact path="/" component={aboutUs}/>
+        <Route exact path="/" component={aboutUs}/> */}
+
+      </Routes>
+
+    </Router> 
+    </>
   );
 }
 

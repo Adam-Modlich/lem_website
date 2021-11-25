@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import '../variables.scss';
 
 
 .mainSite{
@@ -10,7 +10,7 @@
     // background: black;
     // background-color: black;
     // background: linear-gradient(to right, #000000 63%, #3333cc 100%);
-    background-image: url(./pictures/tłov7.jpg);
+    background-image: url(../pictures/tłov7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,27 +57,27 @@
     text-align: left;
 
     .paragraph1{
-        position: absolute;
-        top: 0;
         animation-name: descriptionFromRight;
         animation-duration: 2s;
         animation-timing-function: ease;
     }
 
     #para1{
+        position: absolute;
+        top: 0;
         visibility: visible;
         margin: 0;
     }
 
     .paragraph2{
-        position: absolute;
-        top: 0;
         animation-name: descriptionFromRight;
         animation-duration: 2s;
         animation-timing-function: ease;
     }
 
     #para2{
+        position: absolute;
+        top: 0;
         visibility: hidden;
         margin: 0%;
     }
@@ -94,6 +94,7 @@
     }
 
     h1{
+        font-family: 'Racing Sans One', cursive;
         margin-top: -25px;
         margin-bottom: -5px;
         color: white;
@@ -114,6 +115,7 @@
     }
 
     h4{
+        font-family: 'Racing Sans One', cursive;
         font-weight: 1000;
         letter-spacing: 5px;
         color: rgb(255, 66, 66);
@@ -121,9 +123,10 @@
 }
 
 .projectImagesButt {
-    position: fixed;
-    top:45%;
-    right: 1%;
+    // position: fixed;
+    // top:45%;
+    // right: 1%;
+    z-index: 50;
 
     div{
         margin-bottom: 30px;
@@ -146,7 +149,29 @@
 
 }
 
+.slides{
+    position: relative;
+    z-index: 1;
+    top:0%;
+    left: 0;
+    // height: 700px;
+    // width: 70%;
+
+    img{
+        position: absolute;
+        top: 50%;
+        transform:translate(0%,-50%);
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (min-width: $laptop){
+    .projectImagesButt {
+        position: fixed;
+        top:45%;
+        right: 1%;
+    }
     .projects{
         display: flex;
         flex-direction: row;
@@ -183,7 +208,12 @@
 }  
 
 
-@media screen and (max-width: $mobileTablet) {
+@media screen and (max-width: $Tablet) {
+    .projectImagesButt {
+        position: absolute;
+        right: 50%;
+        transform: rotate(0.25turn) ;
+    }
     .projects{
         display: flex;
         flex-direction: column;
@@ -193,37 +223,81 @@
         height: auto;
     }
 
-    @media screen and (min-height: 700px){
+    @media screen and (max-aspect-ratio: 8/10){
+        .projectImagesButt {
+            top:44%;
+        }
         .slides{
-            margin-top: -4vh;
+            height: 300px;
+            width: 100%;
+            margin-bottom: 5%;
+            // margin-top: -4vh;
 
             img{
-                max-width:100%;
-                max-height: 100%;
+                position: absolute;
+                top: 50%;
+                transform:translate(0%,-50%);
+                width: 100%;
+                height: auto;
             }
 
         }    
     }
 
-    @media screen and (max-height:700px) {
+    @media screen and (min-aspect-ratio:8/10) {
+        .projectImagesButt {
+            top:75%;
+        }
         .slides{
-            margin-top: -10vh;
-            height:50%;
-            width: auto;
-
-            img{
-                align-items: center;
-                justify-content: center;
-                max-width:100%;
-                max-height: 100%;
-            }
-
+            // margin-top: -10vh;
+            height: 67vh;
+            width: 100%;
         }    
     }
 
     .description{
+        margin-top: 50px;
         width: 60%;
         height: 200px;
     }
+
+}
+
+@media  screen and (max-width: $mobile) {
+    .projectImagesButt {
+        position: absolute;
+        top:39vh;
+        right: 50%;
+        transform: rotate(0.25turn) ;
+    }
+
+    .slides{
+        // margin-top: -5%;
+        // margin-bottom: -5%;
+        height: 30vh;
+        width: 100%;
+        // margin-bottom: 5%;
+
+        img{
+            position: absolute;
+            top: 50%;
+            transform:translate(0%,-50%);
+            width: 100%;
+            height: auto;
+        }
+    } 
+
+    .description{
+        margin-top: 0;
+        height:300px;
+        h1{
+            font-size: 27px;
+        }
+
+        .shortText{
+            font-size: 8px;
+        }
+    }
+
 
 }
