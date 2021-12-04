@@ -8,7 +8,26 @@ export default function AboutUs(){
     return(
         // <>
         <div className="about">
-            <p>cos cos cos</p>   
+            <div className="aboutContent">
+                <div className="Container_1">
+
+                </div>
+                <div className="Container_2">
+                    <h1><i className="arrow"></i></h1>
+                </div>
+                <div className="Container_3">
+                    
+                </div>
+                <div className="Container_4">
+                    
+                </div>
+                <div className="Container_5">
+                    
+                </div>
+                <div className="Container_6">
+                    
+                </div>
+            </div> 
         </div>
         // </>
     )

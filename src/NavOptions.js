@@ -25,10 +25,10 @@ export default function NavOptions({isOpen}){
         <div className="optionList">
           <ul>
             <li><Link to="/aboutUs" style={linkStyle}>O Nas</Link></li>
-            <li>Osiągnięcia</li>
-            <li>Projekty</li>
-            <li>Zaufali nam</li>
-            <li>Kontakt</li>
+            <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li>
+            <li><Link to="/Projects" style={linkStyle}>Projekty</Link></li>
+            <li><Link to="/TrustedUs" style={linkStyle}>Wspierają Nas</Link></li>
+            <li><Link to="/ContactUs" style={linkStyle}>Kontakt</Link></li>
             <li className="iconsMobile">
               <a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook"></a>
               <a href="https://www.instagram.com/lemwroclaw/" className="fa fa-instagram"></a>

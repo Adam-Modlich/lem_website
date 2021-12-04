@@ -1,6 +1,183 @@
+@import '../variables.scss';
+
 
 .about{
     height: 100vh;
     width: 100%;
-    background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
+    // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
+    // background-color: white;
+    margin: 7.5vh 0 0 0;
+    background-color: white;
+
+
+    @media screen and (min-width: $laptop){
+    .aboutContent{
+        display: flexbox;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        // padding-left: 5%;
+        // padding-right: 5%;
+        // padding-top: 2%;
+
+        .Container_1{
+            background-image: url("../pictures/drużyna.jpg");
+            height: 70vh;
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-top: 11vh;
+            background-position: 0% 60%;
+            background-size: cover;
+        }
+
+        .Container_2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
+            height: 19vh;
+
+            h1{
+                padding-top: 30px;
+                padding-bottom: 30px;
+                .arrow{
+                    border: solid white;
+                    border-width: 0 7px 7px 0;
+                    display: inline-block;
+                    padding: 20px;
+                    transform: rotate(45deg);
+                    -webkit-transform: rotate(45deg);
+                    
+                }   
+            }
+        }
+
+        .Container_3{
+            height: 90vh;
+            width: 100%;
+            background-color: white;
+        }
+
+        .Container_4{
+            
+        }
+
+        .Container_5{
+            
+        }
+    }}
+    @media screen and (max-width: $Tablet) {
+        .aboutContent{
+            display: flexbox;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            background-color: black;
+            // padding-left: 5%;
+            // padding-right: 5%;
+            // padding-top: 2%;
+    
+            .Container_1{
+                background-image: url("../pictures/drużyna.jpg");
+                height: 67vh;
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 5%;
+                margin-top: 7%;
+                background-position: 0% 60%;
+                background-size: cover;
+            }
+    
+            .Container_2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+    
+                h1{
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    .arrow{
+                        border: solid white;
+                        border-width: 0 7px 7px 0;
+                        display: inline-block;
+                        padding: 20px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        
+                    }   
+                }
+            }
+    
+            .Container_3{
+                height: 90vh;
+                width: 100%;
+                background-color: white;
+            }
+    
+            .Container_4{
+                
+            }
+    
+            .Container_5{
+                
+            }
+        }}
+
+    @media  screen and (max-width: $mobile) {
+        .aboutContent{
+            display: flexbox;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            background-color: black;
+    
+            .Container_1{
+                background-image: url("../pictures/motor.jpg");
+                height: 67vh;
+                width: 80%;
+                margin-left: 10%;
+                margin-right: 10%;
+                padding-top: 7%;
+                background-position: center;
+                background-size: cover;
+            }
+    
+            .Container_2{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: black;
+    
+                h1{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    .arrow{
+                        border: solid white;
+                        border-width: 0 7px 7px 0;
+                        display: inline-block;
+                        padding: 20px;
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        
+                    }   
+                }
+            }
+    
+            .Container_3{
+                height: 90vh;
+                width: 100%;
+                background-color: white;
+            }
+    
+            .Container_4{
+                
+            }
+    
+            .Container_5{
+                
+            }
+        }}
 }

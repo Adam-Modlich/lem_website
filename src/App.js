@@ -1,5 +1,6 @@
 import MainPage from './mainPage/MainPage.js';
 import AboutUs from './AboutUs/aboutUs';
+import Contact from './Contact/Contact.js'
 import Nav from './Nav.js';
 import {
   BrowserRouter as Router,
@@ -22,11 +23,12 @@ function App() {
     <Router> 
     <Nav/>
       <Routes>
-        <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/" element={<MainPage/>}/>
-        {/* <Route exact path="/" component={Achivements}/> */}
-        {/* <Route exact path="/" component={aboutUs}/>
-        <Route exact path="/" component={aboutUs}/> */}
+        <Route exact path="/aboutus" element={<AboutUs/>}/>
+        <Route exact path="/Achievements" element={<MainPage/>}/>
+        <Route exact path="/Projects" element={<MainPage/>}/>
+        <Route exact path="/TrustedUs" element={<MainPage/>}/>
+        <Route exact path="/ContactUs" element={<Contact/>}/>
 
       </Routes>
 
