@@ -9,6 +9,9 @@
     margin: 7.5vh 0 0 0;
     background-color: white;
 
+    p{
+        font-family: 'Shippori Antique', sans-serif;
+    }
 
     @media screen and (min-width: $laptop){
     .aboutContent{
@@ -37,7 +40,7 @@
             align-items: center;
             justify-content: center;
             background-color: black;
-            height: 19vh;
+            height: 20vh;
 
             h1{
                 padding-top: 30px;
@@ -55,17 +58,121 @@
         }
 
         .Container_3{
-            height: 90vh;
-            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 45vh;
             background-color: white;
+
+            .acapits{
+                width: 100%;
+                margin-top: 0;
+                background-color: white;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 1000;
+            }
+
+            .image_1{
+                width: 50%;
+                height: 100%;
+            }
+
+            .text_1{
+                width: 49%;
+                font-size: 20px;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                border: 3px solid black;
+                border-radius: 10px;
+
+                p{
+                    margin: 0 5% 0 5%;
+                }
+            }
+
         }
 
         .Container_4{
-            
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 45vh;
+            background-color: white;
+            color: white;
+
+            .acapits{
+                width: 100%;
+                margin-top: 0;
+                background-color: black;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 1000;
+            }
+
+            .image_2{
+                width: 50%;
+                height: 100%;
+            }
+
+            .text_1{
+                width: 49%;
+                font-size: 20px;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                border: 3px solid white;
+                background-color: black;
+                border-radius: 10px;
+
+                p{
+                    margin: 0 5% 0 5%;
+                }
+            }        
         }
 
         .Container_5{
-            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height: 45vh;
+            background-color: white;
+            color: black;
+
+            .acapits{
+                width: 100%;
+                margin-top: 0;
+                background-color: white;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 1000;
+            }
+
+            .image_3{
+                width: 50%;
+                height: 100%;
+            }
+
+            .text_1{
+                width: 49%;
+                font-size: 20px;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                border: 3px solid black;
+                border-radius: 10px;
+
+                p{
+                    margin: 0 5% 0 5%;
+                }
+            }          
         }
     }}
     @media screen and (max-width: $Tablet) {
