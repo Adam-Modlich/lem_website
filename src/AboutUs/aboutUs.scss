@@ -7,7 +7,7 @@
     // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
     // background-color: white;
     margin: 7.5vh 0 0 0;
-    background-color: white;
+    background-color: whitesmoke;
 
     p{
         font-family: 'Shippori Antique', sans-serif;
@@ -19,7 +19,7 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        background-color: black;
+        background-color: whitesmoke;
         // padding-left: 5%;
         // padding-right: 5%;
         // padding-top: 2%;
@@ -57,122 +57,111 @@
             }
         }
 
-        .Container_3{
+        .Container_3, .Container_4, .Container_5{
             display: flex;
-            flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            align-items:stretch;
             width:100%;
-            height: 45vh;
-            background-color: white;
+            padding: 10vh 0 7vh 0;
+            height: auto;
+            background-color: whitesmoke;
+            text-align: left;
+            line-height: 50px ;
 
             .acapits{
+                font-family: 'Merriweather', serif;
                 width: 100%;
                 margin-top: 0;
-                background-color: white;
+                // margin-left: 0.7em;
+                padding-bottom: 5%;
                 text-align: center;
-                font-size: 50px;
+                font-size: 2.5vw;
                 font-weight: 1000;
             }
+        }
+
+        .Container_3{
+            flex-direction: row;
 
             .image_1{
+                background-image: url(../pictures/SSV_Rama.jpg);
+                background-size: cover;
+                background-position: center;
                 width: 50%;
-                height: 100%;
+                margin: 0vh 5vw 0vh 10vw;
+                height: 40vw;
             }
 
             .text_1{
-                width: 49%;
-                font-size: 20px;
-                padding-top: 3%;
-                padding-bottom: 3%;
-                border: 3px solid black;
-                border-radius: 10px;
+                margin: 0 4vw 0 0 ;
+                width: 30%;
+                height: auto;
+                font-size: 1.1vw;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
 
                 p{
                     margin: 0 5% 0 5%;
                 }
+    
             }
 
         }
 
         .Container_4{
-            display: flex;
             flex-direction: row-reverse;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width:100%;
-            height: 45vh;
-            background-color: white;
-            color: white;
-
-            .acapits{
-                width: 100%;
-                margin-top: 0;
-                background-color: black;
-                text-align: center;
-                font-size: 50px;
-                font-weight: 1000;
-            }
 
             .image_2{
+                background-image: url(../pictures/druzyny.jpg);
+                background-size: cover;
+                background-position: center;
                 width: 50%;
-                height: 100%;
+                margin: 0vh 6vw 0vh 5vw;
+                height: 40vw;
             }
 
-            .text_1{
-                width: 49%;
-                font-size: 20px;
-                padding-top: 3%;
-                padding-bottom: 3%;
-                border: 3px solid white;
-                background-color: black;
-                border-radius: 10px;
+            .text_2{
+                margin: 10vh 0 0 5vw ;
+                width: 30%;
+                height: auto;
+                font-size: 1.1vw;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
 
                 p{
                     margin: 0 5% 0 5%;
                 }
-            }        
+    
+            }
+
         }
 
         .Container_5{
-            display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width:100%;
-            height: 45vh;
-            background-color: white;
-            color: black;
-
-            .acapits{
-                width: 100%;
-                margin-top: 0;
-                background-color: white;
-                text-align: center;
-                font-size: 50px;
-                font-weight: 1000;
-            }
 
             .image_3{
+                background-image: url(../pictures/Photon_naprawa.jpg);
+                background-position: 30% 0%;
+                background-size: cover;
                 width: 50%;
-                height: 100%;
+                margin: 0vh 5vw 0vh 10vw;
+                height: 70vh;
             }
 
-            .text_1{
-                width: 49%;
-                font-size: 20px;
-                padding-top: 3%;
-                padding-bottom: 3%;
-                border: 3px solid black;
-                border-radius: 10px;
+            .text_3{
+                margin: 10vh 4em 0 0 ;
+                width: 30%;
+                height: 40vh;
+                font-size: 1.1vw;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
 
                 p{
                     margin: 0 5% 0 5%;
                 }
-            }          
+    
+            }
+
         }
     }}
     @media screen and (max-width: $Tablet) {
