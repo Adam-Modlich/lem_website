@@ -125,16 +125,6 @@
             }
         }
 
-        // .Container_3:hover .image_1{
-        //     // transition: 1s ease-in-out;
-        //     opacity: 1;
-        // }
-
-        // .Container_3:hover .text_1{
-        //     // transition: 1s ease-in-out;
-        //     opacity: 1;
-        // }
-
         .Container_4{
             flex-direction: row-reverse;
             background: linear-gradient(to right, #4a1b6b, red 150%, );
@@ -143,7 +133,7 @@
             .image_2{
                 background-image: url(../pictures/druzyny.jpg);
                 background-size: cover;
-                background-position: center;
+                background-position: 40% 0%;
                 width: 50%;
                 margin: 0vh 6vw 0vh 5vw;
                 height: 40vw;
@@ -170,7 +160,7 @@
 
             .image_3{
                 background-image: url(../pictures/Photon_naprawa.jpg);
-                background-position: 30% 0%;
+                background-position: left bottom;
                 background-size: cover;
                 width: 50%;
                 margin: 0vh 5vw 0vh 10vw;
