@@ -3,6 +3,7 @@ import Nav from '../Nav'
 import react from 'react';
 
 import $ from 'jquery';
+import Footer from '../Footer';
 
 
 export default function AboutUs(){
@@ -40,11 +41,11 @@ export default function AboutUs(){
       });
 
     return(
-        // <>
+        <>
         <div className="about">
             <div className="aboutContent">
                 <div className="Container_1">
-                    {/* <h1> That's Us</h1> */}
+                    <h1> That's Us</h1>
                         <a href="#section2"><i className="arrow"></i></a>
                 </div>
                 {/* <div className="Container_2">
@@ -97,7 +98,8 @@ export default function AboutUs(){
                 </div>
             </div> 
         </div>
-        // </>
+        <Footer/>
+        </>
     )
 }
 

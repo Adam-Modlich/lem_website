@@ -9,6 +9,7 @@ import {
   Link,
   NavLink,
 } from "react-router-dom";
+import Achievements from './Achievements/Achievements.js';
 
 function App() {
 
@@ -25,13 +26,12 @@ function App() {
       <Routes>
         <Route exact path="/" element={<MainPage/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
-        <Route exact path="/Achievements" element={<MainPage/>}/>
+        <Route exact path="/Achievements" element={<Achievements/>}/>
         <Route exact path="/Projects" element={<MainPage/>}/>
         <Route exact path="/TrustedUs" element={<MainPage/>}/>
         <Route exact path="/ContactUs" element={<Contact/>}/>
 
       </Routes>
-
     </Router> 
     </>
   );

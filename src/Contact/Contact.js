@@ -1,8 +1,23 @@
 import '../Contact/Contact.scss';
-import MapContainer from './map';
 
 export default function Contact(){
 
+    const handleSubmit = () => {
+        const titleSend = document.getElementById("titleSend");
+        const titleUnSend = document.getElementById("titleUnSend");
+
+        titleSend.style.opacity = "1";
+        titleUnSend.style.opacity = "0";
+        setTimeout(handleSubmitGoBack,3000);
+    }
+
+    const handleSubmitGoBack = () => {
+        const titleSend = document.getElementById("titleSend");
+        const titleUnSend = document.getElementById("titleUnSend");
+
+        titleSend.style.opacity = "0";
+        titleUnSend.style.opacity = "1";
+    }
 
     return(
         <>
@@ -40,8 +55,9 @@ export default function Contact(){
             </div>
             <div className="rightSide">
                 <form>
-                    <div>
-                    <h1>Send Us A Message</h1>
+                    <div className='title'>
+                    <h1 id='titleSend'>Thank you</h1>
+                    <h1 id='titleUnSend'>Send Us A Message</h1>
                     </div>
                     <div>
                         <label for="name"><h2>Name</h2></label>
@@ -56,7 +72,7 @@ export default function Contact(){
                         <input type="text" placeholder="Message..."/>
                     </div>
                     <div>
-                        <button>Send</button>
+                        <button type="button" onClick={handleSubmit}>Send</button>
                     </div>
                 </form>
             </div>
