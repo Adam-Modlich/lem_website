@@ -2,6 +2,7 @@ import MainPage from './mainPage/MainPage.js';
 import AboutUs from './AboutUs/aboutUs';
 import Contact from './Contact/Contact.js'
 import Nav from './Nav.js';
+import Projects from './Projects/Projects.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -27,7 +28,7 @@ function App() {
         <Route exact path="/" element={<MainPage/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/Achievements" element={<Achievements/>}/>
-        <Route exact path="/Projects" element={<MainPage/>}/>
+        <Route exact path="/Projects" element={<Projects/>}/>
         <Route exact path="/TrustedUs" element={<MainPage/>}/>
         <Route exact path="/ContactUs" element={<Contact/>}/>
 

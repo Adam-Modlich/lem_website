@@ -1,0 +1,118 @@
+@import '../variables.scss';
+
+@media screen and (min-width: $laptop){
+    .parent{
+        position: absolute;
+        width: 100%;
+        margin-top:8vh;
+        height: 91vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .text{
+            position: relative;
+            background: rgba(0,0,0,0.5);
+            font-size: 1.7vw;
+            width: 80%;
+            height: 80%;
+            color: white;
+            margin: 0%;
+            padding: 0%;
+
+            p{
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 10%;
+            }
+            
+            .projectTitle{
+                position: relative;
+                top: 0%;
+                left: 0%;
+                text-align: center;
+                color: white;
+                z-index: 2;
+            }
+
+            .iconsContainer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 90%;
+                margin: 5% 5%;
+                height: 15vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .icons{
+                    width:calc(100%/4);
+                    text-align: center;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 1;
+
+                    .value{
+
+                    }
+
+                    h1{
+                        height: 50%;
+                        margin: 0%;
+                    }
+
+                    h4{
+                        margin: 0%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    }     
+    
+    .parent1{
+        top: 0%;
+        left: 0%;
+        visibility: visible;
+        background-image: url(../pictures/SSV_podłoga.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }
+
+    .parent2{
+        visibility: hidden;
+        left: 100%;
+        top: 0%;
+        background-image: url(../pictures/Photon_premiera.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }  
+
+    .parent3{
+        visibility: hidden;
+        left: 200%;
+        top: 0%;
+        background-image: url(../pictures/SSV_podłoga.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }     
+
+    button{
+        position: absolute;
+        top:15vh;
+        left: 0%;
+        background-color: white;
+        color: white;
+    }
+}
+@media screen and (max-width: $Tablet){
+
+}
+@media screen and (min-width: $mobile){
+
+}

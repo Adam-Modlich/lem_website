@@ -45,12 +45,9 @@ export default function AboutUs(){
         <div className="about">
             <div className="aboutContent">
                 <div className="Container_1">
-                    <h1> That's Us</h1>
+                    <h1> Light Electronic Motorcycle </h1>
                         <a href="#section2"><i className="arrow"></i></a>
                 </div>
-                {/* <div className="Container_2">
-                    <h1><a href="#section2"><i className="arrow"></i></a></h1>
-                </div> */}
                 <div className="parent1">
                 <div id="section2" className="Container_3">
                     <div className="image_1">
@@ -93,9 +90,20 @@ export default function AboutUs(){
                       </div>
                   </div>
                 </div>
-                <div className="Container_6">
-                    
-                </div>
+                {/* <div className="parent3">
+                  <div className="Container_6">
+                      <div className="image_4">
+
+                      </div>
+                      <div className="text_4">
+                      <h1 className="acapits">Co w tym Roku?</h1>
+                          <p>
+                              W tym roku stworzyliśmy motocykl wyścigowy (LEM Photon), z którym pojechaliśmy na zawody MotoStudent (najbardziej prestiżowe zawody motocyklowe dla studentów na świecie, odpowiednik MotoGP). Dzięki pracy całego zespołu zdobyliśmy 1 miejsce w kategorii Best Rookie Team. 
+                          </p>
+                      </div>
+                  </div>
+                </div> */}
+                
             </div> 
         </div>
         <Footer/>

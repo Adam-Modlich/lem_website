@@ -4,7 +4,7 @@
 .mainSite{
     padding-top: 100px;
     width: 100%;
-    height:100%;
+    height:auto;
     // background: rgb(26,45,68);
     // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
     // background: black;
@@ -50,6 +50,7 @@
 
 .description{
     position: relative;
+    font-family:'Shippori Antique', sans-serif;
     z-index: 1;
     top:0;
     left: 0;
@@ -266,7 +267,7 @@
 @media  screen and (max-width: $mobile) {
     .projectImagesButt {
         position: absolute;
-        top:39vh;
+        top:41vh;
         right: 50%;
         transform: rotate(0.25turn) ;
     }
@@ -280,7 +281,7 @@
 
         img{
             position: absolute;
-            top: 50%;
+            top: 40%;
             transform:translate(0%,-50%);
             width: 100%;
             height: auto;
@@ -288,14 +289,15 @@
     } 
 
     .description{
-        margin-top: 0;
-        height:300px;
+        margin-top: 0%;
+        height:auto;
+        
         h1{
-            font-size: 27px;
+            font-size: 21px;
         }
 
         .shortText{
-            font-size: 8px;
+            font-size: 12px;
         }
     }
 

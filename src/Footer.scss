@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 
-@media screen and (max-width: $Tablet) {
-    
-}
-
 @media screen and (min-width: $laptop) {
 
     footer{
@@ -24,35 +20,25 @@
         letter-spacing: 1px;
         line-height: 1.5em;
 
-        // display: flex;
-        //     align-items: center;
-        //     justify-content: center;
-        //     position: relative;
-        //     z-index: 1;
-        //     height: 90vh;
-        //     width: 100%;
-        //     background-color: black;
-        //     color: white;
-
         .contactLeft{
             width: 30%;
-            padding-top: 100px;
+            padding-top: 70px;
             padding-right: 10%;
-            padding-bottom: 100px;
+            padding-bottom: 70px;
             padding-left: 10%;
         }
 
         .contactRight{
             width: 40%;
-            padding-top: 100px;
+            padding-top: 70px;
             padding-right: 5%;
-            padding-bottom: 100px;
+            padding-bottom: 70px;
             padding-left: 5%;
         }
 
         h1{
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 35px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
@@ -60,7 +46,7 @@
 
         h3{
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 25px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
@@ -74,7 +60,7 @@
 
         .icons{
             width: 80%;
-            margin: 5% 10% 5% 10%;
+            margin: 3% 10% 3% 10%;
             height: auto;
 
             div{
@@ -88,7 +74,7 @@
                     background-color: white;
                     border-radius: 50%;
                     padding: 14px;
-                    font-size: 2em;
+                    font-size: 1.7em;
                     height: auto;
                 }
 
@@ -97,11 +83,11 @@
                     padding-left: 10%;
 
                     h1{
-                        font-size: 2.5em;
+                        font-size: 2em;
                     }
 
                     p{
-                        font-size: 1.5em;
+                        font-size: 1.2em;
                     }
                 }
                 
@@ -118,13 +104,251 @@
         left: 0;
         right: 0;
         background-image: url(../src/pictures/photon_on_track.jpg);
-        opacity: 0.1;
+        opacity: 0.15;
         z-index: -1;
-        background-position: 50% 30%;
+        background-position: 50% 25%;
         transform: scaleX(-1);
         background-size: cover;
     }
 
 
 
+}
+
+
+@media screen and (max-width: $Tablet) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        height: auto;
+        width: 100%;
+        // background-color: black;
+        background-color: black;
+        color: white;
+        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+
+        .contactLeft{
+            width: 30%;
+            padding-top: 40px;
+            padding-right: 10%;
+            padding-bottom: 40px;
+            padding-left: 10%;
+        }
+
+        .contactRight{
+            width: 40%;
+            padding-top: 40px;
+            padding-right: 5%;
+            padding-bottom: 40px;
+            padding-left: 5%;
+        }
+
+        h1{
+            text-transform: uppercase;
+            font-size: 30px;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        h4{
+            font-size: 12px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        .icons{
+            width: 80%;
+            margin: 3% 10% 3% 10%;
+            height: auto;
+
+            div{
+                display: flex;
+                align-items: center;
+                width: 100%;
+
+                .fa{
+                    color: black;
+                    border: 1px solid white;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 14px;
+                    font-size: 1.2em;
+                    height: auto;
+                }
+
+                .text{
+                    color: white;
+                    padding-left: 10%;
+
+                    h1{
+                        font-size: 1.5em;
+                    }
+
+                    p{
+                        font-size: 0.8em;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+    footer::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../src/pictures/photon_on_track.jpg);
+        opacity: 0.15;
+        z-index: -1;
+        background-position: 50% 25%;
+        transform: scaleX(-1);
+        background-size: cover;
+    }
+
+}
+
+@media  screen and (max-width: $mobile) {
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        height: auto;
+        width: 100%;
+        // background-color: black;
+        background-color: black;
+        color: white;
+        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+        letter-spacing: 1px;
+        line-height: 1.5em;
+
+        .contactLeft{
+            width: 80%;
+            padding-top: 20px;
+            padding-right: 10%;
+            padding-bottom: 20px;
+            padding-left: 10%;
+        }
+
+        .contactRight{
+            width: 90%;
+            padding-top: 20px;
+            padding-right: 5%;
+            padding-bottom: 20px;
+            padding-left: 5%;
+        }
+
+        h1{
+            text-transform: uppercase;
+            font-size: 25px;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        h3{
+            text-transform: uppercase;
+            font-size: 15px;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        h4{
+            font-size: 12px;
+            line-height: 1.5em;
+            text-align: left;
+        }
+
+        .icons{
+            display: grid;
+            grid-template-columns: 80% 120%;
+            // flex-direction: row;
+            // flex-wrap: wrap;
+            width: 50%;
+            margin: 3% 0% 3% 0%;
+            height: auto;
+
+            .icon1{
+                grid-column: 1;
+            }
+
+            .icon2{
+                grid-column: 2;
+            }
+
+            div{
+                text-align: center;
+                width: 100%;
+                height: auto;
+                display: inline-block;
+
+                span{
+                    display: block;
+                }
+
+                .fa{
+                    color: black;
+                    border: 1px solid white;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 9px;
+                    font-size: 1.2em;
+                    height: auto;
+                }
+
+                .text{
+                    color: white;
+                    padding: 0%;
+
+                    h1{
+                        text-align: center;
+                        font-size: 1em;
+                    }
+
+                    p{
+                        font-size: 0.7em;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+    footer::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../src/pictures/photon_on_track.jpg);
+        opacity: 0.15;
+        z-index: -1;
+        background-position: 50% 25%;
+        transform: scaleX(-1);
+        background-size: cover;
+    }
 }

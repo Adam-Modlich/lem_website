@@ -1,4 +1,5 @@
 import '../Achievements/Achievements.scss';
+import Footer from '../Footer';
 
 export default function Achievements(){
 
@@ -19,6 +20,7 @@ export default function Achievements(){
             <div id="12"></div>
 
         </div>
+        <Footer/>
         </>
     )
 }
