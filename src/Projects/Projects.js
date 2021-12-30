@@ -77,13 +77,14 @@ export default function Projects(){
 
     return(
         <>
+        <div className='pageContainer'>
         <div className="parents1 parents">
             <div className='text'>
                 <h1 className="projectTitle">Photon</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam? Vitae eos incidunt dolorum culpa suscipit tenetur eius, inventore fuga quis, praesentium laborum in mollitia maxime fugit ut, dignissimos officia.</p>
                 <div className="iconsContainer">
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={3} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={3} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -92,7 +93,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={100} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={100} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -100,7 +101,7 @@ export default function Projects(){
                         <h4 className="valueIs">Moc</h4>
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={200} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={200} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -109,7 +110,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={140} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={140} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -131,7 +132,7 @@ export default function Projects(){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam? Vitae eos incidunt dolorum culpa suscipit tenetur eius, inventore fuga quis, praesentium laborum in mollitia maxime fugit ut, dignissimos officia.</p>
                 <div className="iconsContainer">
                 <div className='icons'>
-                        <h1 className="value"><CountUp end={3} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={3} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -140,7 +141,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={100} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={100} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -148,7 +149,7 @@ export default function Projects(){
                         <h4 className="valueIs">Moc</h4>
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={200} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={200} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -157,7 +158,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={140} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={140} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -179,7 +180,7 @@ export default function Projects(){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam? Vitae eos incidunt dolorum culpa suscipit tenetur eius, inventore fuga quis, praesentium laborum in mollitia maxime fugit ut, dignissimos officia.</p>
                 <div className="iconsContainer">
                 <div className='icons'>
-                        <h1 className="value"><CountUp end={3} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={3} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -188,7 +189,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={100} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={100} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -196,7 +197,7 @@ export default function Projects(){
                         <h4 className="valueIs">Moc</h4>
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={200} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={200} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -205,7 +206,7 @@ export default function Projects(){
 
                     </div>
                     <div className='icons'>
-                        <h1 className="value"><CountUp end={140} duration={2.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={140} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -220,6 +221,7 @@ export default function Projects(){
                 <i className='fa fa-angle-double-right' onClick={switchPictureRight} style={{fontSize:"60px"}}></i>
                 <i className='fa fa-angle-double-left' onClick={switchPictureLeft} style={{fontSize:"60px"}}></i>
             </div>
+        </div>
         </div>
         </> 
     )

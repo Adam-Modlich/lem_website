@@ -1,6 +1,10 @@
 @import '../variables.scss';
 
 @media screen and (min-width: $laptop){
+    .pageContainer{
+        min-height: 91vh;
+    }
+
     .parents{
         position: absolute;
         width: 100%;

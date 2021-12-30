@@ -10,15 +10,12 @@ export default function mainPage(){
 
     return(
         <>
-        {/* <Nav /> */}
         <div className="mainSite">
             <div className="projects">
-                {/* <div className="slidesContainer"> */}
-                    <div className="slides">
-                        <img id="picture" src={SSVpicture}></img>
-                        <img id="picture2" src={PhotonPicture}></img>
-                    </div>
-                {/* </div> */}
+                <div className="slides">
+                    <img id="picture" src={SSVpicture} style={{visibility:"visible"}}></img>
+                    <img id="picture2" src={PhotonPicture}></img>
+                </div>
                 <div className="description">
                     <p id="para1">
                         <h4>NEWEST PROJECT</h4>

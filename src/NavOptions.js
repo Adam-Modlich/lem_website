@@ -27,7 +27,7 @@ export default function NavOptions({isOpen}){
             <li><Link to="/aboutUs" style={linkStyle}>O Nas</Link></li>
             <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li>
             <li><Link to="/Projects" style={linkStyle}>Projekty</Link></li>
-            <li><Link to="/TrustedUs" style={linkStyle}>Wspierają Nas</Link></li>
+            <li><Link to="/TrustUs" style={linkStyle}>Wspierają Nas</Link></li>
             <li><Link to="/ContactUs" style={linkStyle}>Kontakt</Link></li>
             <li className="iconsMobile">
               <a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook"></a>

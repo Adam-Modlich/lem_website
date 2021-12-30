@@ -2,14 +2,9 @@
 
 
 .mainSite{
-    padding-top: 100px;
+    padding-top: 5vh;
     width: 100%;
     height:auto;
-    // background: rgb(26,45,68);
-    // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
-    // background: black;
-    // background-color: black;
-    // background: linear-gradient(to right, #000000 63%, #3333cc 100%);
     background-image: url(../pictures/tłov7.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +23,7 @@
     animation-timing-function: ease;
 }
 
-#picture1{
+#picture{
     visibility: visible;
 }
 
@@ -52,10 +47,15 @@
     position: relative;
     font-family:'Shippori Antique', sans-serif;
     z-index: 1;
-    top:0;
+    // height: auto;
+    top:-4vh;
     left: 0;
     color: white;
     text-align: left;
+
+    p{
+        font-size: 1.2vw;
+    }
 
     .paragraph1{
         animation-name: descriptionFromRight;
@@ -96,8 +96,8 @@
 
     h1{
         font-family: 'Racing Sans One', cursive;
-        margin-top: -25px;
-        margin-bottom: -5px;
+        margin-top: -2vh;
+        margin-bottom: -1vh;
         color: white;
         overflow: hidden;
         background: linear-gradient(to right, #4a1b6b, red 50%, white 50%);
@@ -107,7 +107,7 @@
         background-size: 200% 100%;
         background-position: 100%;
         transition: background-position 0.5s ease;
-        font-size: 50px;
+        font-size: 3.5vw;
         font-weight: 900;
     }
 
@@ -118,35 +118,36 @@
     h4{
         font-family: 'Racing Sans One', cursive;
         font-weight: 1000;
+        font-size: 1.2vw;
         letter-spacing: 5px;
         color: rgb(255, 66, 66);
     }
 }
 
 .projectImagesButt {
-    position: absolute;
     background-color: transparent;
-    // top:45%;
-    // right: 1%;
     z-index: 50;
 
-    div{
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        cursor: pointer;
-        transition: 0.5s ease-in-out;
-        border: 0.5px solid white;
-        transition: background-color 0.3s linear;
+    #imageSSV{
+        background: white;
+        color: white;
+
+        i{
+            position: fixed;
+            // top: 50%;
+            // right:2%;   
+        }
     }
 
-    #imageSSV{
-        background: white
-    }
     #imagePhoton{
-        background: black;
+        background: white;
+        color: white;
+
+        i{            
+            position: fixed;
+            // top: 50%;
+            // left:2%;   
+        }
     }
 
 }
@@ -156,8 +157,6 @@
     z-index: 1;
     top:0%;
     left: 0;
-    // height: 700px;
-    // width: 70%;
 
     img{
         position: absolute;
@@ -169,11 +168,28 @@
 }
 
 @media screen and (min-width: $laptop){
-    .projectImagesButt {
-        position: absolute;
-        top:45%;
-        right: 1%;
+     #imageSSV{
+        color: white;
+        
+        i{
+            font-size: 60px;
+            position: fixed;
+            top: 50%;
+            right:2%;   
+        }
     }
+
+    #imagePhoton{
+        color: white;
+
+        i{          
+            font-size: 60px;  
+            position: fixed;
+            top: 50%;
+            left:2%;   
+        }
+    }
+
     .projects{
         display: flex;
         flex-direction: row;
@@ -211,11 +227,10 @@
 
 
 @media screen and (max-width: $Tablet) {
-    .projectImagesButt {
-        position: absolute;
-        right: 50%;
-        transform: rotate(0.25turn) ;
+    .mainSite{
+        margin-top: 9vh;
     }
+
     .projects{
         display: flex;
         flex-direction: column;
@@ -226,13 +241,10 @@
     }
 
     @media screen and (max-aspect-ratio: 8/10){
-        .projectImagesButt {
-            top:44%;
-        }
         .slides{
             height: 300px;
             width: 100%;
-            margin-bottom: 5%;
+            margin-bottom: 20%;
             // margin-top: -4vh;
 
             img{
@@ -243,42 +255,136 @@
                 height: auto;
             }
 
-        }    
+        }  
+        
+        #imageSSV{
+            background: white;
+            color: white;
+            
+            i{
+                font-size: 50px;
+                position: fixed;
+                top: 30%;
+                right:2%;   
+            }
+        }
+    
+        #imagePhoton{
+            background: white;
+            color: white;
+    
+            i{            
+                font-size: 50px;
+                position: fixed;
+                top: 30%;
+                left:2%;   
+            }
+        }
     }
 
     @media screen and (min-aspect-ratio:8/10) {
-        .projectImagesButt {
-            top:75%;
-        }
         .slides{
-            // margin-top: -10vh;
+            margin-bottom: 10%;
             height: 67vh;
             width: 100%;
         }    
+
+        #imageSSV{
+            background: white;
+            color: white;
+            
+            i{
+                position: fixed;
+                top: 50%;
+                right:2%;   
+            }
+        }
+    
+        #imagePhoton{
+            background: white;
+            color: white;
+    
+            i{            
+                position: fixed;
+                top: 50%;
+                left:2%;   
+            }
+        }
     }
 
     .description{
-        margin-top: 50px;
+        margin-top: 0px;
         width: 60%;
-        height: 200px;
+        height: auto;
+
+        #para1{
+        
+            h1{
+                // margin: 0;
+                font-size: 50px;
+            }
+
+            h4{
+                font-size: 27px;
+            }
+
+            .shortText{
+                font-size: 20px;
+            }
+        }
+
+        #para2{
+            h1{
+                // margin: 0;
+                font-size: 45px;
+            }
+
+            h4{
+                font-size: 24px;
+            }
+
+            .shortText{
+                font-size: 20px;
+            }
+        }
     }
 
 }
 
 @media  screen and (max-width: $mobile) {
-    .projectImagesButt {
-        position: absolute;
-        top:31vh;
-        right: 50%;
-        transform: rotate(0.25turn) ;
+    .mainSite{
+        margin-top: 11vh;
+    }
+
+    #imageSSV{
+        background: white;
+        color: white;
+        
+        i{
+            font-size: 30px;
+
+            position: fixed;
+            top: 25%;
+            right:2%;   
+        }
+    }
+
+    #imagePhoton{
+        background: white;
+        color: white;
+
+        i{       
+            font-size: 30px;
+     
+            position: fixed;
+            top: 25%;
+            left:2%;   
+        }
     }
 
     .slides{
-        // margin-top: -5%;
-        // margin-bottom: -5%;
-        height: 30vh;
+        height: 20vh;
         width: 100%;
-        // margin-bottom: 5%;
 
         img{
             position: absolute;
@@ -292,14 +398,38 @@
     .description{
         margin-top: 0%;
         height:auto;
+
+        #para1{
         
-        h1{
-            font-size: 21px;
+            h1{
+                // margin: 0;
+                font-size: 37px;
+            }
+
+            h4{
+                font-size: 17px;
+            }
+
+            .shortText{
+                font-size: 17px;
+            }
         }
 
-        .shortText{
-            font-size: 12px;
+        #para2{
+            h1{
+                // margin: 0;
+                font-size: 30px;
+            }
+
+            h4{
+                font-size: 17px;
+            }
+
+            .shortText{
+                font-size: 17px;
+            }
         }
+
     }
 
 
