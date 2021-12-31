@@ -53,7 +53,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
 
-                .icons{
+                .iconsProjects{
                     width:calc(100%/4);
                     text-align: center;
                     height: 100%;
@@ -133,8 +133,199 @@
     }
 }
 @media screen and (max-width: $Tablet){
+    .pageContainer{
+        min-height: 91vh;
+    }
 
+    .parents{
+        width: 100%;
+        margin-top:8vh;
+        height: 91vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        .text{
+            position: relative;
+            background: rgba(0,0,0,0.6);
+            font-size: 1.7vw;
+            width: 80%;
+            height: 80%;
+            color: white;
+            margin: 0%;
+            padding: 0%;
+
+            p{
+                height: 30%;
+                font-size: 23px;
+            }
+            
+            .projectTitle{
+                position: relative;
+                top: 0%;
+                left: 0%;
+                margin: 5% 0;
+                height: 10%;
+                font-size: 50px;
+                text-align: center;
+                color: white;
+                z-index: 2;
+            }
+
+            .iconsContainer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 90%;
+                margin: 5% 5%;
+                height: 50%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .iconsProjects{
+                    width: 50%;
+                    text-align: center;
+                    height: 50%;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 1;
+
+                    h1{
+                        font-size: 60px;
+                        height: 50%;
+                        margin: 0%;
+                    }
+
+                    h4{
+                        margin: 0%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    } 
+    
+    .parents1{
+        top: 0%;
+        left: 0%;
+        visibility: visible;
+        background-image: url(../pictures/Photon_premiera.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }
+
+    .parents2{
+        left: 0%;
+        top: 100%;
+        visibility: visible;
+        background-image: url(../pictures/Thunder.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }  
+
+    .parents3{
+        left: 0;
+        top: 200%;
+        visibility: visible;
+        background-image: url(../pictures/SSV_podłoga.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }   
+    
+    .switchButton{
+        display: none;
+    }
 }
-@media screen and (min-width: $mobile){
+
+@media screen and (max-width: $mobile){
+
+    .pageContainer{
+        min-height: 91vh;
+    }
+
+    .parents{
+        width: 100%;
+        margin-top:8vh;
+        height: 91vh;
+
+        .text{
+            background: rgba(0,0,0,0.6);
+            font-size: 19px;
+            width: 80%;
+            height: 80%;
+            color: white;
+            margin: 0%;
+            padding: 0%;
+
+            p{
+                height: auto;
+                font-size: 15px;
+            }
+            
+            .projectTitle{
+                height: auto;
+                padding: auto;
+                text-align: center;
+                color: white;
+                z-index: 2;
+            }
+
+            .iconsContainer{
+                width: 90%;
+                margin: 5% 5%;
+                height: 45%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+                .iconsProjects{
+                    width:90%;
+                    text-align: center;
+                    height: 25%;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 1;
+
+                    h1{
+                        font-size: 30px;
+                        height: 50%;
+                        margin: 0%;
+                    }
+
+                    h4{
+                        margin: 0%;
+                        height: 50%;
+                    }
+                }
+            }
+        }
+    }     
+    
+    .parents1{
+        background-image: url(../pictures/Photon_premiera.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }
+
+    .parents2{
+        background-image: url(../pictures/Thunder.jpg);
+        background-size: cover;
+        background-position: 37% 50%;
+    }  
+
+    .parents3{
+        background-image: url(../pictures/SSV_podłoga.jpg);
+
+        background-size: cover;
+        background-position: 30% 50%;
+    }     
+
+    .switchButton{
+        display: none;
+    }
+
 
 }

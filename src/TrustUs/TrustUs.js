@@ -33,102 +33,102 @@ export default function TrustUs(){
                 </div>
                 <div className='tuSponsorFlexBox'>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.becker-international.com/pl/pl/">
                             <img src={becker}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.fogo.pl/">
                             <img src={fogo}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://solidexpert.com/">
                             <img src={solid}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://mesco.com.pl/">
                             <img src={mesco}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.leoni-polska.com/pl/">
                             <img src={leoni}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="http://www.formanski.pl/">
                             <img src={formanski}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://grupa.sped.pl/">
                             <img src={grupaSpeed}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://kisielewski.pl/">
                             <img src={kisielewski}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://fracht.pl/">
                             <img src={fracht}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="http://www.ac-m.pl/">
                             <img src={autocamp}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.fronius.com/pl-pl/poland/spawalnictwo">
                             <img src={fronius}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://phuinstel.eu/">
                             <img src={phuinstel}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://lockhard.pl/">
                             <img src={lockhard}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="http://www.spoina.eu/">
                             <img src={spoina}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.ssab.pl/">
                             <img src={ssab}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://stigal.pl/">
                             <img src={stigal}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://www.tme.eu/pl/">
                             <img src={tme}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="http://www.wega.ostrowwlkp.pl/">
                             <img src={wega}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://yato.com/">
                             <img src={yato}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="#">
+                        <a href="https://zaopatrzenie24.pl/">
                             <img src={zaopatrzenie24}></img>
                         </a>
                     </div>

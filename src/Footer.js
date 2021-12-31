@@ -1,5 +1,5 @@
 import '../src/Footer.scss';
-
+import pwr from '../src/logoPwr.png';
 
 
 export default function Footer(){
@@ -36,6 +36,11 @@ export default function Footer(){
                                 </p>
                             </span>
                         </div>
+                        
+                    </div>
+                    <div className='icon3'>
+                        <img src={pwr}></img>
+                        {/* <img src={pwrv2}></img> */}
                     </div>
                 </div>
         </footer>
