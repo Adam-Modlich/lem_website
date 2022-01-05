@@ -32,6 +32,24 @@
             background-size: cover;
         }
 
+        .paTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #eb5757, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 0% 25% 5% 25%;
+            width: 50%;
+            font-size: 1.5vw;
+            height: 120px;
+            text-align: center;
+            border-radius: 10px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
         .tuSponsorFlexBox{
             display: flex;
             flex-direction: row;
@@ -101,6 +119,24 @@
             background-size: cover;
         }
 
+        .paTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #eb5757, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 2% 25% 5% 25%;
+            width: 50%;
+            font-size: 2vw;
+            height: 11vw;
+            text-align: center;
+            border-radius: 10px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+
         .tuSponsorFlexBox{
             display: flex;
             flex-direction: row;
@@ -129,7 +165,7 @@
             }
 
             .SponsorBox:hover img{
-                width: 18.5vw;
+                width: 43vw;
             }
         }
     }

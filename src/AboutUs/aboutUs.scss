@@ -1,11 +1,9 @@
 @import '../variables.scss';
-
+@import '../Nav.scss';
 
 .about{
     height: 100%;
     width: 100%;
-    // background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);
-    // background-color: white;
     margin: 7.5vh 0 0 0;
     background-color: whitesmoke;
 
@@ -70,12 +68,12 @@
             background-size: cover;
         }
 
-        .Container_3, .Container_4, .Container_5{
+        .Container_3, .Container_4, .Container_5, .Container_6{
             display: flex;
             flex-wrap: wrap;
             align-items:stretch;
             width:100%;
-            padding: 10vh 0 7vh 0;
+            padding: 10vw 0 7vw 0;
             height: auto;
             background-color: whitesmoke;
             text-align: left;
@@ -132,7 +130,7 @@
             color: white;
             text-align: center;
             z-index: 1;
-            height: 90vh;
+            height: 50vh;
             width: 100%;
             background-color: black;
 
@@ -201,6 +199,83 @@
     
             }
 
+        }
+
+        .Container_6{
+            width: 80%;
+            margin: 0% 10%;
+            padding-top: 0;
+
+            .parentText_4{
+                position: relative;
+                width: 40%;
+                height: 400px;
+
+                .childText_4{
+                    position: absolute;
+                    top: 20%;
+                    left: 0%;
+
+                    div{
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+
+                        h2{
+                            visibility: hidden;
+                        }
+                    }
+
+                    p{
+
+                    }
+                }
+            }
+
+            .departmentsIcons{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                width: 100%;
+
+                div{
+                    width: 12.6%;
+                    padding:2%;
+                    transition: 0.3s linear;
+                }
+
+                div:hover{
+                    cursor: pointer;
+                }
+
+                // .elekIcon:hover{
+
+                // }
+                // .kompIcon:hover{
+
+                // }
+                // .konsIcon:hover{
+
+                // }
+                // .zawIcon:hover{
+
+                // }
+                // .markIcon:hover{
+
+                // }
+                // .mechIcon:hover{
+
+                // }
+
+                img{
+                    width: 9vw;
+                }
+            }
+
+            // .parentText_4 .departmentsIcons div:hover{
+            //     visibility: hidden;
+            //     width: 15%;
+            // }
         }
     }}
     

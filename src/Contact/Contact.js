@@ -1,20 +1,36 @@
 import '../Contact/Contact.scss';
+import $ from 'jquery';
+
 
 export default function Contact(){
 
     const handleSubmit = () => {
-        const titleSend = document.getElementById("titleSend");
-        const titleUnSend = document.getElementById("titleUnSend");
 
-        titleSend.style.opacity = "1";
-        titleUnSend.style.opacity = "0";
-        setTimeout(handleSubmitGoBack,3000);
+        $("input").each(function() {
+        if ($(this).val() != "") {            
+            const titleSend = document.getElementById("titleSend");
+            const titleUnSend = document.getElementById("titleUnSend");
+
+            titleSend.style.opacity = "1";
+            titleUnSend.style.opacity = "0";
+            setTimeout(handleSubmitGoBack,3000);}
+        else{
+            const disabled = document.getElementById("disabled");
+            const titleUnSend = document.getElementById("titleUnSend");
+
+            disabled.style.opacity = "1";
+            titleUnSend.style.opacity = "0";
+            setTimeout(handleSubmitGoBack,3000);
+        }
+        });
     }
 
     const handleSubmitGoBack = () => {
         const titleSend = document.getElementById("titleSend");
         const titleUnSend = document.getElementById("titleUnSend");
+        const disabled = document.getElementById("disabled");
 
+        disabled.style.opacity = "0";
         titleSend.style.opacity = "0";
         titleUnSend.style.opacity = "1";
     }
@@ -54,25 +70,28 @@ export default function Contact(){
                 </div> */}
             </div>
             <div className="rightSide">
-                <form>
-                    <div className='title'>
-                    <h1 id='titleSend'>Thank you</h1>
-                    <h1 id='titleUnSend'>Send Us A Message</h1>
-                    </div>
+                <form action="https://formsubmit.co/adam.modlich13@gmail.com" method='post'>
+                    
                     <div>
                         <label for="name"><h2>Name</h2></label>
-                        <input type="text" placeholder="Your name..."/>
+                        <input type="text" name="name" required placeholder="Your name..."/>
                     </div>
                     <div>
-                        <label for="email" ><h2>Email Adress</h2></label>
-                        <input type="text" placeholder="Your email adress..."/>
+                        <label for="email"><h2>Email Adress</h2></label>
+                        <input type="email" name="email" required placeholder="Your email adress..."/>
                     </div>
                     <div>
-                        <label for="ph-num" ><h2>Type your Message ...</h2></label>
-                        <input type="text" placeholder="Message..."/>
+                        <label for="ph-num"><h2>Type your Message ...</h2></label>
+                        <input type="message" name="message" required placeholder="Message..."/>
                     </div>
                     <div>
-                        <button type="button" onClick={handleSubmit}>Send</button>
+                        <button className='submitButton' type="button" type="submit" value="Send" onClick={handleSubmit}>
+                            <div className='title'>
+                                <h1 id='titleSend'>Thank you</h1>
+                                <h1 id='titleUnSend'>Send Us A Message</h1>
+                                <h1 id='disabled'>Fill in the field</h1>
+                            </div>
+                        </button>
                     </div>
                 </form>
             </div>

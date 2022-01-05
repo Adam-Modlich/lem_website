@@ -1,5 +1,6 @@
 import '../TrustUs/TrustUs.scss';
 import $ from 'jquery';
+import partnerShip from '../TrustUs/Sponsors/partnership.pdf';
 import becker from '../TrustUs/Sponsors/becker.svg';
 import autocamp from '../TrustUs/Sponsors/autocomp.jpg';
 import fogo from '../TrustUs/Sponsors/fogo.jpg';
@@ -32,6 +33,9 @@ export default function TrustUs(){
                     <h1>Partnerzy</h1>
                 </div>
                 <div className='tuSponsorFlexBox'>
+                    <div className='paTitle'>
+                        <h2><a href={partnerShip} target="_blank">Zostań naszym partnerem</a></h2>
+                    </div>
                     <div className='SponsorBox'>
                         <a href="https://www.becker-international.com/pl/pl/">
                             <img src={becker}></img>
