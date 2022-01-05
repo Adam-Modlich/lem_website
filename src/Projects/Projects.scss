@@ -248,7 +248,7 @@
 
     .parents{
         width: 100%;
-        margin-top:8vh;
+        margin: 0%;
         height: 91vh;
 
         .text{
@@ -262,6 +262,8 @@
 
             p{
                 height: auto;
+                text-align:justify;
+                padding: 0% 7%;
                 font-size: 15px;
             }
             
@@ -305,9 +307,10 @@
     }     
     
     .parents1{
-        background-image: url(../pictures/Photon_premiera.jpg);
+        margin-top: 8vh;
+        background-image: url(../pictures/Photon_premierav2.jpg);
         background-size: cover;
-        background-position: 0% 50%;
+        background-position: 40% 0%;
     }
 
     .parents2{
@@ -318,7 +321,6 @@
 
     .parents3{
         background-image: url(../pictures/SSV_podłoga.jpg);
-
         background-size: cover;
         background-position: 30% 50%;
     }     
