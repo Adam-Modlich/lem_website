@@ -2,13 +2,28 @@
 @import '../Nav.scss';
 
 .about{
-    height: 100%;
+    height: auto;
     width: 100%;
     margin: 7.5vh 0 0 0;
     background-color: whitesmoke;
 
+    .Container_1{
+        h1{
+            background: linear-gradient(to right, #aa1f70, red 50%, white 50%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 0.5s ease;
+        }
+        h1:hover{
+            background-position: 0 100%;
+        }
+    }
     p{
-        font-family: 'Shippori Antique', sans-serif;
+        // font-family: 'Shippori Antique', sans-serif;
+        font-family: 'Quicksand', sans-serif;
     }
 
     @media screen and (min-width: $laptop){
@@ -24,7 +39,7 @@
             justify-content: center;
             position: relative;
             z-index: 1;
-            height: 90vh;
+            height: 80vh;
             width: 100%;
             background-color: black;
             color: white;
@@ -35,6 +50,7 @@
                 font-family: 'Racing Sans One', cursive;
                 text-align: center;
             }
+            
             a{
                 position: absolute;
                 top: 90%;

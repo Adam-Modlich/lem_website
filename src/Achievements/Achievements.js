@@ -1,27 +1,35 @@
 import '../Achievements/Achievements.scss';
 import Footer from '../Footer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Achievements(){
 
     return(
         <>
-        <div className='flexboxProjects'>
-            <div id="1"></div>
-            <div id="2"></div>
-            <div id="3"></div>
-            <div id="4"></div>
-            <div id="5"></div>
-            <div id="6"></div>
-            <div id="7"></div>
-            <div id="8"></div>
-            <div id="9"></div>
-            <div id="10"></div>
-            <div id="11"></div>
-            <div id="12"></div>
+        <div className='parentContainerProjects'>
+            <div className='box'>
+                <h1>Nasze Osiągnięcia</h1>
+                <h2>Od 2013 w zawodach Smart Moto Challenge zdobyliśmy:</h2>
+                <div className='boxy'>
 
+                </div>
+                <div className='cups'>
+                    <div className='gold cup'><i class="fa fa-trophy" aria-hidden="true"></i>
+                        <h2>10x Złoto</h2>
+                    </div>
+                    <div className='silver cup'><i class="fa fa-trophy" aria-hidden="true"></i>
+                        <h2>4x Srebro</h2>
+                    </div>
+                    <div className='brown cup'><i class="fa fa-trophy" aria-hidden="true"></i>
+                        <h2>3x Brąz</h2>
+                    </div>
+                    {/* <div className='others cup'>sad</div> */}
+                </div>
+            </div>
         </div>
         <Footer/>
         </>
     )
 }
+
 

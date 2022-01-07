@@ -48,21 +48,6 @@ export default function AboutUs(){
         });
       });
 
-        // $(".elekIcon").on("click", function(){
-        //   $(".beginText").toggle(function()
-        //   {
-        //     $(this).animate({visibility: "hidden"},500);
-        //   },
-        //   function(){
-        //     $(this).animate({visibility: "visible"},500);
-        //   });
-        // });
-
-      // const changeTheText = () => {
-      //   $(".beginText").children().css("visibility", "hidden");
-      //   console.log("1");
-      // }
-
     return(
         <>
         <div className="about">
