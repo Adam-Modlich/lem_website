@@ -37,9 +37,11 @@ export default function TrustUs(){
                         <h2><a href={partnerShip} target="_blank">Zostań naszym partnerem</a></h2>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="https://www.becker-international.com/pl/pl/">
-                            <img src={becker}></img>
-                        </a>
+                        <div>
+                            <a href="https://www.becker-international.com/pl/pl/">
+                                <img src={becker}></img>
+                            </a>
+                        </div>
                     </div>
                     <div className='SponsorBox'>
                         <a href="https://www.fogo.pl/">

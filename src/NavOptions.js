@@ -19,14 +19,22 @@ const linkStyle = {
 
 };
 
+const linkStyleSpecial = {
+  fontSize: "inherit",
+  padding: "0",
+  margin: "0",
+  color: "rgb(250,212,27)"
+};
+
 export default function NavOptions({isOpen}){
     return(
       <>
         <div className="optionList">
           <ul>
             <li><Link to="/aboutUs" style={linkStyle}>O Nas</Link></li>
-            <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li>
+            {/* <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li> */}
             <li><Link to="/Projects" style={linkStyle}>Projekty</Link></li>
+            <li><Link to="/Wojcik" style={linkStyleSpecial}>Wójcik Race</Link></li>
             <li><Link to="/TrustUs" style={linkStyle}>Wspierają Nas</Link></li>
             <li><Link to="/ContactUs" style={linkStyle}>Kontakt</Link></li>
             <li className="iconsMobile">

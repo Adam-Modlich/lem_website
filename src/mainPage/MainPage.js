@@ -2,6 +2,7 @@ import './MainPage.scss';
 import ChangePicture from './ChangePicture';
 import SSVpicture from '../pictures/SSV.jpg';
 import PhotonPicture from '../pictures/photonv2.jpg';
+import LemLogo from '../pictures/lem_logo_white.jpg'
 import { LoremIpsum} from 'react-lorem-ipsum';
 import Nav from '../Nav'
 
@@ -10,6 +11,13 @@ export default function mainPage(){
 
     return(
         <>
+        <div className='firstPage'>
+            <img id="beginPictureStart" src={LemLogo}></img>
+            <div className="loadingMoto">
+                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+            </div>
+        </div>
+
         <div className="mainSite">
             <div className="projects">
                 <div className="slides">

@@ -79,7 +79,7 @@ export default function Projects(){
         <div className="parents1 parents">
             <div className='text'>
                 <h1 className="projectTitle">Photon</h1>
-                <h4>Motocykl elektryczny klasy Moto3</h4>
+                <h4 className='projectTitleDesc'>Motocykl elektryczny klasy Moto3</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam? Vitae eos incidunt dolorum culpa suscipit tenetur eius, inventore fuga quis, praesentium laborum in mollitia maxime fugit ut, dignissimos officia.</p>
                 <div className="iconsContainer">
                     <div className='iconsProjects'>
@@ -128,7 +128,7 @@ export default function Projects(){
         <div className="parents2 parents">
             <div className='text'>
                 <h1 className="projectTitle">Thunder v2</h1>
-                <h4>Terenowy motocykl elektryczny</h4>
+                <h4 className='projectTitleDesc'>Terenowy motocykl elektryczny</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aliquam? Vitae eos incidunt dolorum culpa suscipit tenetur eius, inventore fuga quis, praesentium laborum in mollitia maxime fugit ut, dignissimos officia.</p>
                 <div className="iconsContainer">
                 <div className='iconsProjects'>

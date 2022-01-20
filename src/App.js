@@ -4,6 +4,7 @@ import Contact from './Contact/Contact.js'
 import Nav from './Nav.js';
 import Projects from './Projects/Projects.js';
 import TrustUs from './TrustUs/TrustUs.js';
+import Wojcik from './Wojcik/Wojcik.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/" element={<MainPage/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/Achievements" element={<Achievements/>}/>
+        <Route exact path="/Wojcik" element={<Wojcik/>}/>
         <Route exact path="/Projects" element={<Projects/>}/>
         <Route exact path="/TrustUs" element={<TrustUs/>}/>
         <Route exact path="/ContactUs" element={<Contact/>}/>
