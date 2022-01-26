@@ -1,54 +1,210 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+@import '../variables.scss';
 
-.wojcikRacePage{
-    font-family: 'Quicksand', sans-serif;
-    margin-top: 9vh;
-    height: 70vh;
-    background-color: rgb(250,212,27);
 
-    .wRContainer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: 5% 10%;
-    }
+@media screen and (min-width: $laptop){
+    .wojcikRacePage{
+        font-family: 'Quicksand', sans-serif;
+        height: 70vh;
+        background-color: rgb(250,212,27);
 
-    img{
-        width: 30%;
-    }
-
-    .wRText{
-        width: 50%;
-        margin: 0% 10%;
-    
-        h1{
-            font-weight: 800;
-            font-size: 1.7vw;
+        .wRContainer{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 4% 10% 5% 10%;
+            height: 90%;
         }
 
-        h3{
-            font-size: 1.5vw;
-            display: inline;
+        img{
+            width: 30%;
         }
 
-        p{
-            font-size: 1.3vw;
-            display: inline;
+        .wRText{
+            width: 50%;
+            margin: 0% 10%;
+        
+            h1{
+                font-weight: 800;
+                font-size: 1.7vw;
+            }
+
+            h3{
+                font-size: 1.5vw;
+                display: inline;
+            }
+
+            p{
+                font-size: 1.3vw;
+                display: inline;
+            }
+        
         }
-    
+
     }
 
+    .wREndText{
+        font-family: 'Quicksand', sans-serif;
+        width: 94%;
+        padding: 1% 3%;
+        height: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 1.3vw;
+    }
+
+    .registrationForm{
+        margin-top: 40px;
+        padding: 10px;
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
 }
 
-.wREndText{
-    font-family: 'Quicksand', sans-serif;
-    width: 94%;
-    padding: 1% 3%;
-    height: auto;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 1.3vw;
+@media screen and (max-width: $Tablet){
+    .wojcikRacePage{
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 6vh;
+        padding: 5% 0% 6% 0%;
+        height: auto;
+        background-color: rgb(250,212,27);
+
+        .wRContainer{
+            display: flex;
+            height: auto;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0% 10% 0% 10%;
+        }
+
+        img{
+            width: 40%;
+        }
+
+        .wRText{
+            width: 50%;
+            margin: 0% 5%;
+        
+            h1{
+                font-weight: 800;
+                font-size: 3.2vw;
+            }
+
+            h3{
+                font-size: 2.5vw;
+                display: inline;
+            }
+
+            p{
+                font-size: 2vw;
+                display: inline;
+            }
+        
+        }
+
+    }
+
+    .wREndText{
+        font-family: 'Quicksand', sans-serif;
+        width: 94%;
+        padding: 1% 3%;
+        height: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 2vw;
+    }
+
+    .registrationForm{
+        margin-top: 40px;
+        padding: 10px;
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile){
+    .wojcikRacePage{
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 0vh;
+        height: auto;
+        background-color: rgb(250,212,27);
+
+        .wRContainer{
+            display: flex;
+            flex-wrap: wrap;
+            height: auto;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 10% 0%;
+        }
+
+        img{
+            width: 70%;
+        }
+
+        .wRText{
+            width: 90%;
+            margin: 0% 5%;
+        
+            h1{
+                font-weight: 800;
+                font-size: 5vw;
+            }
+
+            h3{
+                font-size: 4.5vw;
+                display: inline;
+            }
+
+            p{
+                font-size: 4vw;
+                display: inline;
+            }
+        
+        }
+
+    }
+
+    .wREndText{
+        font-family: 'Quicksand', sans-serif;
+        width: 94%;
+        padding: 1% 3%;
+        height: auto;
+        text-align: center;
+        background-color: black;
+        color: white;
+        font-size: 4vw;
+    }
+
+    .registrationForm{
+        margin-top: 40px;
+        padding: 10px;
+        border: 5px solid black;
+        border-radius: 10px;
+        text-align: center;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
 }

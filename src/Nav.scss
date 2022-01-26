@@ -19,6 +19,18 @@
     font-weight: 400;
   }
 
+  .active:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0%;
+    position: absolute;
+    background: white;
+    width: 100%;
+    }
+
   .optionList{
 
     li{
@@ -69,11 +81,15 @@
   }
 
   .fa-facebook:hover{
-    color:rgb(91, 91, 211);
+    color:rgb(104, 180, 224);
   }
 
   .fa-tiktok:hover{
     color: rgb(74, 222, 233);
+  }
+
+  .fa-linkedin:hover{
+    color: rgb(0, 17, 255);
   }
 }
 

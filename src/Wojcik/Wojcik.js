@@ -21,13 +21,15 @@ return(
                 <p>
                     Podczas trzech dni na torze uczestnicy będą rywalizować w testach dynamicznych, których zwieńczeniem będą dwa wyścigi.
                 </p>
+
+                <div className="registrationForm">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFrPjXV420x50BlJLw1sAPBkSSWlsHq5FwjxtAPPi8wtUq_g/viewform" target="_blank"><h3>Rejestracja Drużyn</h3></a>
+                </div>
             </div>
-        
-        
         </div>
         
     </div>
-    <div className='wREndText'>
+        <div className='wREndText'>
             <p>
                 Nieocenione doświadczenie sobyliśmy organizując Wrocław Smart Moto Challenge. <br/>Są to międzynarodowe zawody motocykli elektrycznych, w których uczestniczyły<br/> najlepsze zespoły studentów.
             </p>

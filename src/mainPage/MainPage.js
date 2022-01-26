@@ -1,7 +1,7 @@
 import './MainPage.scss';
 import ChangePicture from './ChangePicture';
-import SSVpicture from '../pictures/SSV.jpg';
-import PhotonPicture from '../pictures/photonv2.jpg';
+import SSVpicture from '../pictures/SSV.png';
+import PhotonPicture from '../pictures/Photonv2.png';
 import LemLogo from '../pictures/lem_logo_white.jpg'
 import { LoremIpsum} from 'react-lorem-ipsum';
 import Nav from '../Nav'

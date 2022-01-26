@@ -126,17 +126,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: linear-gradient(to right, #eb5757, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             margin: 2% 25% 5% 25%;
             width: 50%;
             font-size: 2vw;
             height: 11vw;
             text-align: center;
+            border: 3px black solid;
             border-radius: 10px;
-
             a{
                 text-decoration: none;
-                color: white;
+                color: black;
             }
         }
 

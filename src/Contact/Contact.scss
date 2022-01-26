@@ -6,67 +6,70 @@
     .contact{
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
         width: 100%;
-        min-height: 90vh;
+        min-height: 70vh;
         margin-top: 0vh;
-        // overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+        // overflow: hidden;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
     
-        .leftSide{
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
-            width: 50%;
-            height: 50vw;
-            background-color: transparent;
+        // .leftSide{
+        //     // display: flex;
+        //     // align-items: center;
+        //     // justify-content: center;
+        //     width: 50%;
+        //     height: 50vw;
+        //     background-color: transparent;
 
-            .icons{
-                width: 60%;
-                margin: 15% 20% 15% 20%;
-                height: 70%;
+        //     .icons{
+        //         width: 60%;
+        //         margin: 15% 20% 15% 20%;
+        //         height: 70%;
 
-                div{
-                    display: flex;
-                    align-items: center;
-                    width: 100%;
-                    height: calc(100%/3);
+        //         div{
+        //             display: flex;
+        //             align-items: center;
+        //             width: 100%;
+        //             height: calc(100%/3);
 
-                    .fa{
-                        color: black;
-                        border: 1px solid white;
-                        background-color: white;
-                        border-radius: 50%;
-                        padding: 14px;
-                        font-size: 2em;
-                        height: auto;
-                    }
+        //             .fa{
+        //                 color: black;
+        //                 border: 1px solid white;
+        //                 background-color: white;
+        //                 border-radius: 50%;
+        //                 padding: 14px;
+        //                 font-size: 2em;
+        //                 height: auto;
+        //             }
 
-                    .text{
-                        color: white;
-                        padding-left: 10%;
+        //             .text{
+        //                 color: white;
+        //                 padding-left: 10%;
 
-                        h1{
-                            font-size: 2.5em;
-                        }
+        //                 h1{
+        //                     font-size: 2.5em;
+        //                 }
 
-                        p{
-                            font-size: 1.5em;
-                        }
-                    }
+        //                 p{
+        //                     font-size: 1.5em;
+        //                 }
+        //             }
                     
-                }
-            }
+        //         }
+        //     }
 
-            .map{
-                margin: 0 15% 0 15%;
-                width: 70%;
-                height: 50%;
-                -webkit-filter: grayscale(100%);
-                filter: grayscale(100%);
+        //     .map{
+        //         margin: 0 15% 0 15%;
+        //         width: 70%;
+        //         height: 50%;
+        //         -webkit-filter: grayscale(100%);
+        //         filter: grayscale(100%);
                 
-            }
-        }
+        //     }
+        // }
     
         .rightSide{
             display: flex;
@@ -159,6 +162,61 @@
             }
         }
         
+        .withoutContactForm{
+            width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            height: auto;
+            background-color: transparent;
+
+            .icons{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                margin: 15% 5% 0% 5%;
+                height: 85%;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 60%;
+                    height: auto;
+                    text-align: center;
+
+                    .fa{
+                        height: 100px;
+                        width: 60px;
+                        color: black;
+                        border: 1px solid white;
+                        background-color: white;
+                        border-radius: 50%;
+                        padding: 30px;
+                        font-size: 3em;
+                        height: auto;
+                    }
+
+                    .text{
+                        color: white;
+                        // padding-left: 10%;
+
+                        h1{
+                            font-size: 3em;
+                            margin-bottom: 0%;
+                        }
+
+                        p{
+                            font-size: 2em;
+                        }
+                    }
+                    
+                }
+        }
+    }
+
     }
 
     .contact::before{
@@ -189,23 +247,77 @@
         align-items: center;
         justify-content: center;
     
-        .leftSide{
-            width: 50%;
+        // .leftSide{
+        //     width: 50%;
+        //     height: auto;
+        //     margin:10% 0%;
+        //     background-color: transparent;
+
+        //     .icons{
+        //         width: 85%;
+        //         margin-left: 15%;
+        //         height: 80%;
+
+        //         div{
+        //             display: flex;
+        //             align-items: center;
+        //             width: 100%;
+        //             height: calc(100%/3);
+        //             padding: 0% 0% 20% 0%;
+
+        //             .fa{
+        //                 color: black;
+        //                 border: 1px solid white;
+        //                 background-color: white;
+        //                 border-radius: 50%;
+        //                 padding: 14px;
+        //                 font-size: 1.7em;
+        //                 height: auto;
+        //             }
+
+        //             .text{
+        //                 color: white;
+        //                 padding-left: 10%;
+
+        //                 h1{
+        //                     font-size: 2em;
+        //                 }
+
+        //                 p{
+        //                     font-size: 1.2em;
+        //                 }
+        //             }
+                    
+        //         }
+        //     }
+
+        // }
+
+        .withoutContactForm{
+            width: 100%;
+            // display: flex;
+            // flex-direction: row;
             height: auto;
-            margin:10% 0%;
             background-color: transparent;
 
             .icons{
-                width: 85%;
-                margin-left: 15%;
-                height: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+                margin: 15% 5% 0% 5%;
+                height: 85%;
 
                 div{
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    width: 100%;
+                    justify-content: center;
+                    text-align: center;
+                    width: 80%;
                     height: calc(100%/3);
-                    padding: 0% 0% 20% 0%;
+                    padding-bottom: 4%;
 
                     .fa{
                         color: black;
@@ -213,26 +325,26 @@
                         background-color: white;
                         border-radius: 50%;
                         padding: 14px;
-                        font-size: 1.7em;
+                        font-size: 2em;
                         height: auto;
                     }
 
                     .text{
                         color: white;
-                        padding-left: 10%;
+                        // padding-left: 10%;
 
                         h1{
-                            font-size: 2em;
+                            font-size: 2.5em;
+                            margin-bottom: 0%;
                         }
 
                         p{
-                            font-size: 1.2em;
+                            font-size: 1.5em;
                         }
                     }
                     
                 }
             }
-
         }
     
         .rightSide{
@@ -364,24 +476,78 @@
         align-items: center;
         justify-content: center;
     
-        .leftSide{
-            width: 80%;
-            margin: 5% 10%;
-            height: 60%;
+        // .leftSide{
+        //     width: 80%;
+        //     margin: 5% 10%;
+        //     height: 60%;
+        //     background-color: transparent;
+
+        //     .icons{
+        //         width: 90%;
+        //         margin: 5% 5%;
+        //         // margin-left: 15%;
+        //         height: 50%;
+
+        //         div{
+        //             display: flex;
+        //             align-items: center;
+        //             width: 100%;
+        //             height: calc(100%/3);
+        //             padding: 0%;
+
+        //             .fa{
+        //                 color: black;
+        //                 border: 1px solid white;
+        //                 background-color: white;
+        //                 border-radius: 50%;
+        //                 padding: 14px;
+        //                 font-size: 1.2em;
+        //                 height: auto;
+        //             }
+
+        //             .text{
+        //                 color: white;
+        //                 // padding-left: 10%;
+
+        //                 h1{
+        //                     font-size: 1.2em;
+        //                 }
+
+        //                 p{
+        //                     font-size: 1em;
+        //                 }
+        //             }
+                    
+        //         }
+        //     }
+
+        // }
+
+        .withoutContactForm{
+            width: 100%;
+            // display: flex;
+            // flex-direction: row;
+            height: auto;
             background-color: transparent;
 
             .icons{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 width: 90%;
-                margin: 5% 5%;
-                // margin-left: 15%;
-                height: 50%;
+                margin: 15% 5% 0% 5%;
+                height: 85%;
 
                 div{
                     display: flex;
+                    flex-direction: column;
                     align-items: center;
-                    width: 100%;
+                    justify-content: center;
+                    text-align: center;
+                    width: 90%;
                     height: calc(100%/3);
-                    padding: 0%;
+                    padding-bottom: 10%;
 
                     .fa{
                         color: black;
@@ -389,7 +555,7 @@
                         background-color: white;
                         border-radius: 50%;
                         padding: 14px;
-                        font-size: 1.2em;
+                        font-size: 2em;
                         height: auto;
                     }
 
@@ -398,17 +564,17 @@
                         // padding-left: 10%;
 
                         h1{
-                            font-size: 1.2em;
+                            font-size: 2.5em;
+                            margin-bottom: 0%;
                         }
 
                         p{
-                            font-size: 1em;
+                            font-size: 1.5em;
                         }
                     }
                     
                 }
             }
-
         }
     
         .rightSide{
