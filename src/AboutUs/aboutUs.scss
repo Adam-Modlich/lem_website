@@ -191,22 +191,23 @@
 
         .Container_5{
             flex-direction: row;
+            height: 60vh;
 
             .image_3{
                 background-image: url(../pictures/Photon_garaz.jpg);
-                background-position: 100% 0%;
                 background-size: cover;
                 width: 50%;
                 margin: 0vh 5vw 0vh 10vw;
-                height: 40vw;
+                height: auto;
+                background-position: 0% 30%;
             }
 
             .text_3{
                 margin: 10vh 4em 0 0 ;
                 width: 30%;
-                height: 40vh;
+                height: auto;
                 font-size: 1.1vw;
-                padding-top: 2vw;
+                padding-top: 0vw;
                 padding-bottom: 2vw;
 
                 p{
@@ -218,80 +219,121 @@
         }
 
         .Container_6{
-            width: 80%;
-            margin: 0% 10%;
-            padding-top: 0;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+            text-align: center;
+            z-index: 1;
+            height: auto;
+            width: 100%;
+            background-color: black;
+            padding: 3% 0%;
 
+
+            .departmentsTabletMobile{
+                display: none;
+            
+            }
             .parentText_4{
                 position: relative;
-                width: 40%;
-                height: 400px;
+                height: 10vh;
+                width: 100%;
+            }
+            
+            .departmentsText{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 84%;
+                height: 100%;
+                margin: 0% 8%;
 
-                .childText_4{
-                    position: absolute;
-                    top: 20%;
-                    left: 0%;
-
-                    div{
-                        position: absolute;
-                        top: 0%;
-                        left: 0%;
-
-                        h2{
-                            visibility: hidden;
-                        }
-                    }
-
-                    p{
-
-                    }
+                .depText{
+                    margin: 0% 3%;
+                    // margin-right: 5%;
+                    width: 45%;
                 }
+
+                .depText2{
+                    margin: 0% 3%;
+                    // margin-right: 5%;
+                    width: 25%;
+                }
+
+                #beginText{
+                    transition: 3s linear;
+                    // width: 50%;
+                    height: 100%;
+                }
+
+                #imgPlace{
+                    width: 20%;
+                    margin: 5% 1%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                #imgPlace2{
+                    width: 20%;
+                    margin: 5% 1%;
+                    height: auto;
+                    border-radius: 10px;
+                }
+
+                
+            }
+
+            .acapits{
+                padding-bottom: 3%;
+                margin: 0%;
+                font-size: 3vw;
             }
 
             .departmentsIcons{
+                margin: 0% 5%;
                 display: flex;
                 flex-direction: row;
                 text-align: center;
+                justify-content: center;
                 width: 100%;
 
                 div{
                     width: 12.6%;
                     padding:2%;
                     transition: 0.3s linear;
+
+                    h2{
+                        margin: 0%;
+                    }
                 }
 
                 div:hover{
                     cursor: pointer;
+                    filter: grayscale(60%);
+                    
                 }
-
-                // .elekIcon:hover{
-
-                // }
-                // .kompIcon:hover{
-
-                // }
-                // .konsIcon:hover{
-
-                // }
-                // .zawIcon:hover{
-
-                // }
-                // .markIcon:hover{
-
-                // }
-                // .mechIcon:hover{
-
-                // }
 
                 img{
-                    width: 9vw;
+                    width: 7.5vw;
                 }
             }
+        }
 
-            // .parentText_4 .departmentsIcons div:hover{
-            //     visibility: hidden;
-            //     width: 15%;
-            // }
+        .Container_6::before{
+            position: absolute;
+            content: "";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(../pictures/Photon_naprawa.jpg);
+            opacity: 0.15;
+            z-index: -1;
+            background-position: 0% 40%;
+            background-size: cover;
         }
     }}
     
@@ -477,6 +519,77 @@
                 }
     
             }
+
+            .Container_6{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color: white;
+                text-align: center;
+                z-index: 1;
+                height: auto;
+                width: 100%;
+                background-color: black;
+                padding: 3% 0%;
+
+                .acapits{
+                    font-size: 6vw;
+                }
+    
+                .departmentsText{
+                    display: none !important;
+                }
+    
+                .departmentsIcons{
+                    display: none !important;
+                    
+                }
+
+                .departmentsTabletMobile{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+
+                    .Icon{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 30%;
+                        height: auto;
+                        margin: 3% 3%;
+                        padding: 0% 5%;
+                        border: 2px solid white;
+                        border-radius: 20px;
+
+                        img{
+                            margin: 0% 0% 10% 0%;
+                            width: auto;
+                            height: 45vw;
+                        }
+                    }
+                    
+                }
+
+            }
+    
+            // .Container_6::before{
+            //     position: absolute;
+            //     content: "";
+            //     top: 0;
+            //     bottom: 0;
+            //     left: 0;
+            //     right: 0;
+            //     background-image: url(../pictures/Photon_naprawa.jpg);
+            //     opacity: 0.15;
+            //     z-index: -1;
+            //     background-position: 0% 40%;
+            //     background-size: cover;
+            // }
         }}
 
     @media screen and (max-width: $mobile){
@@ -664,6 +777,63 @@
         
                 }
     
+            }
+
+            .Container_6{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                color: white;
+                text-align: center;
+                z-index: 1;
+                height: auto;
+                width: 100%;
+                background-color: black;
+                padding: 3% 0%;
+
+                .acapits{
+                    font-size: 10vw;
+                }
+    
+                .departmentsText{
+                    display: none !important;
+                }
+    
+                .departmentsIcons{
+                    display: none !important;
+                    
+                }
+
+                .departmentsTabletMobile{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+
+                    .Icon{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        width: 60%;
+                        height: auto;
+                        margin: 5% 3%;
+                        padding: 0% 5%;
+                        border: 2px solid white;
+                        border-radius: 20px;
+
+                        img{
+                            margin: 0% 0% 10% 0%;
+                            width: auto;
+                            height: 65vw;
+                        }
+                    }
+                    
+                }
+
             }
         }}
 }

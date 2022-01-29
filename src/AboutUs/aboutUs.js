@@ -1,52 +1,86 @@
 import '../AboutUs/aboutUs.scss';
-import Nav from '../Nav'
-import react from 'react';
 
 import elek from '../AboutUs/Departments/R_elektronika.png';
-import komp from '../AboutUs/Departments/R_kompozyty.png';
+import prez from '../AboutUs/Departments/R_prezes_koła.png';
+import lider from '../AboutUs/Departments/R_lider_Photon.png';
 import kons from '../AboutUs/Departments/R_konstrukcja.png';
 import mark from '../AboutUs/Departments/R_marketing.png';
 import mech from '../AboutUs/Departments/R_mechanika.png';
 import zaw from '../AboutUs/Departments/R_zawieszenie.png';
 
+import elekImg from "../AboutUs/Boss/elektro.jpg"
+import zawImg from "../AboutUs/Boss/zawieszenie.jpg";
+import markImg from "../AboutUs/Boss/marketing.jpg";
+import konsImg from "../AboutUs/Boss/konstrukcja.jpg";
+import mechImg from "../AboutUs/Boss/mechanika.jpg";
+import prezImg from "../AboutUs/Boss/Prezes1.jpg";
+import liderPhotonImg from "../AboutUs/Boss/Photon_Lider.jpg";
+import liderSSVImg from "../AboutUs/Boss/SSV_Lider.jpg";
+
+
 
 import $ from 'jquery';
 import Footer from '../Footer';
 
-
 export default function AboutUs(){
-          
-      $(window).on('scroll', function() {
-        var scrollTop = $(this).scrollTop();
-        console.log(scrollTop);
-        var heightParent1 = $(".parent1").height();
-        var heightParent2 = $(".parent2").height();
+
+  let elekTitle = "Elektronika";
+  let elekText = "góno"
+
+  let prezTitle = "Prezes Koła";
+  let prezText = "góno"
+
+  let liderTitle = "Lider Photon";
+  let liderText = "góno"
+
+  let liderTitle2 = "Lider SSV";
+  let liderText2 = "góno"
+
+  let zawTitle = "Zawieszenie";
+  let zawText = "góno"
+
+  let mechTitle = "Mechanika";
+  let mechText = "góno"
+
+  let konsTitle = "Konstrukcja";
+  let konsText = "góno"
+
+  let markTitle = "Marketing";
+  let markText = "góno"
 
 
-        $(".Container_3").children().css({
-            opacity: function() {
-              var elementHeight = $(this).height(),
-                opacity = ((1 - (elementHeight - scrollTop) / elementHeight));
-              return opacity;
-            }
-          });
-        $(".Container_4").children().css({
-          opacity: function() {
-            var elementHeights = $(".parent2").height(),
-              opacity = ((1 - ((elementHeights+heightParent1) - scrollTop) / elementHeights));
-            return opacity;
-          }
-        });
+      const changeText = (title,texty,sourceImg) => {
+        $('.imgPlace1').fadeOut();
+        $('.imgPlace1').fadeIn();
+        document.getElementById('beginText2').style.display = "none";
+        document.getElementById('depAcapit2').style.display = "none";
+        document.getElementById('imgPlace2').style.display = "none";
+        document.getElementsByClassName('depText2')[0].style.display = "none";
+        $('.depText').css("width","35%")
 
-        $(".Container_5").children().css({
-          opacity: function() {
-            var elementHeights = $(".parent3").height(),
-              opacity = ((1 - ((elementHeights+heightParent1+heightParent2) - scrollTop) / elementHeights));
-        
-            return opacity;
-          }
-        });
-      });
+        document.getElementById('beginText').textContent = texty;
+        document.getElementById('depAcapit').textContent = title;
+        document.getElementById('firstAcapit').style.display = "none";
+        document.getElementById('imgPlace').src = sourceImg;
+        $(".parentText_4").animate({height:"55vh"});
+      }
+
+      const changeTextLiders = (title, title2, texty, texty2 ,sourceImg1, sourceImg2) => {
+        document.getElementById('beginText2').style.display = "block";
+        document.getElementById('depAcapit2').style.display = "block";
+        document.getElementById('imgPlace2').style.display = "block";
+        document.getElementsByClassName('depText2')[0].style.display = "block";
+
+        document.getElementById('beginText').textContent = texty;
+        document.getElementById('beginText2').textContent = texty2;
+        document.getElementById('depAcapit').textContent = title;
+        document.getElementById('depAcapit2').textContent = title2;
+        document.getElementById('firstAcapit').style.display = "none";
+        document.getElementById('imgPlace').src = sourceImg1;
+        document.getElementById('imgPlace2').src = sourceImg2;
+        $('.depText').css("width","25%")
+        $(".parentText_4").animate({height:"55vh"});
+      }
 
     return(
         <>
@@ -99,55 +133,83 @@ export default function AboutUs(){
                   </div>
                 </div>
                 <div className="parent3">
-                  {/* <div className="Container_6">
-                      <h1 className="acapits">Składamy się z ...</h1>
+                  <div className="Container_6">
                       <div className='parentText_4'>
-                        <div className='beginText'>
-                        <h1>Nasze Działy</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quaerat recusandae blanditiis excepturi minima exercitationem corporis porro unde earum, eum error voluptate molestiae cum veniam at aliquam non ad quidem!</p>
-                        </div>
-                        <div className='childText_4'>
-                          <div className='elek'>
-                            <h2>Elektronika</h2>
+                      <h1 className="acapits" id="firstAcapit">Nasz Zespół</h1>
+                        <div className='departmentsText'>
+                          <div className='depText'>
+                            <h1 className="acapits" id="depAcapit"></h1>
+                              <p id='beginText'>
+                              </p>
                           </div>
-                          <div className='komp'>
-                            <h2>Kompozyty</h2>
+                          <img src="" id="imgPlace"></img>
+                          <div className='depText2'>
+                            <h1 className="acapits" id="depAcapit2"></h1>
+                              <p id='beginText2'>
+                              </p>
                           </div>
-                          <div className='kons'>
-                          <h2>Konstrukcja</h2>
-                          </div>
-                          <div className='zaw'>
-                            <h2>Zawieszenie</h2>
-                          </div>
-                          <div className='mark'>
-                            <h2>Marketing</h2>
-                          </div>
-                          <div className='mech'>
-                            <h2>Mechanika</h2>
-                          </div>
+                          <img src="" id="imgPlace2"></img>
                         </div>
                       </div>
                       <div className='departmentsIcons'>
-                        <div type="button" className='elekIcon'>
+                        <div onClick={() => changeText(prezTitle, prezText, prezImg)} className='prezIcon Icon'>
+                          <img src={prez}></img><h2>Prezes Koła</h2>
+                        </div>
+                        <div onClick={() => changeTextLiders(liderTitle,liderTitle2, liderText, liderText2,liderPhotonImg, liderSSVImg)} className='liderIcon'>
+                          <img src={lider}></img><h2>Liderzy</h2>
+                        </div>
+                        <div onClick={() => changeText(elekTitle,elekText,elekImg)} className='elekIcon Icon'>
                           <img src={elek}></img><h2>Elektronika</h2>
                         </div>
-                        <div className='kompIcon'>
-                          <img src={komp}></img><h2>Kompozyty</h2>
-                        </div>
-                        <div className='konsIcon'>
+                        <div onClick={() => changeText(konsTitle, konsText,konsImg)} className='konsIcon Icon'>
                           <img src={kons}></img><h2>Konstrukcja</h2>
                         </div>
-                        <div className='zawIcon'>
+                        <div onClick={() => changeText(zawTitle, zawText,zawImg)} className='zawIcon Icon'>
                           <img src={zaw}></img><h2>Zawieszenie</h2>
                         </div>
-                        <div className='markIcon'>
+                        <div onClick={() => changeText(markTitle, markText,markImg)} className='markIcon Icon'>
                           <img src={mark}></img><h2>Marketing</h2>
                         </div>
-                        <div className='mechIcon'>
+                        <div onClick={() => changeText(mechTitle, mechText,mechImg)} className='mechIcon Icon'>
                           <img src={mech}></img><h2>Mechanika</h2>
                         </div>
                       </div>
-                    </div> */}
+
+                      <div className='departmentsTabletMobile'>
+                        <div className='prezIcon Icon'>
+                          <h2>Prezes Koła</h2>
+                          <img src={prezImg}></img>
+                        </div>
+                        <div className='liderIcon Icon'>
+                          <h2>Lider Photon</h2>
+                          <img src={liderPhotonImg}></img>
+                        </div>
+                        <div className='liderIcon Icon'>
+                          <h2>Lider SSV</h2>
+                          <img src={liderSSVImg}></img>
+                        </div>
+                        <div className='elekIcon Icon'>
+                          <h2>Elektronika</h2>
+                          <img src={elekImg}></img>
+                        </div>
+                        <div className='konsIcon Icon'>
+                          <h2>Konstrukcja</h2>
+                          <img src={konsImg}></img>
+                        </div>
+                        <div className='zawIcon Icon'>
+                          <h2>Zawieszenie</h2>
+                          <img src={zawImg}></img>
+                        </div>
+                        <div className='markIcon Icon'>
+                          <h2>Marketing</h2>
+                          <img src={markImg}></img>
+                        </div>
+                        <div className='mechIcon Icon'>
+                          <h2>Mechanika</h2>
+                          <img src={mechImg}></img>
+                        </div>
+                      </div>
+                    </div>
                 </div>
                 
             </div> 
