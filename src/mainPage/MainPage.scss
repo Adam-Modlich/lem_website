@@ -15,7 +15,7 @@
     color: white;
     animation: firstPage 1s ease-in-out;
     animation-fill-mode: forwards;  
-    animation-delay: 3s;
+    animation-delay: 2s;
 
     img{
         width: auto;
@@ -33,7 +33,7 @@
             position: absolute;
             font-size: 100px;
             animation: ride 1.5s linear infinite;
-            animation-delay: 1s;
+            animation-delay: 0.5s;
             left: 0;
             bottom: 0;
         }
@@ -123,8 +123,8 @@
     text-align: left;
 
     p{
-        font-family: 'Quicksand', sans-serif;
-        font-size: 1.2vw;
+        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+        font-size: 1.3vw;
     }
 
     .paragraph1{

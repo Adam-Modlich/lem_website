@@ -56,13 +56,14 @@ export default function AboutUs(){
         document.getElementById('depAcapit2').style.display = "none";
         document.getElementById('imgPlace2').style.display = "none";
         document.getElementsByClassName('depText2')[0].style.display = "none";
-        $('.depText').css("width","35%")
 
         document.getElementById('beginText').textContent = texty;
         document.getElementById('depAcapit').textContent = title;
-        document.getElementById('firstAcapit').style.display = "none";
-        document.getElementById('imgPlace').src = sourceImg;
-        $(".parentText_4").animate({height:"55vh"});
+        // document.getElementById('firstAcapit').style.display = "none";
+        $("#imgPlace").fadeOut("medium", function() {
+          $('#imgPlace').attr('src', sourceImg);
+          $("#imgPlace").fadeIn("medium");
+        });  
       }
 
       const changeTextLiders = (title, title2, texty, texty2 ,sourceImg1, sourceImg2) => {
@@ -75,11 +76,12 @@ export default function AboutUs(){
         document.getElementById('beginText2').textContent = texty2;
         document.getElementById('depAcapit').textContent = title;
         document.getElementById('depAcapit2').textContent = title2;
-        document.getElementById('firstAcapit').style.display = "none";
+        // document.getElementById('firstAcapit').style.display = "none";
+
         document.getElementById('imgPlace').src = sourceImg1;
         document.getElementById('imgPlace2').src = sourceImg2;
         $('.depText').css("width","25%")
-        $(".parentText_4").animate({height:"55vh"});
+        // $(".parentText_4").animate({height:"55vh"});
       }
 
     return(
@@ -135,14 +137,15 @@ export default function AboutUs(){
                 <div className="parent3">
                   <div className="Container_6">
                       <div className='parentText_4'>
-                      <h1 className="acapits" id="firstAcapit">Nasz Zespół</h1>
+                      {/* <h1 className="acapits" id="firstAcapit"></h1> */}
                         <div className='departmentsText'>
                           <div className='depText'>
-                            <h1 className="acapits" id="depAcapit"></h1>
+                            <h1 className="acapits" id="depAcapit">Prezes Koła</h1>
                               <p id='beginText'>
+                                
                               </p>
                           </div>
-                          <img src="" id="imgPlace"></img>
+                          <img src={prezImg} id="imgPlace"></img>
                           <div className='depText2'>
                             <h1 className="acapits" id="depAcapit2"></h1>
                               <p id='beginText2'>

@@ -38,7 +38,10 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: white;
+            background: linear-gradient(to right, #aa1f70, red 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 0.3s ease;
             margin: 0% 25% 5% 25%;
             width: 50%;
             font-size: 1.5vw;
@@ -50,6 +53,15 @@
             a{
                 text-decoration: none;
                 color: black;
+            }
+        }
+
+        .paTitle:hover{
+            background-position: 0 100%;
+    
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
 
@@ -103,6 +115,7 @@
             font-size: 7vw;
             height: 300px;
             text-align: center;
+            font-family: 'Racing Sans One', cursive;
         }
 
         .tuTitle::before{
@@ -126,17 +139,30 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-            margin: 2% 25% 5% 25%;
+            background: linear-gradient(to right, #aa1f70, red 50%, white 50%);
+            background-size: 200% 100%;
+            background-position: 100%;
+            transition: background-position 0.3s ease;
+            margin: 0% 25% 5% 25%;
             width: 50%;
             font-size: 2vw;
             height: 11vw;
             text-align: center;
-            border: 3px black solid;
+            border: 5px black solid;
             border-radius: 10px;
+
             a{
                 text-decoration: none;
                 color: black;
+            }
+        }
+
+        .paTitle:hover{
+            background-position: 0 100%;
+    
+            a{
+                color: white;
+                text-decoration: none;
             }
         }
 

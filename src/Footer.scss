@@ -21,7 +21,7 @@
         line-height: 1.5em;
 
         .contactLeft{
-            width: 30%;
+            width: 20%;
             padding-top: 70px;
             padding-right: 10%;
             padding-bottom: 70px;
@@ -32,7 +32,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 40%;
+            width: 50%;
             padding-top: 70px;
             padding-right: 5%;
             padding-bottom: 70px;
@@ -52,7 +52,7 @@
         }
 
         h3{
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-size: 25px;
             letter-spacing: 2px;
             line-height: 1.5em;
@@ -176,7 +176,7 @@
         }
 
         h3{
-            text-transform: uppercase;
+            // text-transform: uppercase;
             font-size: 15px;
             letter-spacing: 2px;
             line-height: 1.5em;
@@ -263,6 +263,7 @@
         line-height: 1.5em;
 
         .contactLeft{
+            text-align: center !important;
             width: 80%;
             padding-top: 20px;
             padding-right: 10%;
@@ -287,6 +288,7 @@
         }
 
         h1{
+            text-align: center !important;
             text-transform: uppercase;
             font-size: 25px;
             letter-spacing: 2px;
@@ -295,7 +297,8 @@
         }
 
         h3{
-            text-transform: uppercase;
+            text-align: center !important;
+            // text-transform: uppercase;
             font-size: 15px;
             letter-spacing: 2px;
             line-height: 1.5em;
@@ -303,6 +306,7 @@
         }
 
         h4{
+            text-align: center !important;
             font-size: 12px;
             line-height: 1.5em;
             text-align: left;
