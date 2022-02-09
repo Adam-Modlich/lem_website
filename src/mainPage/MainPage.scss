@@ -29,13 +29,17 @@
         position: relative; 
         // justify-content: center;
 
-        i{
+        img{
             position: absolute;
+            // filter: invert(100%);
+            height: 11vw;
             font-size: 100px;
             animation: ride 1.5s linear infinite;
             animation-delay: 0.5s;
-            left: 0;
-            bottom: 0;
+            left: 0%;
+            bottom: 0%;
+            margin-bottom: -2.6vw;
+            margin-left: -30px;
         }
     }
 
@@ -197,6 +201,7 @@
 .projectImagesButt {
     background-color: transparent;
     z-index: 50;
+    // width: 30vw;
 
     #imageSSV{
         background: white;
@@ -297,6 +302,18 @@
 
 
 @media screen and (max-width: $Tablet) {
+    .firstPage{
+        height: 100vh;
+        padding: 0vh 0 20vh 0;
+        // background-color: black;
+
+        #beginPictureStart{
+            width: 90%;
+            height: auto;
+        }
+    }
+
+
     .mainSite{
         margin-top: 9vh;
     }
@@ -314,7 +331,7 @@
         .slides{
             height: 300px;
             width: 100%;
-            margin-bottom: 20%;
+            margin-bottom: 10%;
             // margin-top: -4vh;
 
             img{
@@ -354,7 +371,7 @@
 
     @media screen and (min-aspect-ratio:8/10) {
         .slides{
-            margin-bottom: 10%;
+            margin-bottom: 0%;
             height: 67vh;
             width: 100%;
         }    
@@ -364,6 +381,7 @@
             color: white;
             
             i{
+                font-size: 50px;
                 position: fixed;
                 top: 50%;
                 right:2%;   
@@ -374,7 +392,8 @@
             background: white;
             color: white;
     
-            i{            
+            i{     
+                font-size: 50px;       
                 position: fixed;
                 top: 50%;
                 left:2%;   
@@ -422,6 +441,16 @@
 }
 
 @media  screen and (max-width: $mobile) {
+
+    .firstPage{
+        // display: none;
+
+        #beginPictureStart{
+            width: 80%;
+            height: auto;
+        }
+    }
+
     .mainSite{
         margin-top: 11vh;
     }

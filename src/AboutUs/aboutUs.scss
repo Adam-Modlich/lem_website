@@ -70,6 +70,10 @@
             
         }
 
+        p{
+            font-size: 1.4vw;
+        }
+
         .Container_1::before{
             position: absolute;
             content: "";
@@ -89,7 +93,7 @@
             flex-wrap: wrap;
             align-items:stretch;
             width:100%;
-            padding: 10vw 0 7vw 0;
+            padding: 7vw 0 7vw 0;
             height: auto;
             background-color: whitesmoke;
             text-align: left;
@@ -115,9 +119,11 @@
                 // opacity: 0;
                 // transition: .5s ease-in-out;
                 background-image: url(../pictures/SSV_Rama.jpg);
+                mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
                 background-size: cover;
                 background-position: center;
                 width: 50%;
+                border-radius: 5px;
                 margin: 0vh 5vw 0vh 10vw;
                 height: 40vw;
             }
@@ -191,24 +197,42 @@
 
         .Container_5{
             flex-direction: row;
-            height: 60vh;
+            justify-content: center;
+            height: auto;
 
             .image_3{
                 background-image: url(../pictures/Photon_garaz.jpg);
+                mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
                 background-size: cover;
                 width: 50%;
-                margin: 0vh 5vw 0vh 10vw;
+                margin: 0vh 5vw 0vh 5vw;
                 height: auto;
+                border-radius: 5px;
+                background-position: 0% 70%;
+            }
+
+            .image_7{
+                background-image: url(../pictures/driver.jpg);
+                mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+                background-size: cover;
+                width: 50%;
+                margin: 0vh 5vw 0vh 5vw;
+                height: auto;
+                border-radius: 5px;
                 background-position: 0% 70%;
             }
 
             .text_3{
-                margin: 10vh 4em 0 0 ;
+                display: flex;
+                // align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                // margin: 0 3em 0 0 ;
                 width: 30%;
-                height: auto;
+                height: 30vw;
                 font-size: 1.1vw;
                 padding-top: 0vw;
-                padding-bottom: 2vw;
+                padding-bottom: 0vw;
 
                 p{
                     margin: 0 5% 0 5%;
@@ -253,22 +277,36 @@
                 margin: 0% 8%;
 
                 .depText{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     margin: 0% 5%;
+                    width: 50%;
                     // margin-right: 5%;
-                    width: 30%;
+                    // width: 30%;
+
+                    .textContentBoss{
+                        width: 70%;
+                        height: auto;
+                    }
+
+                    h2{
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+                        font-size: 2.5vw;
+                    }
                 }
 
                 .depText2{
                     margin: 0% 5%;
                     display: none;
                     // margin-right: 5%;
-                    width: 30%;
+                    // width: 30%;
                 }
 
                 #beginText{
                     transition: 3s linear;
-                    // width: 50%;
-                    height: 100%;
+                    width: 100%;
+                    height: auto;
                 }
 
                 #imgPlace{
@@ -293,6 +331,9 @@
                 padding-bottom: 3%;
                 margin: 0%;
                 font-size: 3vw;
+                width: auto;
+                height: 30%;
+                transform: rotate(-90deg);
             }
 
             .departmentsIcons{
@@ -353,7 +394,7 @@
                 justify-content: center;
                 position: relative;
                 z-index: 1;
-                height: 80vh;
+                height: 70vh;
                 width: 100%;
                 background-color: black;
                 color: white;
@@ -370,15 +411,14 @@
                     left: 50%;
                     transform: translate(-50%, -50%);
 
-                    .arrow{
-                        border: solid white;
-                        border-width: 0 10px 10px 0;
-                        display: inline-block;
-                        padding: 20px;
-                        transform: rotate(45deg);
-                        -webkit-transform: rotate(45deg);
+                    .fa{
+                        color: white;
+                        font-size: 80px;
+                        // padding: 20px;
+                        transform: rotate(90deg);
+                        -webkit-transform: rotate(90deg);
                         
-                    }   
+                    }  
                 }
                 
             }
@@ -417,6 +457,10 @@
                     font-size: 4vw;
                     font-weight: 1000;
                 }
+
+                p{
+                    font-size: 1.9vw;
+                }
             }
     
             .Container_3{
@@ -428,10 +472,12 @@
                 .image_1{
                     // opacity: 0;
                     // transition: .5s ease-in-out;
+                    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
                     background-image: url(../pictures/SSV_Rama.jpg);
                     background-size: cover;
                     background-position: center;
                     width: 50%;
+                    border-radius: 5px;
                     margin: 0vh 5vw 0vh 5vw;
                     height: 40vw;
                 }
@@ -502,11 +548,25 @@
     
                 .image_3{
                     background-image: url(../pictures/Photon_garaz.jpg);
+                    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
                     background-position: 100% 0% ;
                     background-size: cover;
                     width: 50%;
+                    border-radius: 5px;
                     margin: 0vh 5vw 0vh 5vw;
                     height: 40vw;
+                }
+
+                .image_7{
+                    background-image: url(../pictures/driver.jpg);
+                    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
+                    background-position: 100% 0% ;
+                    background-size: cover;
+                    border-radius: 5px;
+                    width: 50%;
+                    margin: 0vh 5vw 0vh 5vw;
+                    height: 35vw;
+                    background-position: 20% 0%;
                 }
     
                 .text_3{
@@ -534,16 +594,15 @@
                 height: auto;
                 width: 100%;
                 background-color: black;
-                padding: 3% 0% 0% 0%;
+                padding: 5% 0% 5% 0%;
 
                 .parentText_4{
                     height: auto !important;
                 }
 
-                .acapits{
-                    font-family: 'Racing Sans One', cursive;
-                    font-size: 6vw;
-                    display: block !important;
+                h2{
+                    font-size: 3vw;
+                    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                 }
     
                 .departmentsText{
@@ -563,6 +622,12 @@
                     align-items: center;
                     justify-content: center;
 
+                    h1{
+                        width: 100%;
+                        font-family: 'Racing Sans One', cursive !important;
+                        font-size: 5vw;
+                    }
+
                     .Icon{
                         display: flex;
                         flex-direction: column;
@@ -575,6 +640,7 @@
                         border: 2px solid rgb(78, 78, 78);
                         box-shadow: 0 0 30px #e42929;
                         border-radius: 20px;
+                        transition: 0.3s;
 
                         img{
                             margin: 0% 0% 10% 0%;
@@ -585,21 +651,12 @@
                     
                 }
 
+                .departmentsTabletMobile div:hover{
+                    box-shadow: 0 0 30px #5d18b8;
+                }
+
+
             }
-    
-            // .Container_6::before{
-            //     position: absolute;
-            //     content: "";
-            //     top: 0;
-            //     bottom: 0;
-            //     left: 0;
-            //     right: 0;
-            //     background-image: url(../pictures/Photon_naprawa.jpg);
-            //     opacity: 0.15;
-            //     z-index: -1;
-            //     background-position: 0% 40%;
-            //     background-size: cover;
-            // }
         }}
 
     @media screen and (max-width: 1000px){
@@ -645,6 +702,10 @@
                 }
                 
             }
+
+            p{
+                font-size: 3vw !important;
+            }
     
             .Container_1::before{
                 position: absolute;
@@ -679,7 +740,7 @@
                     margin-bottom: 3%;
                     padding-bottom: 0%;
                     text-align: center;
-                    font-size: 30px;
+                    font-size: 6vw;
                     font-weight: 1000;
                 }
             }
@@ -692,8 +753,10 @@
                     // opacity: 0;
                     // transition: .5s ease-in-out;
                     background-image: url(../pictures/SSV_Rama.jpg);
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
                     background-size: cover;
                     background-position: 15% 0%;
+                    border-radius: 5px;
                     width: 80%;
                     margin: 0vh 5vw 2vh 5vw;
                     height: 70vw;
@@ -731,8 +794,8 @@
                     height: auto;
                     text-align: justify;
                     font-size: 17px;
-                    padding-top: 2vw;
-                    padding-bottom: 2vw;
+                    padding-top: 6vw;
+                    padding-bottom: 6vw;
 
                     h1{
                         margin-bottom: 3%;
@@ -767,9 +830,23 @@
                     background-image: url(../pictures/photonv3.jpg);
                     background-position: 50% 0%;
                     background-size: cover;
+                    border-radius: 5px;
                     width: 80%;
                     margin: 0vh 5vw 2vh 5vw;
                     height: 70vw;
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
+                }
+
+                .image_7{
+                    background-image: url(../pictures/driver.jpg);
+                    background-position: 50% 0%;
+                    background-size: cover;
+                    border-radius: 5px;
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
+                    width: 80%;
+                    margin: 0vh 5vw 2vh 5vw;
+                    height: 57vw;
+                    background-position: 0% 0%;
                 }
     
                 .text_3{
@@ -801,10 +878,10 @@
                 width: 100%;
                 background-color: black;
                 padding: 3% 0%;
-                font-family: 'Racing Sans One', cursive;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                 
                 h2{
-                    font-size: 7vw;
+                    font-size: 5vw;
                 }
 
                 .acapits{
@@ -828,12 +905,18 @@
                     align-items: center;
                     justify-content: center;
 
+                    h1{
+                        width: 100%;
+                        font-family: 'Racing Sans One', cursive !important;
+                        font-size: 6vw;
+                    }
+
                     .Icon{
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        width: 60%;
+                        width: 50%;
                         height: auto;
                         margin: 5% 3%;
                         padding: 0% 5%;
@@ -844,7 +927,7 @@
                         img{
                             margin: 0% 0% 10% 0%;
                             width: auto;
-                            height: 65vw;
+                            height: 60vw;
                         }
                     }
                     

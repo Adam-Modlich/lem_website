@@ -8,14 +8,14 @@ import mark from '../AboutUs/Departments/R_marketing.png';
 import mech from '../AboutUs/Departments/R_mechanika.png';
 import zaw from '../AboutUs/Departments/R_zawieszenie.png';
 
-import elekImg from "../AboutUs/Boss/elektro.jpg"
-import zawImg from "../AboutUs/Boss/zawieszenie.jpg";
-import markImg from "../AboutUs/Boss/marketing.jpg";
-import konsImg from "../AboutUs/Boss/konstrukcja.jpg";
-import mechImg from "../AboutUs/Boss/mechanika.jpg";
-import prezImg from "../AboutUs/Boss/Prezes1.jpg";
-import liderPhotonImg from "../AboutUs/Boss/Photon_Lider.jpg";
-import liderSSVImg from "../AboutUs/Boss/SSV_Lider.jpg";
+import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
+import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
+import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
+import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
+import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
+import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
+import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
+import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
 
 
 
@@ -25,64 +25,75 @@ import Footer from '../Footer';
 export default function AboutUs(){
 
   let elekTitle = "Elektronika";
-  let elekText = "góno"
+  let elekText = "Spoke as as other again ye. Hard on to roof he drew. So sell side ye in mr evil. Longer waited mr of nature seemed. Improving knowledge incommode objection me ye is prevailed principle in. Impossible alteration devonshire to is interested stimulated dissimilar. To matter esteem polite do if."
+  let elekName = "Piotr Wyszyński";
 
   let prezTitle = "Prezes Koła";
   let prezText = "góno"
+  let prezName = "Michał Skraburski";
 
-  let liderTitle = "Lider Photon";
-  let liderText = "góno"
+  // let liderTitle = "Lider Photon";
+  // let liderText = "góno"
 
-  let liderTitle2 = "Lider SSV";
-  let liderText2 = "góno"
+  // let liderTitle2 = "Lider SSV";
+  // let liderText2 = "góno"
 
   let zawTitle = "Zawieszenie";
   let zawText = "góno"
+  let zawName = "Damian Sazoński";
 
   let mechTitle = "Mechanika";
-  let mechText = "góno"
+  let mechText = "góno";
+  let mechName = "Albert Iwanicki";
 
   let konsTitle = "Konstrukcja";
-  let konsText = "góno"
+  let konsText = "góno";
+  let konsName = "Piotr Minta";
 
   let markTitle = "Marketing";
-  let markText = "góno"
+  let markText = "góno";
+  let markName = "Izabela Stanula";
 
 
-      const changeText = (title,texty,sourceImg) => {
-        $('.imgPlace1').fadeOut();
-        $('.imgPlace1').fadeIn();
-        document.getElementById('beginText2').style.display = "none";
-        document.getElementById('depAcapit2').style.display = "none";
-        document.getElementById('imgPlace2').style.display = "none";
-        document.getElementsByClassName('depText2')[0].style.display = "none";
-
-        document.getElementById('beginText').textContent = texty;
-        document.getElementById('depAcapit').textContent = title;
-        // document.getElementById('firstAcapit').style.display = "none";
+      const changeText = (title,texty,sourceImg,name) => {
         $("#imgPlace").fadeOut("medium", function() {
           $('#imgPlace').attr('src', sourceImg);
-          $("#imgPlace").fadeIn("medium");
-        });  
+        });
+        $("#imgPlace").fadeIn("slow");  
+
+        $("#beginText").fadeOut("medium", function() {
+          $('#beginText').text(texty);
+        });
+        $("#beginText").fadeIn("slow");  
+
+        $("#depAcapit").fadeOut("medium", function() {
+          $('#depAcapit').text(title);
+        });
+        $("#depAcapit").fadeIn("slow"); 
+
+        $("#bossName").fadeOut("medium", function() {
+          $('#bossName').text(name);
+        });
+        $("#bossName").fadeIn("slow"); 
       }
 
-      const changeTextLiders = (title, title2, texty, texty2 ,sourceImg1, sourceImg2) => {
-        document.getElementById('beginText2').style.display = "block";
-        document.getElementById('depAcapit2').style.display = "block";
-        document.getElementById('imgPlace2').style.display = "block";
-        document.getElementsByClassName('depText2')[0].style.display = "block";
+      // const changeTextLiders = (title, title2, texty, texty2 ,sourceImg1, sourceImg2) => {
+      //   document.getElementById('beginText2').style.display = "block";
+      //   document.getElementById('depAcapit2').style.display = "block";
+      //   document.getElementById('imgPlace2').style.display = "block";
+      //   document.getElementsByClassName('depText2')[0].style.display = "block";
 
-        document.getElementById('beginText').textContent = texty;
-        document.getElementById('beginText2').textContent = texty2;
-        document.getElementById('depAcapit').textContent = title;
-        document.getElementById('depAcapit2').textContent = title2;
-        // document.getElementById('firstAcapit').style.display = "none";
+      //   document.getElementById('beginText').textContent = texty;
+      //   document.getElementById('beginText2').textContent = texty2;
+      //   document.getElementById('depAcapit').textContent = title;
+      //   document.getElementById('depAcapit2').textContent = title2;
+      //   // document.getElementById('firstAcapit').style.display = "none";
 
-        document.getElementById('imgPlace').src = sourceImg1;
-        document.getElementById('imgPlace2').src = sourceImg2;
-        $('.depText').css("width","25%")
-        // $(".parentText_4").animate({height:"55vh"});
-      }
+      //   document.getElementById('imgPlace').src = sourceImg1;
+      //   document.getElementById('imgPlace2').src = sourceImg2;
+      //   $('.depText').css("width","25%")
+      //   // $(".parentText_4").animate({height:"55vh"});
+      // }
 
     return(
         <>
@@ -141,9 +152,12 @@ export default function AboutUs(){
                         <div className='departmentsText'>
                           <div className='depText'>
                             <h1 className="acapits" id="depAcapit">Prezes Koła</h1>
-                              <p id='beginText'>
-                                
-                              </p>
+                              <div className='textContentBoss'>
+                                <h2 id="bossName">Michał skraburski</h2>
+                                <p id='beginText'>
+                                  
+                                </p>
+                              </div>
                           </div>
                           <img src={prezImg} id="imgPlace"></img>
                           <div className='depText2'>
@@ -155,30 +169,31 @@ export default function AboutUs(){
                         </div>
                       </div>
                       <div className='departmentsIcons'>
-                        <div onClick={() => changeText(prezTitle, prezText, prezImg)} className='prezIcon Icon'>
+                        <div onClick={() => changeText(prezTitle, prezText, prezImg, prezName)} className='prezIcon Icon'>
                           <img src={prez}></img><h2>Prezes Koła</h2>
                         </div>
-                        <div onClick={() => changeTextLiders(liderTitle,liderTitle2, liderText, liderText2,liderPhotonImg, liderSSVImg)} className='liderIcon'>
+                        {/* <div onClick={() => changeTextLiders(liderTitle,liderTitle2, liderText, liderText2,liderPhotonImg, liderSSVImg)} className='liderIcon'>
                           <img src={lider}></img><h2>Liderzy</h2>
-                        </div>
-                        <div onClick={() => changeText(elekTitle,elekText,elekImg)} className='elekIcon Icon'>
+                        </div> */}
+                        <div onClick={() => changeText(elekTitle,elekText,elekImg, elekName)} className='elekIcon Icon'>
                           <img src={elek}></img><h2>Elektronika</h2>
                         </div>
-                        <div onClick={() => changeText(konsTitle, konsText,konsImg)} className='konsIcon Icon'>
+                        <div onClick={() => changeText(konsTitle, konsText,konsImg, konsName)} className='konsIcon Icon'>
                           <img src={kons}></img><h2>Konstrukcja</h2>
                         </div>
-                        <div onClick={() => changeText(zawTitle, zawText,zawImg)} className='zawIcon Icon'>
+                        <div onClick={() => changeText(zawTitle, zawText,zawImg, zawName)} className='zawIcon Icon'>
                           <img src={zaw}></img><h2>Zawieszenie</h2>
                         </div>
-                        <div onClick={() => changeText(markTitle, markText,markImg)} className='markIcon Icon'>
+                        <div onClick={() => changeText(markTitle, markText,markImg, markName)} className='markIcon Icon'>
                           <img src={mark}></img><h2>Marketing</h2>
                         </div>
-                        <div onClick={() => changeText(mechTitle, mechText,mechImg)} className='mechIcon Icon'>
+                        <div onClick={() => changeText(mechTitle, mechText,mechImg, mechName)} className='mechIcon Icon'>
                           <img src={mech}></img><h2>Mechanika</h2>
                         </div>
                       </div>
 
                       <div className='departmentsTabletMobile'>
+                        <h1>Nasz Zespół</h1>
                         <div className='prezIcon Icon'>
                           <h2>Prezes Koła</h2>
                           <img src={prezImg}></img>
@@ -213,6 +228,19 @@ export default function AboutUs(){
                         </div>
                       </div>
                     </div>
+                </div>
+                <div className="parent3">
+                  <div className="Container_5">
+                      <div className="image_7">
+
+                      </div>
+                      <div className="text_3">
+                      <h1 className="acapits">Nasz Kierowca</h1>
+                          <p>
+                              W tym roku stworzyliśmy motocykl wyścigowy (LEM Photon), z którym pojechaliśmy na zawody MotoStudent (najbardziej prestiżowe zawody motocyklowe dla studentów na świecie, odpowiednik MotoGP). Dzięki pracy całego zespołu zdobyliśmy 1 miejsce w kategorii Best Rookie Team. 
+                          </p>
+                      </div>
+                  </div>
                 </div>
                 
             </div> 

@@ -2,7 +2,8 @@ import './MainPage.scss';
 import ChangePicture from './ChangePicture';
 import SSVpicture from '../pictures/SSV.png';
 import PhotonPicture from '../pictures/Photonv2.png';
-import LemLogo from '../pictures/lem_logo_white.jpg'
+import LemLogo from '../pictures/lem_logo_white.jpg';
+import motorBike from '../pictures/motorbikeIcon.png';
 import { LoremIpsum} from 'react-lorem-ipsum';
 import Nav from '../Nav'
 
@@ -14,7 +15,7 @@ export default function mainPage(){
         <div className='firstPage'>
             <img id="beginPictureStart" src={LemLogo}></img>
             <div className="loadingMoto">
-                <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                <img src={motorBike} alt="" />
             </div>
         </div>
 
