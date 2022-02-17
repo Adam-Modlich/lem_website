@@ -4,7 +4,7 @@
 .about{
     height: auto;
     width: 100%;
-    margin: 7.5vh 0 0 0;
+    margin: 5vh 0 0 0;
     background-color: whitesmoke;
 
     .Container_1{
@@ -113,6 +113,7 @@
 
         .Container_3{
             flex-direction: row;
+            text-align: justify;
             // transition: 1s ease-in-out;
 
             .image_1{
@@ -204,7 +205,7 @@
                 background-image: url(../pictures/Photon_garaz.jpg);
                 mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 90%, transparent 100%);
                 background-size: cover;
-                width: 50%;
+                width: 45%;
                 margin: 0vh 5vw 0vh 5vw;
                 height: auto;
                 border-radius: 5px;
@@ -215,8 +216,8 @@
                 background-image: url(../pictures/driver.jpg);
                 mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
                 background-size: cover;
-                width: 50%;
-                margin: 0vh 5vw 0vh 5vw;
+                width: 45%;
+                margin: 0vh 5vw 0vh 0vw;
                 height: auto;
                 border-radius: 5px;
                 background-position: 0% 70%;
@@ -224,11 +225,12 @@
 
             .text_3{
                 display: flex;
+                text-align: justify;
                 // align-items: center;
                 justify-content: center;
                 flex-direction: column;
                 // margin: 0 3em 0 0 ;
-                width: 30%;
+                width: 40%;
                 height: 30vw;
                 font-size: 1.1vw;
                 padding-top: 0vw;
@@ -278,21 +280,22 @@
 
                 .depText{
                     display: flex;
+                    flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    margin: 0% 5%;
-                    width: 50%;
+                    margin: 0% 1%;
+                    width: 65%;
                     // margin-right: 5%;
                     // width: 30%;
 
                     .textContentBoss{
-                        width: 70%;
+                        width: 80%;
                         height: auto;
                     }
 
                     h2{
                         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
-                        font-size: 2.5vw;
+                        font-size: 2vw;
                     }
                 }
 
@@ -333,7 +336,7 @@
                 font-size: 3vw;
                 width: auto;
                 height: 30%;
-                transform: rotate(-90deg);
+                // transform: rotate(-90deg);
             }
 
             .departmentsIcons{
@@ -467,6 +470,7 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                
                 // transition: 1s ease-in-out;
     
                 .image_1{

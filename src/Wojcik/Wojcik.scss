@@ -14,7 +14,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin: 4% 10% 5% 10%;
+            margin: 3% 10% 5% 10%;
             height: 90%;
         }
 
@@ -68,6 +68,7 @@
         transition: background-position 0.3s ease;
 
         a{
+            transition: color 0.3s ease;
             color: black;
             text-decoration: none;
         }
@@ -151,6 +152,7 @@
         transition: background-position 0.3s ease;
 
         a{
+            transition: color 0.3s ease;
             color: black;
             text-decoration: none;
         }
@@ -233,6 +235,7 @@
         transition: background-position 0.3s ease;
 
         a{
+            transition: color 0.3s ease;
             color: black;
             text-decoration: none;
         }
