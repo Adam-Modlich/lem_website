@@ -4,7 +4,7 @@
   font-family: 'Shippori Antique', sans-serif;
   position: fixed;
   top: 0%;
-  width: 100vw;
+  width: 100%;
   display: grid;  
   height:fit-content;
   background-color: black;
@@ -15,7 +15,7 @@
   z-index: 99;
 
   li{
-    font-size: larger;
+    font-size: large;
     font-weight: 400;
   }
 
@@ -114,7 +114,7 @@
 @media screen and (max-width: $Tablet) {
   .navbar {
     grid-template-columns: 5% 20% 60% 10% 5%;
-    grid-template-rows: 100px;
+    grid-template-rows: auto;
     background-color: black;
 
     img{
@@ -146,7 +146,7 @@
       width:100%;
       margin: 0;
       position: fixed;
-      top:100px;
+      top: 80px;
       overflow-x: hidden;
       overflow: hidden;
       left:0;
@@ -196,7 +196,7 @@
 
   .navbar{
     grid-template-columns: 5% 15% 3% 50% 3% 24% 2.5%;
-    grid-template-rows: 100px;
+    grid-template-rows: auto;
 
     img{
       width:180px;

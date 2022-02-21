@@ -7,10 +7,6 @@ import {
   Link,
   NavLink,
 } from "react-router-dom";
-// import Achivements from './Achievements/Achievements';
-// import Projects from './Projects/Projects';
-// import trustUs from './trustUs/trustUs';
-// import Contact from './Contact/Contact';
 
 const linkStyle = {
   fontSize: "inherit",
