@@ -114,7 +114,7 @@ export default function AboutUs(){
                           </div>
                   </div>
                 </div>
-                <div className="parent3">
+                {/* <div className="parent3">
                   <div className="Container_5">
                       <div className="image_3">
 
@@ -130,7 +130,6 @@ export default function AboutUs(){
                 <div className="parent3">
                   <div className="Container_6">
                       <div className='parentText_4'>
-                      {/* <h1 className="acapits" id="firstAcapit"></h1> */}
                         <div className='departmentsText'>
                           <div className='depText'>
                             <h1 className="acapits" id="depAcapit">Prezes Koła</h1>
@@ -154,9 +153,6 @@ export default function AboutUs(){
                         <div onClick={() => changeText(prezTitle, prezText, prezImg, prezName)} className='prezIcon Icon'>
                           <img src={prez} alt="Zdjęcie Prezesa"></img><h2>Prezes Koła</h2>
                         </div>
-                        {/* <div onClick={() => changeTextLiders(liderTitle,liderTitle2, liderText, liderText2,liderPhotonImg, liderSSVImg)} className='liderIcon'>
-                          <img src={lider}></img><h2>Liderzy</h2>
-                        </div> */}
                         <div onClick={() => changeText(elekTitle,elekText,elekImg, elekName)} className='elekIcon Icon'>
                           <img src={elek} alt="Zdjęcie Elektronika"></img><h2>Elektronika</h2>
                         </div>
@@ -210,7 +206,7 @@ export default function AboutUs(){
                         </div>
                       </div>
                     </div>
-                </div>
+                </div> */}
                 <div className="parent3">
                   <div className="Container_5">
                       <div className="image_7">

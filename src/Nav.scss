@@ -15,7 +15,7 @@
   z-index: 99;
 
   li{
-    font-size: large;
+    font-size: medium;
     font-weight: 400;
   }
 
@@ -118,9 +118,10 @@
     background-color: black;
 
     img{
+      width:150px;
       grid-column: 2;
       grid-row: 1;
-      width: 180px;
+      padding: 6px 0px 2px 0px;
     }
 
     .hamburgerMenu{
@@ -174,7 +175,7 @@
           display: inline-block;
           margin-left:25px;
           margin-right: 25px;
-          margin-bottom:40px;
+          margin-bottom:10px;
         }
       }
     }
@@ -199,9 +200,10 @@
     grid-template-rows: auto;
 
     img{
-      width:180px;
+      width:150px;
       grid-column: 2;
       grid-row: 1;
+      padding: 4px 0px 0px 0px;
     }
     
     .optionList{
