@@ -1,10 +1,6 @@
 import './Nav.scss';
 import React from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link,
   NavLink,
 } from "react-router-dom";
 
@@ -14,12 +10,12 @@ const linkStyle = {
   margin: "0"
 };
 
-const activeLink = {
-  fontSize: "inherit",
-  padding: "0",
-  margin: "0",
-  color: "rgb(250,212,27)"
-};
+// const activeLink = {
+//   fontSize: "inherit",
+//   padding: "0",
+//   margin: "0",
+//   color: "rgb(250,212,27)"
+// };
 
 const linkStyleSpecial = {
   fontSize: "inherit",

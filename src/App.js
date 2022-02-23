@@ -9,8 +9,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
-  NavLink,
 } from "react-router-dom";
 import Achievements from './Achievements/Achievements.js';
 

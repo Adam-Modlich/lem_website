@@ -1,36 +1,36 @@
 import '../AboutUs/aboutUs.scss';
 
-import elek from '../AboutUs/Departments/R_elektronika.png';
-import prez from '../AboutUs/Departments/R_prezes_koła.png';
-import lider from '../AboutUs/Departments/R_lider_Photon.png';
-import kons from '../AboutUs/Departments/R_konstrukcja.png';
-import mark from '../AboutUs/Departments/R_marketing.png';
-import mech from '../AboutUs/Departments/R_mechanika.png';
-import zaw from '../AboutUs/Departments/R_zawieszenie.png';
+// import elek from '../AboutUs/Departments/R_elektronika.png';
+// import prez from '../AboutUs/Departments/R_prezes_koła.png';
+// import lider from '../AboutUs/Departments/R_lider_Photon.png';
+// import kons from '../AboutUs/Departments/R_konstrukcja.png';
+// import mark from '../AboutUs/Departments/R_marketing.png';
+// import mech from '../AboutUs/Departments/R_mechanika.png';
+// import zaw from '../AboutUs/Departments/R_zawieszenie.png';
 
-import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
-import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
-import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
-import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
-import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
-import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
-import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
-import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
+// import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
+// import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
+// import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
+// import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
+// import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
+// import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
+// import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
+// import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
 
 
 
-import $ from 'jquery';
+// import $ from 'jquery';
 import Footer from '../Footer';
 
 export default function AboutUs(){
 
-  let elekTitle = "Elektronika";
-  let elekText = "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych."
-  let elekName = "Piotr Wyszyński";
+  // let elekTitle = "Elektronika";
+  // let elekText = "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych."
+  // let elekName = "Piotr Wyszyński";
 
-  let prezTitle = "Prezes Koła";
-  let prezText = "góno"
-  let prezName = "Michał Skraburski";
+  // let prezTitle = "Prezes Koła";
+  // let prezText = "góno"
+  // let prezName = "Michał Skraburski";
 
   // let liderTitle = "Lider Photon";
   // let liderText = "góno"
@@ -38,44 +38,44 @@ export default function AboutUs(){
   // let liderTitle2 = "Lider SSV";
   // let liderText2 = "góno"
 
-  let zawTitle = "Zawieszenie";
-  let zawText = "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. "
-  let zawName = "Damian Sazoński";
+  // let zawTitle = "Zawieszenie";
+  // let zawText = "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. "
+  // let zawName = "Damian Sazoński";
 
-  let mechTitle = "Mechanika";
-  let mechText = "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.";
-  let mechName = "Albert Iwanicki";
+  // let mechTitle = "Mechanika";
+  // let mechText = "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.";
+  // let mechName = "Albert Iwanicki";
 
-  let konsTitle = "Konstrukcja";
-  let konsText = "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.";
-  let konsName = "Piotr Minta";
+  // let konsTitle = "Konstrukcja";
+  // let konsText = "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.";
+  // let konsName = "Piotr Minta";
 
-  let markTitle = "Marketing";
-  let markText = "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ";
-  let markName = "Izabela Stanula";
+  // let markTitle = "Marketing";
+  // let markText = "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ";
+  // let markName = "Izabela Stanula";
 
 
-      const changeText = (title,texty,sourceImg,name) => {
-        $("#imgPlace").fadeOut("medium", function() {
-          $('#imgPlace').attr('src', sourceImg);
-        });
-        $("#imgPlace").fadeIn("slow");  
+      // const changeText = (title,texty,sourceImg,name) => {
+      //   $("#imgPlace").fadeOut("medium", function() {
+      //     $('#imgPlace').attr('src', sourceImg);
+      //   });
+      //   $("#imgPlace").fadeIn("slow");  
 
-        $("#beginText").fadeOut("medium", function() {
-          $('#beginText').text(texty);
-        });
-        $("#beginText").fadeIn("slow");  
+      //   $("#beginText").fadeOut("medium", function() {
+      //     $('#beginText').text(texty);
+      //   });
+      //   $("#beginText").fadeIn("slow");  
 
-        $("#depAcapit").fadeOut("medium", function() {
-          $('#depAcapit').text(title);
-        });
-        $("#depAcapit").fadeIn("slow"); 
+      //   $("#depAcapit").fadeOut("medium", function() {
+      //     $('#depAcapit').text(title);
+      //   });
+      //   $("#depAcapit").fadeIn("slow"); 
 
-        $("#bossName").fadeOut("medium", function() {
-          $('#bossName').text(name);
-        });
-        $("#bossName").fadeIn("slow"); 
-      }
+      //   $("#bossName").fadeOut("medium", function() {
+      //     $('#bossName').text(name);
+      //   });
+      //   $("#bossName").fadeIn("slow"); 
+      // }
 
     return(
         <>

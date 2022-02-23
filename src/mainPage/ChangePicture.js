@@ -14,7 +14,7 @@ export default function ChangePicture(){
         const imageSSV = document.getElementById('imageSSV');
         const imagePhoton = document.getElementById('imagePhoton');
 
-        console.log(picture.style.visibility)
+        // console.log(picture.style.visibility)
 
         if(picture.style.visibility === "visible"){
             imageSSV.style.backgroundPosition = "top";

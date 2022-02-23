@@ -3,11 +3,7 @@ import Hamburger from './Hamburger.js';
 import NavOptions from './NavOptions.js';
 import { useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
   Link,
-  NavLink,
 } from "react-router-dom";
 
 const linkStyle = {
