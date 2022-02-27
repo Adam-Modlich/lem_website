@@ -8,6 +8,7 @@ import Wojcik from './Wojcik/Wojcik.js';
 import {
   BrowserRouter as Router,
   Routes,
+  HashRouter,
   Route,
 } from "react-router-dom";
 import Achievements from './Achievements/Achievements.js';
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-    <Router> 
+    <HashRouter> 
     <Nav/>
       <Routes>
         <Route exact path="/" element={<MainPage/>}/>
@@ -34,7 +35,7 @@ function App() {
         <Route exact path="/ContactUs" element={<Contact/>}/>
 
       </Routes>
-    </Router> 
+    </HashRouter> 
     </>
   );
 }

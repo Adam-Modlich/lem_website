@@ -83,7 +83,7 @@ export default function AboutUs(){
             <div className="aboutContent">
                 <div className="Container_1">
                     <h1> Light Electronic Motorcycle </h1>
-                        <a href="#section2"><i className="fa fa-angle-double-right"></i></a>
+                      <a><i className="fa fa-angle-double-right"></i></a>
                 </div>
                 <div className="parent1">
                 <div id="section2" className="Container_3">

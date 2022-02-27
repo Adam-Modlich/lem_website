@@ -11,8 +11,8 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        height: 96.5vh;
-        width: 100%;
+        height: calc(100vh - 81px);
+        width: auto;
         // background-color: black;
         background-color: black;
         color: white;
@@ -22,9 +22,9 @@
 
         .contactLeft{
             width: 20%;
-            padding-top: 70px;
+            // padding-top: 70px;
             padding-right: 5%;
-            padding-bottom: 70px;
+            // padding-bottom: 70px;
             padding-left: 5%;
         }
 
@@ -33,9 +33,9 @@
             flex-direction: row;
             align-items: center;
             width: 40%;
-            padding-top: 70px;
+            // padding-top: 70px;
             padding-right: 2.5%;
-            padding-bottom: 70px;
+            // padding-bottom: 70px;
             padding-left: 2.5%;
         }
 
@@ -143,7 +143,7 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        margin-top: 7vh;
+        // margin-top: 7vh;
         height: auto;
         width: 100%;
         // background-color: black;
@@ -282,7 +282,7 @@
         align-items: center;
         position: relative;
         z-index: 1;
-        height: auto;
+        height: 100vh;
         width: 100%;
         // background-color: black;
         background-color: black;
@@ -293,9 +293,9 @@
 
         .contactLeft{
             width: 80%;
-            padding-top: 20px;
+            // padding-top: 20px;
             padding-right: 10%;
-            padding-bottom: 20px;
+            // padding-bottom: 20px;
             padding-left: 10%;
         }
 

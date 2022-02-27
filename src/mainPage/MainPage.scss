@@ -73,7 +73,7 @@
 }
 
 .mainSite{
-    padding-top: 5vh;
+    // padding-top: 5vh;
     width: 100%;
     height:auto;
     background-image: url(../pictures/tłov7.jpg);
@@ -313,7 +313,7 @@
     }
 
     .mainSite{
-        margin-top: 9vh;
+        // margin-top: 9vh;
     }
 
     .projects{
@@ -450,7 +450,7 @@
     }
 
     .mainSite{
-        margin-top: 11vh;
+        // margin-top: 11vh;
     }
 
     #imageSSV{
@@ -480,12 +480,13 @@
     }
 
     .slides{
+        padding-top: 15vh;
         height: 20vh;
         width: 100%;
 
         img{
             position: absolute;
-            top: 40%;
+            top: 50%;
             transform:translate(0%,-50%);
             width: 100%;
             height: auto;

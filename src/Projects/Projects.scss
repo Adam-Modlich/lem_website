@@ -2,7 +2,7 @@
 
 @media screen and (min-width: $laptop){
     .pageContainer{
-        min-height: 91vh;
+        min-height: auto;
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
 
     }
@@ -11,7 +11,7 @@
         position: absolute;
         width: 100%;
         margin-top:8vh;
-        height: 91vh;
+        height: 92vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -146,13 +146,13 @@
 }
 @media screen and (max-width: $Tablet){
     .pageContainer{
-        min-height: 91vh;
+        min-height: auto;
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
     }
 
     .parents{
         width: 100%;
-        margin-top:8vh;
+        // margin-top:8vh;
         height: auto;
         display: flex;
         align-items: center;
@@ -274,7 +274,7 @@
 @media screen and (max-width: $mobile){
 
     .pageContainer{
-        min-height: 91vh;
+        min-height: auto;
     }
 
     .parents{
@@ -345,7 +345,7 @@
     }     
     
     .parents1{
-        margin-top: 8vh;
+        // margin-top: 8vh;
         background-image: url(../pictures/Photon_premierav2.jpg);
         background-size: cover;
         background-position: 40% 0%;

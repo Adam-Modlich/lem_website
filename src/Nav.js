@@ -2,6 +2,7 @@ import picture from '../src/pictures/lem_logo_white.jpg';
 import Hamburger from './Hamburger.js';
 import NavOptions from './NavOptions.js';
 import { useState } from 'react';
+import $ from 'jquery'
 import {
   Link,
 } from "react-router-dom";
@@ -20,14 +21,28 @@ export default function Nav(){
         setHamburgerOpen(!hamburgerOpen)
     }
 
+    const closeHamburger = () =>{
+        setHamburgerOpen(false)
+    }
+
+    let height = $('.navbar:visible').css('height');
+
+    $(document).on('ready', function(){
+        height = $('.navbar:visible').css('height') // will give you css height
+    });
+
+
     return(
+        <div style={{position: "relative", top: "0%", height: "81px", width: "100%"}}>
         <div className="navbar">
             <Link to="/" style={linkStyle}><img src={picture}></img></Link>
             <div className="hamburgerMenu" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>
             </div>
             
-            <NavOptions isOpen={hamburgerOpen}/>
+            <NavOptions isOpen={hamburgerOpen} isClosing={closeHamburger}/>
+        </div>
+        {/* <div className="marginTop" style={{position: "relative", top: "0%", height: height, width: "100%"}}></div> */}
         </div>
     )
 }
