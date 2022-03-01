@@ -33,16 +33,15 @@ export default function Nav(){
 
 
     return(
-        <div style={{position: "relative", top: "0%", height: "81px", width: "100%"}}>
+        <div className="divNavbar" style={{position: "relative", top: "0%", width: "100%"}}>
         <div className="navbar">
-            <Link to="/" style={linkStyle}><img src={picture}></img></Link>
+            <Link to="/" style={linkStyle} className="divImgNavbar"><img src={picture} className="imgNavbar"></img></Link>
             <div className="hamburgerMenu" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>
             </div>
             
             <NavOptions isOpen={hamburgerOpen} isClosing={closeHamburger}/>
         </div>
-        {/* <div className="marginTop" style={{position: "relative", top: "0%", height: height, width: "100%"}}></div> */}
         </div>
     )
 }

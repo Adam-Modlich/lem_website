@@ -23,6 +23,7 @@
     }
     p{
         // font-family: 'Shippori Antique', sans-serif;
+        hyphens: auto;
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
     }
 
@@ -96,7 +97,7 @@
             padding: 7vw 0 7vw 0;
             height: auto;
             background-color: whitesmoke;
-            text-align: left;
+            // text-align: left;
             line-height: 35px ;
 
             .acapits{
@@ -436,7 +437,7 @@
                 background-image: url("../pictures/drużyna.jpg");
                 opacity: 0.4;
                 z-index: -1;
-                background-position: 40% 0%;
+                background-position: 0% 50%;
                 background-size: cover;
             }
     
@@ -448,7 +449,7 @@
                 padding: 10vh 0 7vh 0;
                 height: auto;
                 background-color: whitesmoke;
-                text-align: left;
+                // text-align: left;
                 // line-height: 30px ;
     
                 .acapits{
@@ -470,6 +471,7 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
+                text-align: justify;
                 
                 // transition: 1s ease-in-out;
     
@@ -497,6 +499,7 @@
                     // padding-bottom: 2vw;
     
                     p{
+                        text-align: justify;
                         margin: 0 5% 0 5%;
                     }
                 }
@@ -549,6 +552,7 @@
             .Container_5{
                 flex-direction: row;
                 align-items: center;
+                text-align: justify;
     
                 .image_3{
                     background-image: url(../pictures/Photon_garaz.jpg);
@@ -734,7 +738,7 @@
                 padding: 5vh 0 5vh 0;
                 height: auto;
                 background-color: whitesmoke;
-                text-align: left;
+                text-align: justify;
                 // line-height: 50px ;
     
                 .acapits{
@@ -757,7 +761,7 @@
                     // opacity: 0;
                     // transition: .5s ease-in-out;
                     background-image: url(../pictures/SSV_Rama.jpg);
-                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
                     background-size: cover;
                     background-position: 15% 0%;
                     border-radius: 5px;
@@ -796,7 +800,6 @@
                 .text_2{
                     width: 90%;
                     height: auto;
-                    text-align: justify;
                     font-size: 17px;
                     padding-top: 6vw;
                     padding-bottom: 6vw;
@@ -846,7 +849,7 @@
                     background-position: 50% 0%;
                     background-size: cover;
                     border-radius: 5px;
-                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
+                    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 80%, transparent 100%);
                     width: 80%;
                     margin: 0vh 5vw 2vh 5vw;
                     height: 57vw;

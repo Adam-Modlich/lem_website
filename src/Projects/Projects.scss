@@ -1,5 +1,10 @@
 @import '../variables.scss';
 
+p{
+    hyphens: auto;
+}
+
+
 @media screen and (min-width: $laptop){
     .pageContainer{
         min-height: auto;
@@ -173,18 +178,19 @@
 
             p{
                 height: auto;
+                text-align: justify;
                 margin: auto 10%;
                 width: 80%;
-                font-size: 20px;
+                font-size: 2.7vw;
             }
             
             .projectTitle{
                 // position: relative;
                 // top: 0%;
                 // left: 0%;
-                margin: 5% 0% 0% 0%;
+                margin: 5% 0% 3% 0%;
                 height: 10%;
-                font-size: 40px;
+                font-size: 6vw;
                 text-align: center;
                 color: white;
                 z-index: 2;
@@ -192,7 +198,7 @@
             }
 
             .projectTitleDesc{
-                font-size: 2.5vw;
+                font-size: 3.5vw;
                 margin: 0% 0% 3% 0%;
                 font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
             }
@@ -225,7 +231,7 @@
                     h1{
                         height: auto;
                         margin: 0%;
-                        font-size: 3vw;
+                        font-size: 4vw;
 
                     }
 
@@ -296,7 +302,7 @@
                 height: auto;
                 text-align:justify;
                 // padding: 0% 5%;
-                font-size: 15px;
+                font-size: 3vw;
             }
             
             .projectTitle{
@@ -305,6 +311,8 @@
                 text-align: center;
                 color: white;
                 z-index: 2;
+                padding-bottom: 3%;
+                font-size: 7vw ;
             }
 
             .projectTitleDesc{
@@ -328,13 +336,13 @@
                     z-index: 1;
 
                     h1{
-                        font-size: 27px;
+                        font-size: 5vw;
                         height: auto;
                         margin: 0%;
                     }
 
                     h4{
-                        font-size: 20px;
+                        font-size: 4vw;
                         padding-bottom: 10px;
                         margin: 0%;
                         height: auto;

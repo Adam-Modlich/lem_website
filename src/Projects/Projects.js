@@ -96,7 +96,7 @@ export default function Projects(){
             <div className='text'>
                 <h1 className="projectTitle">Photon</h1>
                 <h4 className='projectTitleDesc'>Motocykl elektryczny klasy Moto3</h4>
-                <p>LEM Photon jest pierwszym w Polsce elektrycznym motocyklem szosowym w pełni zbudowanym przez studentów Politechniki Wrocławskiej. Prototyp został zaprojektowany i skonstruowany z myślą o udziale w międzynarodowych zawodach MotoStudent 2021, studenckiego odpowiednika MotoGP.
+                <p lang="en">LEM Photon jest pierwszym w Polsce elektrycznym motocyklem szosowym w pełni zbudowanym przez studentów Politechniki Wrocławskiej. Prototyp został zaprojektowany i skonstruowany z myślą o udziale w międzynarodowych zawodach MotoStudent 2021, studenckiego odpowiednika MotoGP.
                 LEM Photon okazał się być dumą projektu LEM Wrocław i przyczynił się do zdobycia przez zespół tytułu Koła Naukowego Roku 2021 według Studenckiego Ruchu Naukowego.
                 Motocykl odwiedził już wiele torów w Polsce, w tym Tor Poznań oraz Tor Krzywa. Podbił także te zagraniczne - w Hiszpanii na MotorLandzie Aragón oraz we Włoszech na Autodromo Enzo e Dino Ferrari gdzie uzyskał wysokie lokaty.
 
@@ -110,7 +110,7 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>kW</h1>
+                        )}</CountUp> kW</h1>
                         <h4 className="valueIs">Moc</h4>
                     </div>
                     <div className='iconsProjects'>
@@ -118,8 +118,8 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>km/h</h1>
-                        <h4 className="valueIs">Prędkość Maksymalna</h4>
+                        )}</CountUp> km/h</h1>
+                        <h4 className="valueIs">Prędkość max.</h4>
 
                     </div>
                     <div className='iconsProjects'>
@@ -127,7 +127,7 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>kg</h1>
+                        )}</CountUp> kg</h1>
                         <h4 className="valueIs">Masa</h4>
 
                     </div>
@@ -136,7 +136,7 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>km</h1>
+                        )}</CountUp> km</h1>
                         <h4 className="valueIs">Zasięg</h4>
 
                     </div>
@@ -151,7 +151,7 @@ export default function Projects(){
             <div className='text'>
                 <h1 className="projectTitle">Thunder v2</h1>
                 <h4 className='projectTitleDesc'>Terenowy motocykl elektryczny</h4>
-                <p>LEM Thunder v2 jest optymalizacją poprzedzającego go projektu, czyli prototypu elektrycznego motocykla crossowego. Jest to motocykl własnoręcznie wykonany przez studentów Politechniki Wrocławskiej. Został dedykowany osobom pragnącym poczuć emocje towarzyszące rajdom oraz jeździe terenowej. Wziął wielokrotnie udział w międzynarodowych zawodach Smart Moto Challenge, gdzie osiągał wysokie noty w wielu kategoriach. Projekt LEM Thunder v2 to także propozycja dla instytucji państwowych takich jak Straż Graniczna, strzegąca granicy na terenach leśnych i górzystych oraz Straż Parków Narodowych, posiadająca pod opieką ogromne tereny leśne, w których silniki nie są dozwolone. 
+                <p lang="en">LEM Thunder v2 jest optymalizacją poprzedzającego go projektu, czyli prototypu elektrycznego motocykla crossowego. Jest to motocykl własnoręcznie wykonany przez studentów Politechniki Wrocławskiej. Został dedykowany osobom pragnącym poczuć emocje towarzyszące rajdom oraz jeździe terenowej. Wziął wielokrotnie udział w międzynarodowych zawodach Smart Moto Challenge, gdzie osiągał wysokie noty w wielu kategoriach. Projekt LEM Thunder v2 to także propozycja dla instytucji państwowych takich jak Straż Graniczna, strzegąca granicy na terenach leśnych i górzystych oraz Straż Parków Narodowych, posiadająca pod opieką ogromne tereny leśne, w których silniki nie są dozwolone. 
                 Jednoślad projektu LEM Wrocław jest przeznaczony także do dróg asfaltowych - wymaga jedynie zmiany opon. To klasyfikuje go do użytku w każdych warunkach.
 </p>
                 <div className="iconsContainer">
@@ -160,16 +160,25 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>kW</h1>
+                        )}</CountUp> kW</h1>
                         <h4 className="valueIs">Moc</h4>
+                    </div>
+                    <div className='iconsProjects'>
+                        <h1 className="value"><CountUp end={90} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                            </VisibilitySensor>
+                        )}</CountUp> km</h1>
+                        <h4 className="valueIs">Zasięg</h4>
+
                     </div>
                     <div className='iconsProjects'>
                         <h1 className="value"><CountUp end={120} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>km/h</h1>
-                        <h4 className="valueIs">Prędkość Maksymalna</h4>
+                        )}</CountUp> km/h</h1>
+                        <h4 className="valueIs">Prędkość max.</h4>
 
                     </div>
                     <div className='iconsProjects'>
@@ -177,19 +186,11 @@ export default function Projects(){
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>kg</h1>
+                        )}</CountUp> kg</h1>
                         <h4 className="valueIs">Masa</h4>
 
                     </div>
-                    <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={90} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
-                            <VisibilitySensor onChange={start} delayedCall>
-                                <span ref={countUpRef} />
-                            </VisibilitySensor>
-                        )}</CountUp>km</h1>
-                        <h4 className="valueIs">Zasięg</h4>
-
-                    </div>
+                    
                 </div>
             </div>
             <div className='switchButton'>
@@ -200,7 +201,7 @@ export default function Projects(){
         <div className="parents3 parents">
             <div className=' text'>
                 <h1 className="projectTitle">LEM SSV</h1>
-                <p>LEM SSV jest pionierskim projektem w szeregach zespołu LEM Wrocław z uwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie w innowacyjnym, zero emisyjnym projekcie.
+                <p lang="en">LEM SSV jest pionierskim projektem w szeregach zespołu LEM Wrocław z uwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie w innowacyjnym, zero emisyjnym projekcie.
 LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony w napęd 4x4 z możliwością przełączenia na napęd 2x4, LEM SSV będzie w stanie sprostać wyzwaniom zarówno w terenie, jak i na szosie. </p>
                 <div className="iconsContainer">
                 <div className='iconsProjects'>
@@ -208,8 +209,17 @@ LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoj
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>s</h1>
+                        )}</CountUp> s</h1>
                         <h4 className="valueIs">Przyspieszenie<br/> 0-100 km/h</h4>
+
+                    </div>
+                    <div className='iconsProjects'>
+                        <h1 className="value"><CountUp end={280} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                            <VisibilitySensor onChange={start} delayedCall>
+                                <span ref={countUpRef} />
+                            </VisibilitySensor>
+                        )}</CountUp> Nm</h1>
+                        <h4 className="valueIs">Moment obrotowy</h4>
 
                     </div>
                     <div className='iconsProjects'>
@@ -217,24 +227,16 @@ LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoj
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>kW</h1>
+                        )}</CountUp> kW</h1>
                         <h4 className="valueIs">Moc</h4>
                     </div>
-                    <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={280} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
-                            <VisibilitySensor onChange={start} delayedCall>
-                                <span ref={countUpRef} />
-                            </VisibilitySensor>
-                        )}</CountUp>Nm</h1>
-                        <h4 className="valueIs">Moment obrotowy</h4>
-
-                    </div>
+                    
                     <div className='iconsProjects'>
                         <h1 className="value"><CountUp end={90} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp>km</h1>
+                        )}</CountUp> km</h1>
                         <h4 className="valueIs">Zasięg</h4>
 
                     </div>

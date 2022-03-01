@@ -8,7 +8,7 @@ export default function Footer(){
         <>
         <footer>
             <div className='contactLeft'>
-                <h1 style={{paddingBottom:"10px"}}>Skontaktuj się z nami</h1>
+                <h1 style={{paddingBottom:"10px"}}>Skontaktuj się <br/> z nami</h1>
 
                 <h3>Michał Skraburski (Team Leader)</h3>
                 <h4>michal.skraburski@gmail.com</h4>

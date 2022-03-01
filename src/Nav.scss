@@ -1,5 +1,24 @@
 @import 'variables.scss';
 
+@media screen and (max-height: 500px){
+  .navbar{
+    height: 50px !important;
+    grid-template-rows: 50px !important;
+
+    img{
+      height: 40px !important;
+      width: 110px !important;
+    }
+  }
+
+  .divNavbar{
+    height: 50px !important;
+  }
+
+  .optionList{
+    top:50px !important;
+  }
+}
 .navbar{
   font-family: 'Shippori Antique', sans-serif;
   position: fixed;
@@ -111,6 +130,10 @@
   }
 }
 
+.divNavbar{
+  height: 81px;
+}
+
 @media screen and (max-width: $Tablet) {
   .navbar {
     grid-template-columns: 5% 20% 60% 10% 5%;
@@ -149,10 +172,11 @@
       position: fixed;
       top: 80px;
       overflow-x: hidden;
-      overflow: hidden;
+      overflow-y: auto; 
       left:0;
       transition: 0.5s;
       background-color: black;
+      max-height: 80vh;
 
       ul{
         padding: 0;
@@ -161,9 +185,10 @@
         margin: 0;
 
         li{
+          font-size: 20px;
           display: block;
           width:fit-content;
-          margin: 15px auto;
+          margin: 20px auto;
           text-align: center;
           color:white;
           list-style-type: none;

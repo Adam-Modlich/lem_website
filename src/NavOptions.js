@@ -1,5 +1,6 @@
 import './Nav.scss';
 import React from 'react';
+// import $ from jQuery;
 import {
   NavLink,
 } from "react-router-dom";
@@ -24,17 +25,21 @@ const linkStyleSpecial = {
   color: "rgb(250,212,27)"
 };
 
+const ScrollToTop = () => {
+  window.scrollTo(0,0);
+}
+
 export default function NavOptions({isOpen, isClosing}){
     return(
       <>
         <div className="optionList">
           <ul>
-            <li><NavLink exact activeClassName="active" to="/aboutUs" style={linkStyle} onClick={isClosing}>O Nas</NavLink></li>
+            <li onClick={ScrollToTop}><NavLink exact activeClassName="active" to="/aboutUs" style={linkStyle} onClick={isClosing}>O Nas</NavLink></li>
             {/* <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li> */}
-            <li><NavLink exact activeClassName="active" to="/Projects" style={linkStyle} onClick={isClosing}>Projekty</NavLink></li>
-            <li><NavLink to="/Wojcik" style={linkStyleSpecial} onClick={isClosing}>Wójcik Race</NavLink></li>
-            <li><NavLink exact activeClassName="active" to="/TrustUs" style={linkStyle} onClick={isClosing}>Wspierają Nas</NavLink></li>
-            <li><NavLink exact activeClassName="active" to="/ContactUs" style={linkStyle} onClick={isClosing}>Kontakt</NavLink></li>
+            <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/Projects" style={linkStyle} onClick={isClosing} >Projekty</NavLink></li>
+            <li onClick={ScrollToTop} ><NavLink to="/Wojcik" style={linkStyleSpecial} onClick={isClosing}>Wójcik Race</NavLink></li>
+            <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/TrustUs" style={linkStyle} onClick={isClosing}>Wspierają Nas</NavLink></li>
+            <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/ContactUs" style={linkStyle} onClick={isClosing}>Kontakt</NavLink></li>
             <li className="iconsMobile">
               <a href="https://www.facebook.com/LEMWroclaw" className="fa fa-facebook" target="_blank" onClick={isClosing}></a>
               <a href="https://www.instagram.com/lemwroclaw/" className="fa fa-instagram" target="_blank" onClick={isClosing}></a>
@@ -54,7 +59,7 @@ export default function NavOptions({isOpen, isClosing}){
       <style jsx>{`
           
           .optionList{
-            height: ${ isOpen ? '350px' : '0'};
+            height: ${ isOpen ? '420px' : '0'};
           }
 
           .optionList li{

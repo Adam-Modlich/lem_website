@@ -92,9 +92,9 @@ export default function AboutUs(){
                     </div>
                     <div className="text_1">
                     <h1 className="acapits">Kim Jesteśmy?</h1>
-                        <p>
+                        <p lang="en">
                             Jesteśmy grupą 50 studentów działających jako Koło Naukowe Pojazdów i Robotów Mobilnych. 
-                            Tworzymy projekt Light Electric Motorcycle (LEM Wrocław) pod patronatem Politechniki Wrocławskiej. <br />
+                            Tworzymy projekt Light Electric Motorcycle (LEM Wrocław) pod patronatem Politechniki Wrocławskiej.
                             Projektujemy i budujemy od podstaw motocykle elektryczne, 
                             jednak w tym roku postanowiliśmy stworzyć coś zupełnie nowego, czyli elektryczny pojazd terenowy typu buggy (projekt LEM SSV).
                         </p>
@@ -108,7 +108,7 @@ export default function AboutUs(){
                       </div>
                       <div className="text_2">
                       <h1 className="acapits">Co Robimy?</h1>
-                          <p>
+                          <p lang="en">
                               Od 2013 roku bierzemy udział w międzynarodowych zawodach SmartMoto Challenge. Są to prestiżowe, międzynarodowe zawody motocykli elektrycznych, w których rywalizują ze sobą uczelnie z całego świata. Podczas 7 edycji zdobyliśmy 9 złotych, 5 srebrnych oraz 2 brązowe medale.
                           </p>
                           </div>
@@ -214,7 +214,7 @@ export default function AboutUs(){
                       </div>
                       <div className="text_3">
                       <h1 className="acapits">Nasz Kierowca</h1>
-                          <p>
+                          <p lang="en">
                           Szeregi projektu LEM Wrocław wspiera utalentowany i młody kierowca, Krzysztof Borys. Dzięki niemu zespół mógł podjąć się realizacji projektu LEM Photon, przy którego realizacji czerpali z jego wiedzy oraz doświadczenia.
                           Kojarzony bardziej pod pseudonimem Mały Kris, swoją przygodę z motocyklami zaczął w wieku 5 lat. Szybko zmieniła się ona w pasję, a wkrótce w życie zawodowe Krisa. Tworzy rodzinną markę MotoKenner oraz oferuje rzetelne szkolenia motocyklowe na swoim torze.
                           </p>

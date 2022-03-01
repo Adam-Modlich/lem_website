@@ -147,7 +147,7 @@
         border-radius: 10px;
         text-align: center;
         background: linear-gradient(to right, #aa1f70, red 50%, rgb(250,212,27) 50%);
-        background-size: 200% 100%;
+        background-size: 200% 90%;
         background-position: 100%;
         transition: background-position 0.3s ease;
 
@@ -171,7 +171,8 @@
 @media screen and (max-width: $mobile){
     .wojcikRacePage{
         font-family: 'Quicksand', sans-serif;
-        // margin-top: 0vh;
+        // margin-top: ;
+        // padding-top: 10px;
         height: auto;
         background-color: rgb(250,212,27);
 
@@ -182,7 +183,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            margin: 10% 0%;
+            margin: 0% 0 10% 0%;
         }
 
         img{
