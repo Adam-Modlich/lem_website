@@ -10,10 +10,10 @@ export default function Footer(){
             <div className='contactLeft'>
                 <h1 style={{paddingBottom:"10px"}}>Skontaktuj się <br/> z nami</h1>
 
-                <h3>Michał Skraburski (Team Leader)</h3>
+                <h3>Michał&nbsp;Skraburski&nbsp;(Team&nbsp;Leader)</h3>
                 <h4>michal.skraburski@gmail.com</h4>
 
-                <h3>Iza Stanula (Marketing)</h3>
+                <h3>Iza&nbsp;Stanula&nbsp;(Marketing)</h3>
                 <h4>iza.stanula@gmail.com</h4>
             </div>
 
@@ -23,7 +23,7 @@ export default function Footer(){
                             <span><i className='fa fa-phone fa-fw'></i></span>
                             <span className='text'>
                                 <h1>Telefon</h1>
-                                <p>+48 500 474 573</p>
+                                <p>+48&nbsp;500&nbsp;474&nbsp;573</p>
                             </span>
                         </div>
                         <div className='icon2'>
@@ -31,7 +31,7 @@ export default function Footer(){
                             <span className='text'>
                                 <h1>Mail</h1>
                                 <p>
-                                    ul. Smoluchowskiego 25 <br/>
+                                    ul.&nbsp;Smoluchowskiego&nbsp;25 <br/>
                                     50-372 Wrocław
                                 </p>
                             </span>

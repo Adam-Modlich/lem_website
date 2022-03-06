@@ -42,7 +42,7 @@ export default function Contact(){
             <div className='contactLeft'>
                 <h1 style={{paddingBottom:"10px"}}>Napisz do nas</h1>
 
-                <h3>Michał&nbsp;Skraburski (Team Leader)</h3>
+                <h3>Michał&nbsp;Skraburski <br/>(Team Leader)</h3>
                 <h4>michal.skraburski1999@gmail.com</h4>
 
                 <h3>Iza&nbsp;Stanula (Marketing)</h3>
