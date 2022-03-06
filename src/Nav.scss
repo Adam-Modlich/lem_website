@@ -1,5 +1,28 @@
 @import 'variables.scss';
 
+@media screen and (max-height: 600px){
+  .optionList{
+    overflow-y: auto !important;
+    --scrollbarBG: black;
+    --thumbBG: #555a5f;
+  }
+  .optionList::-webkit-scrollbar {
+    width: 9px;
+  }
+  .optionList {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  .optionList::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  .optionList::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 2.5px solid var(--scrollbarBG);
+  }
+}
+
 @media screen and (max-height: 500px){
   .navbar{
     height: 50px !important;
@@ -96,11 +119,11 @@
   }
 
   .fa-instagram:hover{
-    color: violet;
+    color: rgb(193,53,132);
   }
 
   .fa-facebook:hover{
-    color:rgb(104, 180, 224);
+    color:rgb(66, 103, 178);
   }
 
   .fa-tiktok:hover{
@@ -108,7 +131,7 @@
   }
 
   .fa-linkedin:hover{
-    color: rgb(0, 17, 255);
+    color: rgb(40,103,178);
   }
 }
 
@@ -172,7 +195,7 @@
       position: fixed;
       top: 80px;
       overflow-x: hidden;
-      overflow-y: auto; 
+      overflow-y:hidden; 
       left:0;
       transition: 0.5s;
       background-color: black;

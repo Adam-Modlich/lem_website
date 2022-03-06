@@ -2,8 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
 
-@media screen and (min-width: $laptop) {
 
+@media screen and (min-width: $laptop) {
+    .copyright{
+        position: absolute;
+        bottom: 3%;
+        // left: 50%;
+        text-align: center;
+        font-size: 0.9vw;
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+    @media screen and (max-height: 600px){
+        .footer{
+            height: calc(100vh - 50px) !important;
+        }
+    
+    }
     .footer{
         display: flex;
         flex-direction: row;
@@ -21,18 +37,18 @@
         line-height: 1.5em;
 
         .contactLeft{
-            width: 30%;
+            width: 25%;
             // padding-top: 70px;
-            padding-right: 0%;
+            padding-right: 5%;
             // padding-bottom: 70px;
-            padding-left: 0%;
+            padding-left: 5%;
         }
 
         .contactRight{
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 40%;
+            width: 35%;
             // padding-top: 70px;
             padding-right: 2.5%;
             // padding-bottom: 70px;
@@ -45,14 +61,14 @@
             height: auto;
 
             img{
-                height: 400px;
+                height: 350px;
                 margin-bottom: 5%;
             }
         }
 
         h1{
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 35px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: center;
@@ -60,14 +76,14 @@
 
         h3{
             // text-transform: uppercase;
-            font-size: 30px;
+            font-size: 25px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: center;
         }
 
         h4{
-            font-size: 20px;
+            font-size: 17px;
             line-height: 1.5em;
             text-align: center;
         }
@@ -76,6 +92,15 @@
             width: 80%;
             margin: 3% 10% 3% 10%;
             height: 80%;
+
+            .icon{
+                padding-bottom: 10%;
+            }
+
+            h1{
+                margin-bottom: 0px;
+                padding-bottom: 0%;
+            }
 
             div{
                 display: flex;
@@ -90,21 +115,24 @@
                     border: 1px solid white;
                     background-color: white;
                     border-radius: 50%;
-                    padding: 20px;
+                    padding: 10px;
                     font-size: 1.7em;
                     height: auto;
                 }
 
                 .text{
                     color: white;
-                    padding-left: 10%;
+                    padding-left: 8%;
 
                     h1{
+                        margin: 0% 0% 2% 0%;
                         font-size: 2em;
                         text-align: left !important;
                     }
 
                     p{
+                        margin: 0%;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                         font-size: 1.3em;
                     }
                 }
@@ -153,11 +181,22 @@
         letter-spacing: 1px;
         // line-height: 1.5em;
 
+        .copyright{
+            position: absolute;
+            bottom: 1%;
+            // left: 50%;
+            text-align: center;
+            font-size: 1.5vw;
+            width: 100%;
+            height: auto;
+            padding: 0%;
+        }
+        
         .contactLeft{
             width: 50%;
             padding-top: 30px;
             // padding-right: 5%;
-            padding-bottom: 70px;
+            padding-bottom: 10px;
             // padding-left: 5%;
         }
 
@@ -168,7 +207,7 @@
             width: 50%;
             // padding-top: 30px;
             // padding-right: 5%;
-            padding-bottom: 70px;
+            padding-bottom: 10px;
             // padding-left: 5%;
             
         }
@@ -183,13 +222,13 @@
 
             img{
                 height: 20vw;
-                margin-bottom: 5%;
+                padding-bottom: 5%;
             }
         }
 
         h1{
             // text-transform: uppercase;
-            font-size: 4vw;
+            font-size: 3.2vw;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: center;
@@ -197,15 +236,15 @@
 
         h3{
             // text-transform: uppercase;
-            font-size: 3vw;
+            font-size: 2.4vw;
             letter-spacing: 2px;
-            line-height: 1.5em;
+            line-height: 1.3em;
             text-align: center;
         }
 
         h4{
-            font-size: 2vw;
-            line-height: 1.5em;
+            font-size: 1.6vw;
+            line-height: 1.3em;
             text-align: center;
             padding-bottom: 10%;
         }
@@ -218,6 +257,10 @@
             width: 90%;
             margin: 3% 5% 3% 5%;
             height: auto;
+
+            .icon{
+                padding-bottom: 10%;
+            }
 
             div{
                 display: flex;
@@ -232,8 +275,8 @@
                     border: 1px solid white;
                     background-color: white;
                     border-radius: 50%;
-                    padding: 15px;
-                    font-size: 3vw;
+                    padding: 17px;
+                    font-size: 2.3vw;
                     height: auto;
                 }
 
@@ -242,13 +285,16 @@
                     padding-left: 10%;
 
                     h1{
-                        font-size: 4vw;
+                        font-size: 2.5vw;
                         text-align: left !important;
+                        margin: 0%;
                     }
 
                     p{
-                        font-size: 2.5vw;
+                        margin: 0%;
+                        font-size: 1.7vw;
                         text-align: left !important;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                     }
                 }
                 
@@ -300,6 +346,17 @@
             // padding-left: 10%;
         }
 
+        .copyright{
+            position: absolute;
+            bottom: 0%;
+            // left: 50%;
+            text-align: center;
+            font-size: 1.8vw;
+            width: 100%;
+            height: auto;
+            padding: 0%;
+        }
+
         .contactRight{
             display: flex;
             justify-content: center;
@@ -335,7 +392,7 @@
             // text-transform: uppercase;
             font-size: 4vw;
             letter-spacing: 2px;
-            line-height: 1em;
+            line-height: 1.5em;
             text-align: center;
         }
 
@@ -352,7 +409,7 @@
             // flex-direction: row;
             // flex-wrap: wrap;
             width: 100%;
-            margin: 2% 0% 2% 0%;
+            margin: 2% 0% 0% 0%;
             height: auto;
 
             .icon1{
@@ -381,11 +438,12 @@
                     background-color: white;
                     border-radius: 50%;
                     padding: 12px;
-                    font-size: 3vw;
+                    font-size: 4vw;
                     height: auto;
                 }
 
                 .text{
+                    padding-top: 5% !important;
                     color: white;
                     padding: 0%;
 
@@ -397,6 +455,7 @@
                     p{
                         text-align: center !important;
                         font-size: 2.5vw;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                     }
                 }
                 

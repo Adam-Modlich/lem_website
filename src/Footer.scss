@@ -4,6 +4,7 @@
 
 @media screen and (min-width: $laptop) {
 
+
     footer{
         display: flex;
         flex-direction: row;
@@ -22,9 +23,9 @@
 
         .contactLeft{
             width: 30%;
-            padding-top: 70px;
+            padding-top: 20px;
             padding-right: 5%;
-            padding-bottom: 70px;
+            padding-bottom: 20px;
             padding-left: 5%;
         }
 
@@ -33,11 +34,14 @@
             flex-direction: row;
             align-items: center;
             width: 50%;
-            padding-top: 70px;
+            // padding-top: 70px;
             padding-right: 5%;
-            padding-bottom: 70px;
+            // padding-bottom: 70px;
             padding-left: 5%;
 
+            .icons{
+
+            }
             img{
                 height: 280px;
             }
@@ -45,7 +49,7 @@
 
         h1{
             text-transform: uppercase;
-            font-size: 35px;
+            font-size: 30px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
@@ -53,7 +57,7 @@
 
         h3{
             // text-transform: uppercase;
-            font-size: 25px;
+            font-size: 20px;
             letter-spacing: 2px;
             // padding-bottom: 0;
             margin-bottom: 10px;
@@ -62,7 +66,7 @@
         }
 
         h4{
-            font-size: 20px;
+            font-size: 15px;
             padding-bottom: 30px;
             margin-top: 0;
             // line-height: 1.5em;
@@ -71,7 +75,7 @@
 
         .icons{
             width: 60%;
-            margin: 3% 10% 3% 10%;
+            margin: 3% 20% 3% 0%;
             height: 80%;
 
             div{
@@ -87,7 +91,7 @@
                     background-color: white;
                     border-radius: 50%;
                     padding: 14px;
-                    font-size: 1.7em;
+                    font-size: 1.5em;
                     height: auto;
                 }
 
@@ -96,15 +100,27 @@
                     padding-left: 10%;
 
                     h1{
-                        font-size: 2em;
+                        font-size: 1.6em;
                     }
 
                     p{
-                        font-size: 1.2em;
+                        font-size: 1.1em;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                     }
                 }
                 
             }
+        }
+
+        .copyrightFooter{
+            position: absolute;
+            bottom: 1%;
+            // left: 50%;
+            text-align: center;
+            font-size: 0.8vw;
+            width: 100%;
+            height: auto;
+            padding: 0%;
         }
 
     }
@@ -147,11 +163,22 @@
         letter-spacing: 1px;
         line-height: 1.5em;
 
+        .copyrightFooter{
+            position: absolute;
+            bottom: 0%;
+            // left: 50%;
+            text-align: center;
+            font-size: 0.8vw;
+            width: 100%;
+            height: auto;
+            padding: 0%;
+        }
+
         .contactLeft{
             width: 30%;
-            padding-top: 40px;
+            padding-top: 20px;
             padding-right: 0%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
             padding-left: 5%;
         }
 
@@ -160,20 +187,19 @@
             justify-content: center;
             align-items: center;
             width: 55%;
-            padding-top: 40px;
+            padding-top: 20px;
             padding-right: 5%;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
             padding-left: 5%;
 
             img{
-                
                 height: 150px;
             }
         }
 
         h1{
             text-transform: uppercase;
-            font-size: 2.7vw;
+            font-size: 1.8vw;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
@@ -181,14 +207,17 @@
 
         h3{
             // text-transform: uppercase;
-            font-size: 1.8vw;
+            font-size: 1.4vw;
+            margin: 0%;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
         }
 
         h4{
-            font-size: 1.4vw;
+            margin: 0%;
+            padding-bottom: 10%;
+            font-size: 1vw;
             line-height: 1.5em;
             text-align: left;
         }
@@ -197,6 +226,10 @@
             width: 90%;
             margin: 3% 5% 3% 5%;
             height: auto;
+
+            .icon1{
+                padding-bottom: 10% ;
+            }
 
             div{
                 display: flex;
@@ -208,8 +241,8 @@
                     border: 1px solid white;
                     background-color: white;
                     border-radius: 50%;
-                    padding: 14px;
-                    font-size: 1.2em;
+                    padding: 1.2vw;
+                    font-size: 2vw;
                     height: auto;
                 }
 
@@ -218,11 +251,16 @@
                     padding-left: 10%;
 
                     h1{
-                        font-size: 2vw;
+                        font-size: 1.5vw;
+                        margin: 0%;
+
                     }
 
                     p{
-                        font-size: 1.6vw;
+                        margin: 0%;
+                        font-size: 1.2vw;
+                        line-height: 1.4em;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
                     }
                 }
                 
@@ -266,12 +304,23 @@
         letter-spacing: 1px;
         line-height: 1.5em;
 
+        .copyrightFooter{
+            position: absolute;
+            bottom: 0%;
+            // left: 50%;
+            text-align: center;
+            font-size: 2vw;
+            width: 100%;
+            height: auto;
+            padding: 0%;
+        }
+
         .contactLeft{
             text-align: center !important;
             width: 80%;
             padding-top: 20px;
             padding-right: 10%;
-            padding-bottom: 20px;
+            // padding-bottom: 20px;
             padding-left: 10%;
         }
 
@@ -281,18 +330,19 @@
             align-items: center;
             flex-direction: column;
             width: 100%;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin-top: -30px;
+            // padding-bottom: 20px;
 
             img{
                 height: 170px;
+                padding-bottom: 20%;
             }
         }
 
         h1{
             text-align: center !important;
             text-transform: uppercase;
-            font-size: 25px;
+            font-size: 23px;
             letter-spacing: 2px;
             line-height: 1.5em;
             text-align: left;
@@ -309,7 +359,7 @@
 
         h4{
             text-align: center !important;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 1.5em;
             text-align: left;
         }
@@ -321,17 +371,17 @@
             // flex-direction: row;
             // flex-wrap: wrap;
             width: 100%;
-            margin: 3% 0% 3% 0%;
+            margin: 0% 0% 3% 0%;
             height: auto;
 
             .icon1{
                 width: 50%;
-                padding:3%;
+                // padding:3%;
             }
 
             .icon2{
                 width: 50%;
-                padding: 3%;
+                // padding: 3%;
             }
 
             div{
@@ -357,6 +407,7 @@
                 .text{
                     color: white;
                     padding: 0%;
+                    padding-top: 5%;
 
                     h1{
                         text-align: center;
@@ -381,7 +432,7 @@
         left: 0;
         right: 0;
         background-image: url(../src/pictures/photon_on_track.jpg);
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 20%, transparent 100%);
         opacity: 0.15;
         z-index: -1;
         background-position: 50% 25%;

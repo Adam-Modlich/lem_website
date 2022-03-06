@@ -201,6 +201,7 @@ export default function Projects(){
         <div className="parents3 parents">
             <div className=' text'>
                 <h1 className="projectTitle">LEM SSV</h1>
+                <h4 className='projectTitleDesc'>Beach Buggy</h4>
                 <p lang="en">LEM SSV jest pionierskim projektem w szeregach zespołu LEM Wrocław z uwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie w innowacyjnym, zero emisyjnym projekcie.
 LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony w napęd 4x4 z możliwością przełączenia na napęd 2x4, LEM SSV będzie w stanie sprostać wyzwaniom zarówno w terenie, jak i na szosie. </p>
                 <div className="iconsContainer">

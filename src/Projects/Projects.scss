@@ -113,7 +113,7 @@ p{
         top: 0%;
         left: 0%;
         visibility: visible;
-        background-image: url(../pictures/Photon_premiera.jpg);
+        background-image: url(../pictures/photonv4.jpg);
         background-size: cover;
         background-position: 0% 50%;
     }
@@ -168,6 +168,24 @@ p{
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
     }
 
+    @media screen and (min-height: 900px) {
+        .text{
+            
+            p{
+                font-size: 2.6vw !important;
+            }
+
+            .projectTitle{
+                font-size: 6vw!important;
+            }
+
+            .projectTitleDesc{
+                font-size: 4vw !important;
+                margin: 0% 0% 3% 0%;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+            }
+        }
+    }
     .parents{
         width: 100%;
         // margin-top:8vh;
@@ -177,13 +195,13 @@ p{
         justify-content: center;
         flex-direction: column;
         flex-wrap: wrap;
-
+        
         .text{
             text-align: center;
             // position: relative;
             background: rgba(0,0,0,0.6);
-            font-size: 1.5vw;
-            width: 80%;
+            font-size: 1.2vw;
+            width: 90%;
             height: auto;
             color: white;
             margin: 5% 0%;
@@ -194,16 +212,16 @@ p{
                 text-align: justify;
                 margin: auto 10%;
                 width: 80%;
-                font-size: 2.7vw;
+                font-size: 1.8vw;
             }
             
             .projectTitle{
                 // position: relative;
                 // top: 0%;
                 // left: 0%;
-                margin: 5% 0% 3% 0%;
-                height: 10%;
-                font-size: 6vw;
+                margin: 2% 0% 3% 0%;
+                height: auto;
+                font-size: 5vw;
                 text-align: center;
                 color: white;
                 z-index: 2;
@@ -211,7 +229,7 @@ p{
             }
 
             .projectTitleDesc{
-                font-size: 3.5vw;
+                font-size: 3vw;
                 margin: 0% 0% 3% 0%;
                 font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
             }
@@ -221,7 +239,7 @@ p{
                 // bottom: 0;
                 // left: 0;
                 width: 90%;
-                margin: 10% 5%;
+                margin: 5% 5%;
                 height: auto;
                 display: flex;
                 flex-direction: row;
@@ -262,9 +280,9 @@ p{
         top: 0%;
         left: 0%;
         visibility: visible;
-        background-image: url(../pictures/Photon_premiera.jpg);
+        background-image: url(../pictures/photonv4.jpg);
         background-size: cover;
-        background-position: 0% 50%;
+        background-position: 50% 30%;
     }
 
     .parents2{
@@ -315,7 +333,7 @@ p{
                 height: auto;
                 text-align:justify;
                 // padding: 0% 5%;
-                font-size: 3vw;
+                font-size: 2.6vw;
             }
             
             .projectTitle{
@@ -324,12 +342,12 @@ p{
                 text-align: center;
                 color: white;
                 z-index: 2;
-                padding-bottom: 3%;
-                font-size: 7vw ;
+                padding-bottom: 1%;
+                font-size: 6vw ;
             }
 
             .projectTitleDesc{
-                font-size: 4vw;
+                font-size: 3.5vw;
                 margin: 0% 0% 3% 0%;
             }
 

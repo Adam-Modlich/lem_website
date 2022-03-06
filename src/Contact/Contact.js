@@ -43,7 +43,7 @@ export default function Contact(){
                 <h1 style={{paddingBottom:"10px"}}>Napisz do nas</h1>
 
                 <h3>Michał&nbsp;Skraburski <br/>(Team Leader)</h3>
-                <h4>michal.skraburski1999@gmail.com</h4>
+                <h4>michalskraburski1999@gmail.com</h4>
 
                 <h3>Iza&nbsp;Stanula (Marketing)</h3>
                 <h4>izabellastanula@gmail.com</h4>
@@ -51,17 +51,17 @@ export default function Contact(){
 
                 <div className='contactRight'> 
                     <div className='icons'>
-                        <div className='icon1'>
+                        <div className='icon'>
                             <span><i className='fa fa-phone fa-fw'></i></span>
                             <span className='text'>
                                 <h1>Telefon</h1>
-                                <p>+48&nbsp;500&nbsp;474&nbsp;573</p>
+                                <p>+48&nbsp;697&nbsp;612&nbsp;009</p>
                             </span>
                         </div>
-                        <div className='icon2'>
+                        <div className='icon'>
                             <span><i className='fa fa-map-marker fa-fw'></i></span>
                             <span className='text'>
-                                <h1>Mail</h1>
+                                <h1>Adres</h1>
                                 <p>
                                     ul.&nbsp;Smoluchowskiego&nbsp;25 <br/>
                                     50-372&nbsp;Wrocław
@@ -74,6 +74,7 @@ export default function Contact(){
                 <div className='icon3'>
                     <img src={pwr}></img>
                 </div>
+                <div className='copyright'>Copyright© 2021 Designed by Adam Modlich +48 500 474 573</div>
         </div>
         </>
     )
