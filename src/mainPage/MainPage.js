@@ -29,12 +29,12 @@ export default function mainPage(){
                     <p id="para1">
                         <h4>NEWEST PROJECT</h4>
                         <h1>FAST AND FURIOUS SSV</h1>
-                        <p className="shortText" lang="pl-PL">Mocny i ekologiczny - taki jest właśnie LEM SSV. Zespół LEM Wrocław po raz pierwszy stworzył terenowy pojazd czterokołowy, będący wizją przyszłości zeroemisyjnych Rajdów Dakar. Proces twórczy przy zasadach zero waste, a efekt końcowy dający potężną dawkę emocji. Czy może być lepiej?</p>  
+                        <p className="shortText" lang="pl-PL">Mocny i&nbsp;ekologiczny - taki jest właśnie LEM SSV. Zespół LEM Wrocław po raz pierwszy stworzył terenowy pojazd czterokołowy, będący wizją przyszłości zeroemisyjnych Rajdów Dakar. Proces twórczy przy zasadach zero waste, a&nbsp;efekt końcowy dający potężną dawkę emocji. Czy może być lepiej?</p>  
                     </p>
                     <p id="para2">
                         <h4>PREVIOUS PROJECT</h4>
                         <h1>PHOTON SPEED AND POWER</h1>
-                        <p className="shortText" lang="pl-PL">Podbił hiszpański MotorLand Aragón, a na koncie ma już podium na torze F1 we Włoszech. To jednak możliwe, że studencki prototyp wyciąga nawet 200km/h. Poznaj innowacyjny projekt LEM Photon - pierwszy polski elektryczny motocykl szosowy zbudowany w pełni przez studentów Politechniki Wrocławskiej. </p>  
+                        <p className="shortText" lang="pl-PL">Podbił hiszpański MotorLand Aragón, a&nbsp;na koncie ma już podium na torze F1 we Włoszech. To jednak możliwe, że studencki prototyp wyciąga nawet 200km/h. Poznaj innowacyjny projekt LEM Photon - pierwszy polski elektryczny motocykl szosowy zbudowany w&nbsp;pełni przez studentów Politechniki Wrocławskiej. </p>  
                     </p>
                 </div>
                 <ChangePicture />

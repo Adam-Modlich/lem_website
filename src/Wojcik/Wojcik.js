@@ -19,7 +19,7 @@ return(
                         <h3>Wójcik Electric Race</h3> to kategoria Mistrzostw Polski obejmująca konkurencje motocykli elektrycznych dla najlepszych drużyn studenckich z całego świata.
                     </p>
                 <p>
-                    Podczas trzech dni na torze uczestnicy będą rywalizować w testach dynamicznych, których zwieńczeniem będą dwa wyścigi.
+                    Podczas trzech dni na torze uczestnicy będą rywalizować w&nbsp;testach dynamicznych, których zwieńczeniem będą dwa wyścigi.
                 </p>
 
                 <div className="registrationForm">
@@ -31,7 +31,7 @@ return(
     </div>
         <div className='wREndText'>
             <p>
-                Nieocenione doświadczenie sobyliśmy organizując Wrocław Smart Moto Challenge. <br/>Są to międzynarodowe zawody motocykli elektrycznych, w których uczestniczyły<br/> najlepsze zespoły studentów.
+                Nieocenione doświadczenie zdobyliśmy organizując Wrocław Smart Moto Challenge. <br/>Są to międzynarodowe zawody motocykli elektrycznych, w&nbsp;których uczestniczyły<br/> najlepsze zespoły studentów.
             </p>
         </div>
     <Footer/>

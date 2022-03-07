@@ -96,9 +96,9 @@ export default function Projects(){
             <div className='text'>
                 <h1 className="projectTitle">Photon</h1>
                 <h4 className='projectTitleDesc'>Motocykl elektryczny klasy Moto3</h4>
-                <p lang="en">LEM Photon jest pierwszym w Polsce elektrycznym motocyklem szosowym w pełni zbudowanym przez studentów Politechniki Wrocławskiej. Prototyp został zaprojektowany i skonstruowany z myślą o udziale w międzynarodowych zawodach MotoStudent 2021, studenckiego odpowiednika MotoGP.
-                LEM Photon okazał się być dumą projektu LEM Wrocław i przyczynił się do zdobycia przez zespół tytułu Koła Naukowego Roku 2021 według Studenckiego Ruchu Naukowego.
-                Motocykl odwiedził już wiele torów w Polsce, w tym Tor Poznań oraz Tor Krzywa. Podbił także te zagraniczne - w Hiszpanii na MotorLandzie Aragón oraz we Włoszech na Autodromo Enzo e Dino Ferrari gdzie uzyskał wysokie lokaty.
+                <p lang="en">LEM Photon jest pierwszym w&nbsp;Polsce elektrycznym motocyklem szosowym w&nbsp;pełni zbudowanym przez studentów Politechniki Wrocławskiej. Prototyp został zaprojektowany i&nbsp;skonstruowany z&nbsp;myślą o&nbsp;udziale w&nbsp;międzynarodowych zawodach MotoStudent 2021, studenckiego odpowiednika MotoGP.
+                LEM Photon okazał się być dumą projektu LEM Wrocław i&nbsp;przyczynił się do zdobycia przez zespół tytułu Koła Naukowego Roku 2021 według Studenckiego Ruchu Naukowego.
+                Motocykl odwiedził już wiele torów w Polsce, w&nbsp;tym Tor Poznań oraz Tor Krzywa. Podbił także te zagraniczne - w&nbsp;Hiszpanii na MotorLandzie Aragón oraz we Włoszech na Autodromo Enzo e&nbsp;Dino Ferrari gdzie uzyskał wysokie lokaty.
 
                 {/* LEM Wrocław startował z tym projektem we wspomnianych międzynarodowych zawodach MotoStudent 2021, gdzie uzyskał tytuł Best Rookie Team oraz zajął 6 miejsce w klasyfikacji generalnej na 46 zespołów studenckich z całego świata. 
                 Po znakomitych wynikach uzyskanych w Hiszpanii, zespół został zaproszony z projektem LEM Photon na pierwszą edycję międzynarodowych zawodów Moto Engineering Italy, gdzie stanął na podium zajmując III miejsce.
@@ -151,7 +151,7 @@ export default function Projects(){
             <div className='text'>
                 <h1 className="projectTitle">Thunder v2</h1>
                 <h4 className='projectTitleDesc'>Terenowy motocykl elektryczny</h4>
-                <p lang="en">LEM Thunder v2 jest optymalizacją poprzedzającego go projektu, czyli prototypu elektrycznego motocykla crossowego. Jest to motocykl własnoręcznie wykonany przez studentów Politechniki Wrocławskiej. Został dedykowany osobom pragnącym poczuć emocje towarzyszące rajdom oraz jeździe terenowej. Wziął wielokrotnie udział w międzynarodowych zawodach Smart Moto Challenge, gdzie osiągał wysokie noty w wielu kategoriach. Projekt LEM Thunder v2 to także propozycja dla instytucji państwowych takich jak Straż Graniczna, strzegąca granicy na terenach leśnych i górzystych oraz Straż Parków Narodowych, posiadająca pod opieką ogromne tereny leśne, w których silniki nie są dozwolone. 
+                <p lang="en">LEM Thunder v2 jest optymalizacją poprzedzającego go projektu, czyli prototypu elektrycznego motocykla crossowego. Jest to motocykl własnoręcznie wykonany przez studentów Politechniki Wrocławskiej. Został dedykowany osobom pragnącym poczuć emocje towarzyszące rajdom oraz jeździe terenowej. Wziął wielokrotnie udział w&nbsp;międzynarodowych zawodach Smart Moto Challenge, gdzie osiągał wysokie noty w&nbsp;wielu kategoriach. Projekt LEM Thunder v2 to także propozycja dla instytucji państwowych takich jak Straż Graniczna, strzegąca granicy na terenach leśnych i&nbsp;górzystych oraz Straż Parków Narodowych, posiadająca pod opieką ogromne tereny leśne, w&nbsp;których silniki nie są dozwolone. 
                 Jednoślad projektu LEM Wrocław jest przeznaczony także do dróg asfaltowych - wymaga jedynie zmiany opon. To klasyfikuje go do użytku w każdych warunkach.
 </p>
                 <div className="iconsContainer">
@@ -201,9 +201,9 @@ export default function Projects(){
         <div className="parents3 parents">
             <div className=' text'>
                 <h1 className="projectTitle">LEM SSV</h1>
-                <h4 className='projectTitleDesc'>Beach Buggy</h4>
-                <p lang="en">LEM SSV jest pionierskim projektem w szeregach zespołu LEM Wrocław z uwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie w innowacyjnym, zero emisyjnym projekcie.
-LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony w napęd 4x4 z możliwością przełączenia na napęd 2x4, LEM SSV będzie w stanie sprostać wyzwaniom zarówno w terenie, jak i na szosie. </p>
+                <h4 className='projectTitleDesc'>Side by side vehicle</h4>
+                <p lang="en">LEM SSV jest pionierskim projektem w&nbsp;szeregach zespołu LEM Wrocław z&nbsp;uwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w&nbsp;procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie w&nbsp;innowacyjnym, zero emisyjnym projekcie.
+LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony w&nbsp;napęd 4x4 z&nbsp;możliwością przełączenia na napęd 2x4, LEM SSV będzie w&nbsp;stanie sprostać wyzwaniom zarówno w&nbsp;terenie, jak i&nbsp;na szosie. </p>
                 <div className="iconsContainer">
                 <div className='iconsProjects'>
                         <h1 className="value"><CountUp end={3} duration={1.5} redraw={true}>{({ countUpRef, start }) => (

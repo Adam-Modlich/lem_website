@@ -82,7 +82,7 @@ export default function AboutUs(){
         <div className="about">
             <div className="aboutContent">
                 <div className="Container_1">
-                    <h1> Light Electronic Motorcycle </h1>
+                    <h1> Light Electric Motorcycle </h1>
                       <a><i className="fa fa-angle-double-right"></i></a>
                 </div>
                 <div className="parent1">
@@ -93,10 +93,10 @@ export default function AboutUs(){
                     <div className="text_1">
                     <h1 className="acapits">Kim Jesteśmy?</h1>
                         <p lang="en">
-                            Jesteśmy grupą 50 studentów działających jako Koło Naukowe Pojazdów i Robotów Mobilnych. 
+                            Jesteśmy grupą 50 studentów działających jako Koło Naukowe Pojazdów i&nbsp;Robotów Mobilnych. 
                             Tworzymy projekt Light Electric Motorcycle (LEM Wrocław) pod patronatem Politechniki Wrocławskiej.
-                            Projektujemy i budujemy od podstaw motocykle elektryczne, 
-                            jednak w tym roku postanowiliśmy stworzyć coś zupełnie nowego, czyli elektryczny pojazd terenowy typu buggy (projekt LEM SSV).
+                            Projektujemy i&nbsp;budujemy od podstaw motocykle elektryczne, 
+                            jednak w&nbsp;tym roku postanowiliśmy stworzyć coś zupełnie nowego, czyli elektryczny pojazd terenowy typu buggy (projekt LEM SSV).
                         </p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ export default function AboutUs(){
                       <div className="text_2">
                       <h1 className="acapits">Co Robimy?</h1>
                           <p lang="en">
-                              Od 2013 roku bierzemy udział w międzynarodowych zawodach SmartMoto Challenge. Są to prestiżowe, międzynarodowe zawody motocykli elektrycznych, w których rywalizują ze sobą uczelnie z całego świata. Podczas 7 edycji zdobyliśmy 9 złotych, 5 srebrnych oraz 2 brązowe medale.
+                              Od 2013 - 2019 roku bierzemy udział w&nbsp;międzynarodowych zawodach SmartMoto Challenge. Są to prestiżowe, międzynarodowe zawody motocykli elektrycznych, w&nbsp;których rywalizują ze sobą uczelnie z&nbsp;całego świata. Podczas 7 edycji zdobyliśmy 9 złotych, 5 srebrnych oraz 2 brązowe medale.
                           </p>
                           </div>
                   </div>
@@ -215,8 +215,8 @@ export default function AboutUs(){
                       <div className="text_3">
                       <h1 className="acapits">Nasz Kierowca</h1>
                           <p lang="en">
-                          Szeregi projektu LEM Wrocław wspiera utalentowany i młody kierowca, Krzysztof Borys. Dzięki niemu zespół mógł podjąć się realizacji projektu LEM Photon, przy którego realizacji czerpali z jego wiedzy oraz doświadczenia.
-                          Kojarzony bardziej pod pseudonimem Mały Kris, swoją przygodę z motocyklami zaczął w wieku 5 lat. Szybko zmieniła się ona w pasję, a wkrótce w życie zawodowe Krisa. Tworzy rodzinną markę MotoKenner oraz oferuje rzetelne szkolenia motocyklowe na swoim torze.
+                          Szeregi projektu LEM Wrocław wspiera utalentowany i&nbsp;młody kierowca, Krzysztof Borys. Dzięki niemu zespół mógł podjąć się realizacji projektu LEM Photon, przy którego realizacji czerpali z&nbsp;jego wiedzy oraz doświadczenia.
+                          Kojarzony bardziej pod pseudonimem Mały Kris, swoją przygodę z&nbsp;motocyklami zaczął w&nbsp;wieku 5 lat. Szybko zmieniła się ona w&nbsp;pasję, a&nbsp;wkrótce w&nbsp;życie zawodowe Krisa. Tworzy rodzinną markę MotoKenner oraz oferuje rzetelne szkolenia motocyklowe na swoim torze.
                           </p>
                       </div>
                   </div>

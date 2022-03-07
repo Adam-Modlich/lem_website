@@ -11,9 +11,9 @@ export default function Footer(){
                 <h1 style={{paddingBottom:"10px"}}>Skontaktuj się <br/> z nami</h1>
 
                 <h3>Michał&nbsp;Skraburski&nbsp;(Team&nbsp;Leader)</h3>
-                <h4>michalskraburski1999@gmail.com</h4>
+                <h4>skraburski.michal@gmail.com</h4>
 
-                <h3>Iza&nbsp;Stanula&nbsp;(Marketing)</h3>
+                <h3>Iza&nbsp;Stanula&nbsp;(Marketing Leader)</h3>
                 <h4>izabellastanula@gmail.com</h4>
             </div>
 

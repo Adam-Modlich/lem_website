@@ -90,7 +90,7 @@
             background-image: url("../pictures/drużyna.jpg");
             opacity: 0.4;
             z-index: -1;
-            background-position: 0% 70%;
+            background-position: 0% 65%;
             background-size: cover;
         }
 
@@ -391,6 +391,52 @@
     }}
     
     @media screen and (max-width: $Tablet) {
+
+        @media screen and (max-height: 500px){
+            .aboutContent{
+                h1{
+                    font-size: 5vw !important;
+                }
+                .fa{
+                    font-size: 50px !important;                    
+                }
+
+                .Container_3, .Container_5{
+                    flex-direction: row !important;
+                }
+
+                .Container_3, .Container_4, .Container_5{
+                    padding: 7vh 0 7vh 0 !important;
+        
+                    .acapits{
+                        font-size: 3.2vw !important;
+                    }
+    
+                    p{
+                        font-size: 1.4vw !important;
+                    }
+                }
+
+                .image_1{
+                    width:50%!important;
+                    height: 35vw!important;
+                }
+
+                .text_1{
+                    width: 30% !important;
+                }
+
+                .image_7{
+                    width:50%!important;
+                    height: 35vw!important;
+                }
+
+                .text_3{
+                    width: 30% !important;
+                }
+            }
+        }
+
         .aboutContent{
             display: flexbox;
             flex-direction: column;

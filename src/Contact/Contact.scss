@@ -310,9 +310,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url(../pictures/photon_on_track.jpg);
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 20%, transparent 100%);
-        opacity: 0.15;
+        background-image: url("../pictures/photon_on_track.jpg");
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 30%, transparent 100%);
+        opacity: 0.20;
         z-index: -1;
         background-position: 50% 25%;
         transform: scaleX(-1);
@@ -357,6 +357,31 @@
             padding: 0%;
         }
 
+        @media screen and (max-height: 600px) {
+            h1{
+                font-size: 3vw !important;
+            }
+            h3{
+                font-size: 2vw !important;
+            }
+            h4{
+                font-size: 1.6vw !important;
+                padding-bottom: 4% !important;
+            }
+            p{
+                font-size: 2vw !important;
+            }
+            .fa{
+                font-size: 2vw !important;
+            }
+
+            .icon{
+                padding-bottom: 2%!important;
+            }
+            img{
+                height: 200px!important;
+            }
+        }
         .contactRight{
             display: flex;
             justify-content: center;

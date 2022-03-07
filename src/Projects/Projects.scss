@@ -169,6 +169,8 @@ p{
     }
 
     @media screen and (min-height: 900px) {
+        .pageContainer{
+
         .text{
             
             p{
@@ -184,7 +186,29 @@ p{
                 margin: 0% 0% 3% 0%;
                 font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
             }
-        }
+        }}
+    }
+
+    @media screen and (max-height: 500px){
+        .parents{
+            .text{
+                p{
+                    font-size: 1.6vw !important;
+                    width: 90%!important;
+                    margin: 0 5% !important;
+                }
+
+                .projectTitle{
+                    font-size: 4vw!important;
+                    margin-bottom: 1% !important;
+                }
+
+                .projectTitleDesc{
+                    font-size: 2.5vw !important;
+                    margin-bottom: 1% !important;
+                    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+                }
+            }}
     }
     .parents{
         width: 100%;

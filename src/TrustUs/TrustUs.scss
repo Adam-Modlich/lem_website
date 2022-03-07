@@ -106,6 +106,10 @@
     @media screen and (max-height: 500px){
         .tuTitle::before{
             top:50px !important;
+            height: 200px!important;
+        }
+        .tuTitle{
+            height: 200px!important;
         }
     }
 
@@ -217,9 +221,7 @@
             top:50px !important;
         }
 
-        // .tuTitle{
-        //     height: 170px !important;
-        // }
+        
     }
 
     .tuContainer{
