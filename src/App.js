@@ -6,7 +6,6 @@ import Projects from './Projects/Projects.js';
 import TrustUs from './TrustUs/TrustUs.js';
 import Wojcik from './Wojcik/Wojcik.js';
 import {
-  BrowserRouter as Router,
   Routes,
   HashRouter,
   Route,
@@ -25,6 +24,7 @@ function App() {
     <>
     <HashRouter> 
     <Nav/>
+      <div style={{height: "100%"}}>
       <Routes>
         <Route exact path="/" element={<MainPage/>}/>
         <Route exact path="/aboutus" element={<AboutUs/>}/>
@@ -35,6 +35,7 @@ function App() {
         <Route exact path="/ContactUs" element={<Contact/>}/>
 
       </Routes>
+      </div>
     </HashRouter> 
     </>
   );

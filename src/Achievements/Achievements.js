@@ -1,6 +1,5 @@
 import '../Achievements/Achievements.scss';
 import Footer from '../Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Achievements(){
 

@@ -20,7 +20,7 @@ export default function mainPage(){
         <div className="mainSite">
             <div className="projects">
                 <div className="slides">
-                    <img id="picture" src={SSVpicture} style={{visibility:"visible"}}></img>
+                    <img id="picture1" src={SSVpicture} style={{visibility:"visible"}}></img>
                     <img id="picture2" src={PhotonPicture}></img>
                 </div>
                 <div className="description">
