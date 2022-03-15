@@ -5,94 +5,25 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 export default function Projects(){
 
-    const switchPictureRight = () => {
+    const switchPictureRight = (number) => {
         let activeVisible;
-        let i = 1;
+        let i = 0;
         for(i; i<4; i++){
             if($(`.parents${(i)}`).css("visibility") == "visible"){
                 activeVisible = i;
             }
         }
-        
         $(`.parents${(activeVisible)}`).css("visibility", "hidden");
-        if(activeVisible == 2){
-            $(`.parents3`).css({visibility: "visible"});
-            $(`.parents3`).animate({left:0+"px"});
-            $(`.parents1`).css({visibility: "hidden"});
-            $(`.parents${((activeVisible+2)%3)}`).css({left: $(window).width()});
-            $(`.parents${activeVisible}`).css({left: (-1)*$(window).width()});
-        }
-        else if(activeVisible == 1){
-            $(`.parents${((activeVisible+1)%3)}`).css({visibility: "visible"});
-            $(`.parents${((activeVisible+1)%3)}`).animate({left:0+"px"});
-            $(`.parents3`).css({left: $(window).width()});
-            $(`.parents${activeVisible}`).css({left: (-1)*$(window).width()});
-            
-        }
-        else{
-            $(`.parents${((activeVisible+2)%3)}`).css({left: $(window).width()});
-            $(`.parents${activeVisible}`).css({left: (-1)*$(window).width()});
-            $(`.parents1`).animate({left:0+"px"});
-            $(`.parents1`).css({visibility: "visible"});
-        }      
-        
-        
+        $(`.parents${((activeVisible+1+number)%3)}`).animate({left:0+"px"});
+        $(`.parents${((activeVisible+1+number)%3)}`).css({visibility: "visible"});
+        $(`.parents${((activeVisible+2+number)%3)}`).css({left: $(window).width()});    
+        $(`.parents${((activeVisible+number)%3)}`).css({left: (-1)*$(window).width()});
     }
-
-    const switchPictureLeft = () => {
-        let activeVisible;
-        let i = 1;
-        for(i; i<4; i++){
-            if($(`.parents${(i)}`).css("visibility") == "visible"){
-                activeVisible = i;
-            }
-        }
-        
-        $(`.parents${(activeVisible)}`).css("visibility", "hidden");
-        if(activeVisible == 2){
-            $(`.parents1`).css({visibility: "visible"});
-            $(`.parents1`).animate({left:0+"px"});
-            $(`.parents3`).css({visibility: "hidden"});
-            $(`.parents${activeVisible}`).css({left: $(window).width()});
-            $(`.parents3`).css({left: (-1)*$(window).width()});
-        }
-        else if(activeVisible == 1){
-            $(`.parents3`).css({visibility: "visible"});
-            $(`.parents3`).animate({left:0+"px"});
-            $(`.parents1`).css({left: $(window).width()});
-            $(`.parents2`).css({left: (-1)*$(window).width()});
-            
-        }
-        else{
-            $(`.parents3`).css({left: $(window).width()});
-            $(`.parents1`).css({left: (-1)*$(window).width()});
-            $(`.parents2`).animate({left:0+"px"});
-            $(`.parents2`).css({visibility: "visible"});
-        }  
-
-    }
-
-    function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-
 
     return(
         <>
         <div className='pageContainer'>
-        <div className="parents1 parents">
+        <div className="parents0 parents">
             <div className='text'>
                 <h1 className="projectTitle">Photon</h1>
                 <h4 className='projectTitleDesc'>Motocykl elektryczny klasy Moto3</h4>
@@ -106,7 +37,7 @@ export default function Projects(){
                 </p>
                 <div className="iconsContainer">
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={57} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={57} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -114,7 +45,7 @@ export default function Projects(){
                         <h4 className="valueIs">Moc</h4>
                     </div>
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={200} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={200} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -123,7 +54,7 @@ export default function Projects(){
 
                     </div>
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={140} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={140} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -132,7 +63,7 @@ export default function Projects(){
 
                     </div>
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={90} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={90} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -143,11 +74,11 @@ export default function Projects(){
                 </div>
             </div>
             <div className='switchButton'>
-                <i className='fa fa-angle-double-right' onClick={switchPictureRight} style={{fontSize:"60px"}}></i>
-                <i className='fa fa-angle-double-left' onClick={switchPictureLeft} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-right' onClick={() => switchPictureRight(0)} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-left' onClick={() => switchPictureRight(1)} style={{fontSize:"60px"}}></i>
             </div>
         </div>
-        <div className="parents2 parents">
+        <div className="parents1 parents">
             <div className='text'>
                 <h1 className="projectTitle">Thunder v2</h1>
                 <h4 className='projectTitleDesc'>Terenowy motocykl elektryczny</h4>
@@ -194,11 +125,11 @@ export default function Projects(){
                 </div>
             </div>
             <div className='switchButton'>
-                <i className='fa fa-angle-double-right' onClick={switchPictureRight} style={{fontSize:"60px"}}></i>
-                <i className='fa fa-angle-double-left' onClick={switchPictureLeft} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-right' onClick={() => switchPictureRight(0)} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-left' onClick={() => switchPictureRight(1)} style={{fontSize:"60px"}}></i>
             </div>
         </div>
-        <div className="parents3 parents">
+        <div className="parents2 parents">
             <div className=' text'>
                 <h1 className="projectTitle">LEM SSV</h1>
                 <h4 className='projectTitleDesc'>Side by side vehicle</h4>
@@ -206,7 +137,7 @@ export default function Projects(){
 LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony w&nbsp;napęd 4x4 z&nbsp;możliwością przełączenia na napęd 2x4, LEM SSV będzie w&nbsp;stanie sprostać wyzwaniom zarówno w&nbsp;terenie, jak i&nbsp;na szosie. </p>
                 <div className="iconsContainer">
                 <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={3} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={5} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -224,7 +155,7 @@ LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoj
 
                     </div>
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={109} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={80} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -233,20 +164,20 @@ LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoj
                     </div>
                     
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={90} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={80} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
-                        )}</CountUp> km</h1>
-                        <h4 className="valueIs">Zasięg</h4>
+                        )}</CountUp></h1>
+                        <h4 className="valueIs">KM</h4>
 
                     </div>
                     
                 </div>
             </div>
             <div className='switchButton'>
-                <i className='fa fa-angle-double-right' onClick={switchPictureRight} style={{fontSize:"60px"}}></i>
-                <i className='fa fa-angle-double-left' onClick={switchPictureLeft} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-right' onClick={() => switchPictureRight(0)} style={{fontSize:"60px"}}></i>
+                <i className='fa fa-angle-double-left' onClick={() => switchPictureRight(1)} style={{fontSize:"60px"}}></i>
             </div>
         </div>
         </div>

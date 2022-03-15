@@ -109,7 +109,7 @@ export default function AboutUs(){
                       <div className="text_2">
                       <h1 className="acapits">Co Robimy?</h1>
                           <p lang="en">
-                              Od 2013 - 2019 roku bierzemy udział w&nbsp;międzynarodowych zawodach SmartMoto Challenge. Są to prestiżowe, międzynarodowe zawody motocykli elektrycznych, w&nbsp;których rywalizują ze sobą uczelnie z&nbsp;całego świata. Podczas 7 edycji zdobyliśmy 9 złotych, 5 srebrnych oraz 2 brązowe medale.
+                          Nasz zespół głównie skupia się na przygotowaniach do międzynarodowych zawodów motocykli elektrycznych. Można nas spotkać na targach oraz eventach motocyklowych. Odwiedzamy różne tory, gdzie testujemy nasze projekty.  Prężnie się rozwijamy, biorąc udział w&nbsp;innych konkursach zarówno lokalnych, jak i&nbsp;zagranicznych. Działamy także charytatywnie.                          
                           </p>
                           </div>
                   </div>

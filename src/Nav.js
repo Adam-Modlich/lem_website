@@ -25,25 +25,10 @@ export default function Nav(){
         setHamburgerOpen(false)
     }
 
-    let height = $('.navbar:visible').css('height');
-
-    $(document).on('ready', function(){
-        height = $('.navbar:visible').css('height') // will give you css height
-    });
-
-    // const scrollBeh = () => {
-    //     setTimeout(
-    //         function(){
-    //             $(".optionList").css("overflow-y", "auto");
-    //         }, 500
-    //     );
-    // }
-
-
     return(
         <div className="divNavbar" style={{position: "relative", top: "0%", width: "100%"}}>
         <div className="navbar">
-            <Link to="/" style={linkStyle} className="divImgNavbar"><img src={picture} className="imgNavbar"></img></Link>
+            <Link to="/" style={linkStyle} onClick={closeHamburger} className="divImgNavbar"><img src={picture} className="imgNavbar"></img></Link>
             <div className="hamburgerMenu" onClick={toggleHamburger}>
                 <Hamburger isOpen={hamburgerOpen}/>
             </div>
