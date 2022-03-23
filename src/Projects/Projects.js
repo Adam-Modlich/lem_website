@@ -37,7 +37,7 @@ export default function Projects(){
                 </p>
                 <div className="iconsContainer">
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={57} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={42} duration={1.5} redraw={false}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -87,7 +87,7 @@ export default function Projects(){
 </p>
                 <div className="iconsContainer">
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={40} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={30} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>
@@ -164,7 +164,7 @@ LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoj
                     </div>
                     
                     <div className='iconsProjects'>
-                        <h1 className="value"><CountUp end={80} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
+                        <h1 className="value"><CountUp end={109} duration={1.5} redraw={true}>{({ countUpRef, start }) => (
                             <VisibilitySensor onChange={start} delayedCall>
                                 <span ref={countUpRef} />
                             </VisibilitySensor>

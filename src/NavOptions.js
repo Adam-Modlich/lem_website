@@ -36,7 +36,7 @@ export default function NavOptions({isOpen, isClosing}){
         <div className="optionList">
           <ul>
             <li onClick={ScrollToTop}><NavLink exact activeClassName="active" to="/aboutUs" style={linkStyle} onClick={isClosing}>O Nas</NavLink></li>
-            {/* <li><Link to="/Achievements" style={linkStyle}>Osiągnięcia</Link></li> */}
+            {/* <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/Achievements" style={linkStyle} onClick={isClosing} >Osiągnięcia</NavLink></li>    */}
             <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/Projects" style={linkStyle} onClick={isClosing} >Projekty</NavLink></li>
             <li onClick={ScrollToTop} ><NavLink to="/Wojcik" style={linkStyleSpecial} onClick={isClosing}>Wójcik Electric Race</NavLink></li>
             <li onClick={ScrollToTop} ><NavLink exact activeClassName="active" to="/TrustUs" style={linkStyle} onClick={isClosing}>Wspierają Nas</NavLink></li>

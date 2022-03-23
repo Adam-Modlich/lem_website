@@ -1,81 +1,45 @@
 import '../AboutUs/aboutUs.scss';
+import { useState } from 'react';
+import tło from '../pictures/tłov7.jpg'
+import tłod from '../pictures/tłov7d.jpg'
+import tłor from '../pictures/tłov7r.jpg'
+import tłop from '../pictures/tłov7p.jpg'
+import tłob from '../pictures/tłov7b.jpg'
 
-// import elek from '../AboutUs/Departments/R_elektronika.png';
-// import prez from '../AboutUs/Departments/R_prezes_koła.png';
-// import lider from '../AboutUs/Departments/R_lider_Photon.png';
-// import kons from '../AboutUs/Departments/R_konstrukcja.png';
-// import mark from '../AboutUs/Departments/R_marketing.png';
-// import mech from '../AboutUs/Departments/R_mechanika.png';
-// import zaw from '../AboutUs/Departments/R_zawieszenie.png';
+import elek from '../AboutUs/Departments/R_elektronika.png';
+import prez from '../AboutUs/Departments/R_prezes_koła.png';
+import lider from '../AboutUs/Departments/R_lider_Photon.png';
+import kons from '../AboutUs/Departments/R_konstrukcja.png';
+import mark from '../AboutUs/Departments/R_marketing.png';
+import mech from '../AboutUs/Departments/R_mechanika.png';
+import zaw from '../AboutUs/Departments/R_zawieszenie.png';
 
-// import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
-// import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
-// import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
-// import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
-// import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
-// import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
-// import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
-// import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
+import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
+import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
+import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
+import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
+import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
+import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
+import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
+import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
 
 
 
-// import $ from 'jquery';
+import $ from 'jquery';
 import Footer from '../Footer';
 
 export default function AboutUs(){
 
-  // let elekTitle = "Elektronika";
-  // let elekText = "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych."
-  // let elekName = "Piotr Wyszyński";
-
-  // let prezTitle = "Prezes Koła";
-  // let prezText = "góno"
-  // let prezName = "Michał Skraburski";
-
-  // let liderTitle = "Lider Photon";
-  // let liderText = "góno"
-
-  // let liderTitle2 = "Lider SSV";
-  // let liderText2 = "góno"
-
-  // let zawTitle = "Zawieszenie";
-  // let zawText = "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. "
-  // let zawName = "Damian Sazoński";
-
-  // let mechTitle = "Mechanika";
-  // let mechText = "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.";
-  // let mechName = "Albert Iwanicki";
-
-  // let konsTitle = "Konstrukcja";
-  // let konsText = "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.";
-  // let konsName = "Piotr Minta";
-
-  // let markTitle = "Marketing";
-  // let markText = "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ";
-  // let markName = "Izabela Stanula";
-
-
-      // const changeText = (title,texty,sourceImg,name) => {
-      //   $("#imgPlace").fadeOut("medium", function() {
-      //     $('#imgPlace').attr('src', sourceImg);
-      //   });
-      //   $("#imgPlace").fadeIn("slow");  
-
-      //   $("#beginText").fadeOut("medium", function() {
-      //     $('#beginText').text(texty);
-      //   });
-      //   $("#beginText").fadeIn("slow");  
-
-      //   $("#depAcapit").fadeOut("medium", function() {
-      //     $('#depAcapit').text(title);
-      //   });
-      //   $("#depAcapit").fadeIn("slow"); 
-
-      //   $("#bossName").fadeOut("medium", function() {
-      //     $('#bossName').text(name);
-      //   });
-      //   $("#bossName").fadeIn("slow"); 
-      // }
+  const [departments, setDepartments] = useState([
+    { title: "Prezes Koła",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "Zaczynał od kariery w Mechanice (połączonej jeszcze wtedy z Konstrukcją), następnie mógł się wykazać w Zawieszeniu oraz poczuć jak to jest być liderem w Marketingu, gdzie aktywnie zachęcał do poszukiwania nowych możliwości współpracy i pomagał członkom stawiać swoje “pierwsze kroki” - jak prawdziwy przywódca. Każdy z nas miał przyjemność pracować wspólnie z Michałem i wie, że jest to kumpel odpowiedzialny, chętny do pomocy i bardzo pracowity.", name: "Michał Skraburski", img: prezImg, id: 1},
+    // { title: "Lider Photon", text: "góno", name: "", img: liderPhotonImg, id: 2},
+    // { title: "Lider SSV", text: "góno", name: "", img: liderSSVImg, id: 3},
+    { title: "Elektronika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych.", name: "Piotr Wyszyński", img: elekImg, id: 4},
+    { title: "Zawieszenie",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. ", name: "Damian Sazoński", img: zawImg, id: 5},
+    { title: "Mechanika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.", name: "Albert Iwanicki", img: mechImg, id: 6},
+    { title: "Konstrukcja",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.", name: "Piotr Minta", img: konsImg, id: 7},
+    { title: "Marketing",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ", name: "Izabela Stanula", img: markImg, id: 8},
+  ])
 
     return(
         <>
@@ -114,7 +78,7 @@ export default function AboutUs(){
                           </div>
                   </div>
                 </div>
-                {/* <div className="parent3">
+                <div className="parent3">
                   <div className="Container_5">
                       <div className="image_3">
 
@@ -128,50 +92,23 @@ export default function AboutUs(){
                   </div>
                 </div>
                 <div className="parent3">
-                  <div className="Container_6">
+                    <div className="Container_6">
                       <div className='parentText_4'>
-                        <div className='departmentsText'>
+                      <h1 className='acapits'>Nasz Zespół</h1>
+                      {departments.map((dep) => (
+                        <div className='departmentsText' key={dep.id} style={{flexDirection: dep.styleT, textAlign: dep.styleTA, backgroundImage: dep.styleB }} >
                           <div className='depText'>
-                            <h1 className="acapits" id="depAcapit">Prezes Koła</h1>
+                            <h1 className="acapits" id="depAcapit" style={{textAlign: dep.styleTA}}>{dep.title}</h1>
                               <div className='textContentBoss'>
-                                <h2 id="bossName">Michał skraburski</h2>
-                                <p id='beginText'>
-                                  
-                                </p>
+                                <h2 id="bossName">{dep.name}</h2>
+                                <p id='beginText'>{dep.text}</p>
                               </div>
                           </div>
-                          <img src={prezImg} id="imgPlace"></img>
-                          <div className='depText2'>
-                            <h1 className="acapits" id="depAcapit2"></h1>
-                              <p id='beginText2'>
-                              </p>
-                          </div>
-                          <img src="" id="imgPlace2"></img>
-                        </div>
-                      </div>
-                      <div className='departmentsIcons'>
-                        <div onClick={() => changeText(prezTitle, prezText, prezImg, prezName)} className='prezIcon Icon'>
-                          <img src={prez} alt="Zdjęcie Prezesa"></img><h2>Prezes Koła</h2>
-                        </div>
-                        <div onClick={() => changeText(elekTitle,elekText,elekImg, elekName)} className='elekIcon Icon'>
-                          <img src={elek} alt="Zdjęcie Elektronika"></img><h2>Elektronika</h2>
-                        </div>
-                        <div onClick={() => changeText(konsTitle, konsText,konsImg, konsName)} className='konsIcon Icon'>
-                          <img src={kons} alt="Zdjęcie Konstrukcji"></img><h2>Konstrukcja</h2>
-                        </div>
-                        <div onClick={() => changeText(zawTitle, zawText,zawImg, zawName)} className='zawIcon Icon'>
-                          <img src={zaw} alt="Zdjęcie Zawieszenia"></img><h2>Zawieszenie</h2>
-                        </div>
-                        <div onClick={() => changeText(markTitle, markText,markImg, markName)} className='markIcon Icon'>
-                          <img src={mark} alt="Zdjęcie Marketingu"></img><h2>Marketing</h2>
-                        </div>
-                        <div onClick={() => changeText(mechTitle, mechText,mechImg, mechName)} className='mechIcon Icon'>
-                          <img src={mech} alt="Zdjęcie Mechaniki"></img><h2>Mechanika</h2>
-                        </div>
+                          <img src={dep.img} id="imgPlace"></img>
+                        </div>))}
                       </div>
 
                       <div className='departmentsTabletMobile'>
-                        <h1>Nasz Zespół</h1>
                         <div className='prezIcon Icon'>
                           <h2>Prezes Koła</h2>
                           <img src={prezImg} alt="Zdjęcie Prezesa"></img>
@@ -206,7 +143,7 @@ export default function AboutUs(){
                         </div>
                       </div>
                     </div>
-                </div> */}
+                  </div>
                 <div className="parent3">
                   <div className="Container_5">
                       <div className="image_7">
