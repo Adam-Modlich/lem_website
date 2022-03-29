@@ -157,88 +157,81 @@
   height: 81px;
 }
 
-@media screen and (max-width: $Tablet) {
-  .navbar {
-    grid-template-columns: 5% 20% 60% 10% 5%;
+@media screen and (min-width: $laptop) {
+  .hamburgerMenu{
+    display: none;
+  }
+
+  .navbar{
+    grid-template-columns: 5% 15% 3% 54% 3% 20% 2.5%;
     grid-template-rows: 81px;
-    background-color: black;
 
     img{
       width:150px;
       grid-column: 2;
       grid-row: 1;
-      padding: 6px 0px 2px 0px;
-    }
-
-    .hamburgerMenu{
-      display: block;
-      grid-column: 4;
-      grid-row: 1;
-      width: 30px;
-      margin: auto;
-      background-color: transparent;
-      cursor: pointer;
-      
-
-      div{
-        background-color: white;
-        height: 2px;
-        margin: 6px 0 6px 0;
-        transition: all 0.32s ease-in-out;
-      }
+      padding: 4px 0px 0px 0px;
     }
     
     .optionList{
-      scroll-behavior: smooth;
-      width:100%;
-      margin: 0;
-      position: fixed;
-      top: 80px;
-      overflow-x: hidden;
-      overflow-y:hidden; 
-      left:0;
-      transition: 0.5s;
-      background-color: black;
-      max-height: 80vh;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      height: auto;
+      // display: block;
+      grid-column: 4;
+      grid-row:1;
 
       ul{
-        padding: 0;
-        display: block;
         background-color: black;
-        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin: auto;
 
         li{
-          font-size: 20px;
-          display: block;
-          width:fit-content;
-          margin: 20px auto;
+          display: inline-block;
+          margin: 15px 1.5vw 15px 1.5vw !important;
           text-align: center;
           color:white;
           list-style-type: none;
-        }
-
-        a{
-          font-size: 25px;
-          padding:0;
-          display: inline-block;
-          margin-left:25px;
-          margin-right: 25px;
-          margin-bottom:10px;
+          font-size: 0.68vw !important; 
         }
       }
+      
+      .iconsMobile{
+        display: none;
+      }
     }
+  
+  .icons{
+    height: auto;
+    display: block;
+    grid-column: 6;
+    grid-row: 1;
+    background-color: black;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+
+      li{
+        display: inline-block;
+        margin: 15px 1vw 15px 1vw!important;
+        text-align: center;
+        color:white;
+        list-style-type: none;
+        font-size: 0.68vw!important;
+      }
     
-    .icons{
-      display: none;
-    }
+  }
+  
+  
+  
+  
   
   }
-
-  
-
 }
 
-@media screen and (min-width: $laptop) {
+@media screen and (min-width: $Tablet) {
   .hamburgerMenu{
     display: none;
   }
@@ -307,6 +300,87 @@
   }
 }
 
+@media screen and (max-width: $Tablet) {
+  .navbar {
+    grid-template-columns: 5% 20% 60% 10% 5%;
+    grid-template-rows: 81px;
+    background-color: black;
+
+    img{
+      width:150px;
+      grid-column: 2;
+      grid-row: 1;
+      padding: 6px 0px 2px 0px;
+    }
+
+    .hamburgerMenu{
+      display: block;
+      grid-column: 4;
+      grid-row: 1;
+      width: 30px;
+      margin: auto;
+      background-color: transparent;
+      cursor: pointer;
+      
+
+      div{
+        background-color: white;
+        height: 2px;
+        margin: 6px 0 6px 0;
+        transition: all 0.32s ease-in-out;
+      }
+    }
+    
+    .optionList{
+      scroll-behavior: smooth;
+      width:100%;
+      margin: 0;
+      position: fixed;
+      top: 80px;
+      overflow-x: hidden;
+      overflow-y:hidden; 
+      left:0;
+      transition: 0.5s;
+      background-color: black;
+      max-height: 80vh;
+      // height: auto !important;
+
+      ul{
+        padding: 0;
+        display: block;
+        background-color: black;
+        margin: 0;
+
+        li{
+          font-size: 20px;
+          display: block;
+          width:fit-content;
+          margin: 20px auto;
+          text-align: center;
+          color:white;
+          list-style-type: none;
+        }
+
+        a{
+          font-size: 25px;
+          padding:0;
+          display: inline-block;
+          margin-left:25px;
+          margin-right: 25px;
+          margin-bottom:10px;
+        }
+      }
+    }
+    
+    .icons{
+      display: none;
+    }
+  
+  }
+
+  
+
+}
 // @media screen and (max-width: $mobile) {
 //   .navbar img{
 //     // height: 300px;

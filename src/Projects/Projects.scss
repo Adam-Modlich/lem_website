@@ -16,8 +16,154 @@ p{
 //     font-family: 'Montserrat', sans-serif !important;
 //     font-weight: 900;
 // }
-
 @media screen and (min-width: $laptop){
+    .pageContainer{
+        // min-height: auto;
+        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+
+    }
+
+    .parents{
+        position: absolute;
+        width: 100%;
+        // margin-top:8vh;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .text{
+            position: relative;
+            background: rgba(0,0,0,0.6);
+            font-size: 1.3vw;
+            width: 90%;
+            height: 80%;
+            color: white;
+            margin: 0%;
+            padding: 0%;
+            // transition: 0.3s linear visibility;
+
+            
+            p{
+                position: absolute;
+                text-align: justify;
+                top: 0;
+                left: 0;
+                padding: 10% 10%;
+            }
+            
+            .projectTitle{
+                font-family: 'Racing Sans One', cursive;
+                position: relative;
+                top: 0%;
+                left: 0%;
+                text-align: center;
+                color: white;
+                z-index: 2;
+                margin-bottom: 0%;
+            }
+
+            .projectTitleDesc{
+                margin-bottom: 0%;
+                margin-top: 1%;
+                font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+            }
+
+            h4{
+                text-align: center;
+            }
+
+            .iconsContainer{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 90%;
+                margin: 2% 5%;
+                height: 13vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                .iconsProjects{
+                    width:calc(100%/4);
+                    text-align: center;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    z-index: 1;
+                    font-size: 0.8em;
+
+                    h1{
+                        // height: 50%;
+                        margin: 0%;
+                    }
+
+                    h4{
+                        margin: 0%;
+                        // height: 50%;
+                    }
+                }
+            }
+        }
+    }     
+    
+    .parents0{
+        top: 0%;
+        left: 0%;
+        visibility: visible;
+        background-image: url(../pictures/photonv4.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }
+
+    .parents1{
+        visibility: hidden;
+        left: 100%;
+        top: 0%;
+        background-image: url(../pictures/Thunder.jpg);
+        background-size: cover;
+        background-position: 0% 50%;
+    }  
+
+    .parents2{
+        visibility: hidden;
+        left: 200%;
+        top: 0%;
+        background-image: url(../pictures/SSV_podłoga.jpg);
+
+        background-size: cover;
+        background-position: 0% 50%;
+    }     
+
+    .fa-angle-double-right{
+        position: absolute;
+        top:50%;
+        right: 7%;
+        color: white;
+        transform: translateY(-50%);
+
+    }
+    
+    .fa-angle-double-right:hover{
+        cursor: pointer;
+    }
+
+    .fa-angle-double-left{
+        position: absolute;
+        top:50%;
+        left: 7%;
+        color: white;
+        transform: translateY(-50%);
+    }
+
+    .fa-angle-double-left:hover{
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: $Tablet){
     .pageContainer{
         min-height: auto;
         font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;

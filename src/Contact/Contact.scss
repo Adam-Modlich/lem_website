@@ -1,9 +1,166 @@
 @import '../variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
+@media screen and (min-width: $laptop){
+    .copyright{
+        position: absolute;
+        bottom: 3%;
+        // left: 50%;
+        text-align: center;
+        font-size: 0.9vw;
+        width: 100%;
+        height: auto;
+        padding: 0%;
+    }
+    @media screen and (max-height: 600px){
+        .footer{
+            height: calc(100vh - 50px) !important;
+        }
+    
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        height: calc(100vh - 81px);
+        width: auto;
+        // background-color: black;
+        background-color: black;
+        color: white;
+        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+        letter-spacing: 1px;
+        line-height: 1.5em;
 
+        .contactLeft{
+            width: 25%;
+            // padding-top: 70px;
+            padding-right: 5%;
+            // padding-bottom: 70px;
+            padding-left: 5%;
+        }
 
-@media screen and (min-width: $laptop) {
+        .contactRight{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 35%;
+            // padding-top: 70px;
+            padding-right: 2.5%;
+            // padding-bottom: 70px;
+            padding-left: 2.5%;
+        }
+
+        .icon3{
+            width: 20%;
+            margin: 0% 5% 0% 0%;
+            height: auto;
+
+            img{
+                height: 450px!important;
+                margin-bottom: 5%;
+            }
+        }
+
+        h1{
+            text-transform: uppercase;
+            font-size: 60px!important;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        h3{
+            // text-transform: uppercase;
+            font-size: 45px!important;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        h4{
+            font-size: 30px!important;
+            line-height: 1.5em;
+            text-align: center;
+        }
+
+        .icons{
+            width: 80%;
+            margin: 3% 10% 3% 10%;
+            height: 80%;
+
+            .icon{
+                padding-bottom: 10%;
+            }
+
+            h1{
+                margin-bottom: 0px;
+                padding-bottom: 0%;
+            }
+
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                
+
+                .fa{
+                    color: black;
+                    border: 1px solid white;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 20px!important;
+                    font-size: 2.5em!important;
+                    height: auto;
+                }
+
+                .text{
+                    color: white;
+                    padding-left: 8%;
+
+                    h1{
+                        margin: 0% 0% 2% 0%;
+                        font-size: 2.7em!important;
+                        line-height: 55px!important;
+                        text-align: left !important;
+                    }
+
+                    p{
+                        margin: 0%;
+                        font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+                        font-size: 1.7em!important;
+                        line-height: 40px!important;
+                    }
+                }
+                
+            }
+        }
+
+    }
+
+    .footer::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url(../pictures/photon_on_track.jpg);
+        mask-image: linear-gradient(to left, rgba(0, 0, 0, 1.0) 20%, transparent 100%);
+        opacity: 0.15;
+        z-index: -1;
+        background-position: 50% 25%;
+        transform: scaleX(-1);
+        background-size: cover;
+    }
+    
+}
+
+@media screen and (min-width: $Tablet) {
     .copyright{
         position: absolute;
         bottom: 3%;

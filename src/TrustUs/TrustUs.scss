@@ -1,6 +1,108 @@
 @import '../variables.scss';
 
-@media screen and (min-width: $laptop){    
+@media screen and (min-width: $ultraWideLaptop){    
+    .tuContainer{
+        width:100%;
+        // margin-top: 5vh;
+        height: auto;
+        background-color: transparent;
+        font-family: 'Quicksand', sans-serif;
+
+        .tuTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            width: 100%;
+            font-size: 2.5vw;
+            height: 600px !important;
+            text-align: center;
+            font-family: 'Racing Sans One', cursive;
+        }
+
+        .tuTitle::before{
+            position: absolute;
+            content: "";
+            top: -34vh;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(../TrustUs/Sponsors/photon_sponsorzy.jpg);
+            opacity: 0.4;
+            z-index: -1;
+            background-position: 100% 60%;
+            background-size: cover;
+        }
+
+        .paTitle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #aa1f70, red 50%, white 50%);
+            background-size: 200% 90%;
+            background-position: 100%;
+            transition: background-position 0.3s ease;
+            margin: 0% 25% 5% 25%;
+            padding: 1% !important;
+            width: 50%;
+            font-size: 1.5vw;
+            height: 80px;
+            text-align: center;
+            border: 5px black solid;
+            border-radius: 10px;
+
+            a{
+                transition: color 0.3s ease;
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        .paTitle:hover{
+            background-position: 0 100%;
+            cursor: pointer;
+    
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .tuSponsorFlexBox{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            margin: auto;
+            width: auto;
+            padding: 5vw 0px 5vw 0;  
+
+
+            .SponsorBox{
+                width:20vw;
+                // padding: 1vw;
+                height: auto;
+                text-align: center;
+                margin: 1vw;
+
+                img{
+                    width: 17vw;
+                    padding: 0;
+                    margin: 0;
+                    transition: 0.3s ease-in-out;                    
+                }
+            }
+
+            .SponsorBox:hover img{
+                width: 18.5vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $laptop){    
     .tuContainer{
         width:100%;
         // margin-top: 5vh;

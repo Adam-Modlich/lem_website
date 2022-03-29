@@ -5,37 +5,6 @@ import pwr from '../logoPwr.png';
 
 export default function Contact(){
 
-    // const handleSubmit = () => {
-
-    //     $("input").each(function() {
-    //     if ($(this).val() != "") {            
-    //         const titleSend = document.getElementById("titleSend");
-    //         const titleUnSend = document.getElementById("titleUnSend");
-
-    //         titleSend.style.opacity = "1";
-    //         titleUnSend.style.opacity = "0";
-    //         setTimeout(handleSubmitGoBack,3000);}
-    //     else{
-    //         const disabled = document.getElementById("disabled");
-    //         const titleUnSend = document.getElementById("titleUnSend");
-
-    //         disabled.style.opacity = "1";
-    //         titleUnSend.style.opacity = "0";
-    //         setTimeout(handleSubmitGoBack,3000);
-    //     }
-    //     });
-    // }
-
-    // const handleSubmitGoBack = () => {
-    //     const titleSend = document.getElementById("titleSend");
-    //     const titleUnSend = document.getElementById("titleUnSend");
-    //     const disabled = document.getElementById("disabled");
-
-    //     disabled.style.opacity = "0";
-    //     titleSend.style.opacity = "0";
-    //     titleUnSend.style.opacity = "1";
-    // }
-
     return(
         <>
         <div className='footer'>

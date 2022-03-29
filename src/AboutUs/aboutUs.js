@@ -31,14 +31,15 @@ import Footer from '../Footer';
 export default function AboutUs(){
 
   const [departments, setDepartments] = useState([
-    { title: "Prezes Koła",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "Zaczynał od kariery w Mechanice (połączonej jeszcze wtedy z Konstrukcją), następnie mógł się wykazać w Zawieszeniu oraz poczuć jak to jest być liderem w Marketingu, gdzie aktywnie zachęcał do poszukiwania nowych możliwości współpracy i pomagał członkom stawiać swoje “pierwsze kroki” - jak prawdziwy przywódca. Każdy z nas miał przyjemność pracować wspólnie z Michałem i wie, że jest to kumpel odpowiedzialny, chętny do pomocy i bardzo pracowity.", name: "Michał Skraburski", img: prezImg, id: 1},
+    { title: "Prezes Koła",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "Posiada kilkuletnie doświadczenie w pracy w wielu działach oraz umiejętność zarządzania zespołem. Jest przedstawicielem naszej organizacji zarówno w sferze uczelnianej, jak i w kontaktach z przedsiębiorstwami wspierającymi działalności studenckie. Przez koła naukowego dba o jego rozwój, zgłaszając organizację do udziału w międzynarodowych zawodach. Do jego obowiązków należy nadzór prac liderów poszczególnych działów oraz kontrola wszystkich projektów.", name: "Michał Skraburski", img: prezImg, id: 1},
     // { title: "Lider Photon", text: "góno", name: "", img: liderPhotonImg, id: 2},
     // { title: "Lider SSV", text: "góno", name: "", img: liderSSVImg, id: 3},
     { title: "Elektronika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych.", name: "Piotr Wyszyński", img: elekImg, id: 4},
-    { title: "Zawieszenie",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. ", name: "Damian Sazoński", img: zawImg, id: 5},
-    { title: "Mechanika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.", name: "Albert Iwanicki", img: mechImg, id: 6},
+    { title: "Marketing",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ", name: "Izabela Stanula", img: markImg, id: 8},
+    { title: "Zawieszenie",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. ", name: "Damian Sazoński", img: zawImg, id: 5},
     { title: "Konstrukcja",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.", name: "Piotr Minta", img: konsImg, id: 7},
-    { title: "Marketing",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ", name: "Izabela Stanula", img: markImg, id: 8},
+    { title: "Mechanika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.", name: "Albert Iwanicki", img: mechImg, id: 6},
+    
   ])
 
     return(
@@ -78,7 +79,7 @@ export default function AboutUs(){
                           </div>
                   </div>
                 </div>
-                <div className="parent3">
+                {/* <div className="parent3">
                   <div className="Container_5">
                       <div className="image_3">
 
@@ -90,8 +91,8 @@ export default function AboutUs(){
                           </p>
                       </div>
                   </div>
-                </div>
-                <div className="parent3">
+                </div> */}
+                {/* <div className="parent3">
                     <div className="Container_6">
                       <div className='parentText_4'>
                       <h1 className='acapits'>Nasz Zespół</h1>
@@ -112,6 +113,7 @@ export default function AboutUs(){
                         <div className='prezIcon Icon'>
                           <h2>Prezes Koła</h2>
                           <img src={prezImg} alt="Zdjęcie Prezesa"></img>
+                          
                         </div>
                         <div className='liderIcon Icon'>
                           <h2>Lider Photon</h2>
@@ -143,7 +145,7 @@ export default function AboutUs(){
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 <div className="parent3">
                   <div className="Container_5">
                       <div className="image_7">
