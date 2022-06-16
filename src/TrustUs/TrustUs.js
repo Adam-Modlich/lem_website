@@ -22,6 +22,8 @@ import wega from '../TrustUs/Sponsors/wega.jpg';
 import yato from '../TrustUs/Sponsors/yato.jpg';
 import zaopatrzenie24 from '../TrustUs/Sponsors/zaopatrzenie24.png';
 import motokenner from '../TrustUs/Sponsors/motokenner.jpeg'
+import ng from '../TrustUs/Sponsors/ng.png'
+import electreecity from '../TrustUs/Sponsors/electreecity.png'
 import Footer from '../Footer';
 
 
@@ -90,8 +92,18 @@ export default function TrustUs(){
                         </a>
                     </div>
                     <div className='SponsorBox'>
+                        <a href="https://electreecity.pro/" target="_blank">
+                            <img src={electreecity}></img>
+                        </a>
+                    </div>
+                    <div className='SponsorBox'>
                         <a href="http://motokenner.pl/" target="_blank">
                             <img src={motokenner}></img>
+                        </a>
+                    </div>
+                    <div className='SponsorBox'>
+                        <a href="https://www.ng.engineering/pl/start.html" target="_blank">
+                            <img src={ng}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>

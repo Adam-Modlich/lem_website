@@ -36,7 +36,7 @@
         font-family: 'Racing Sans One', sans-serif !important;
     }
 
-    @media screen and (min-width: $ultraWideLaptop){
+    @media screen and (min-width: $laptop){
         .aboutContent{
             display: flexbox;
             flex-direction: column;
@@ -124,7 +124,7 @@
             .Container_3{
                 flex-direction: row;
                 text-align: justify;
-                align-items: center;
+                align-items: center !important;
                 // transition: 1s ease-in-out;
     
                 .image_1{
@@ -265,7 +265,10 @@
                 height: auto;
                 width: 100%;
                 padding: 0% 0%;
-    
+                
+                // .acapits{
+                //     display: none;
+                // }
     
                 .departmentsTabletMobile{
                     display: none;
@@ -321,7 +324,7 @@
                     }
     
                     #beginText{
-                        transition: 3s linear;
+                        // transition: 3s linear;
                         line-height: 50px;
                         width: 100%;
                         height: auto;
@@ -365,7 +368,7 @@
                     div{
                         width: 12.6%;
                         padding:2%;
-                        transition: 0.3s linear;
+                        // transition: 0.3s linear;
     
                         h2{
                             margin: 0%;
@@ -385,7 +388,7 @@
             }
     }}
 
-    @media screen and (max-width: $laptop){
+    @media screen and (min-width: $Tablet){
     .aboutContent{
         display: flexbox;
         flex-direction: column;
@@ -473,6 +476,7 @@
         .Container_3{
             flex-direction: row;
             text-align: justify;
+            align-items: center;
             // transition: 1s ease-in-out;
 
             .image_1{
@@ -671,7 +675,7 @@
                 }
 
                 #beginText{
-                    transition: 3s linear;
+                    // transition: 3s linear;
                     width: 100%;
                     height: auto;
                 }
@@ -959,6 +963,10 @@
                 background-position: 0% 70%;
                 background-size: cover;
             }
+            
+            .Container_55{
+                display: none;
+            }
     
             .Container_5{
                 flex-direction: row;
@@ -1003,7 +1011,7 @@
             }
 
             .Container_6{
-                // display: none;
+                display: none;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -1290,7 +1298,7 @@
             }
 
             .Container_6{
-                // display: none;
+                display: none;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;

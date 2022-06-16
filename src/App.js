@@ -2,6 +2,7 @@ import MainPage from './mainPage/MainPage.js';
 import AboutUs from './AboutUs/aboutUs';
 import Contact from './Contact/Contact.js'
 import Nav from './Nav.js';
+import LRP from './LRP/LRP.js';
 import Projects from './Projects/Projects.js';
 import TrustUs from './TrustUs/TrustUs.js';
 import Wojcik from './Wojcik/Wojcik.js';
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/aboutus" element={<AboutUs/>}/>
         <Route exact path="/Achievements" element={<Achievements/>}/>
         <Route exact path="/Wojcik" element={<Wojcik/>}/>
+        <Route exact path="/LRP" element={<LRP/>}/>
         <Route exact path="/Projects" element={<Projects/>}/>
         <Route exact path="/TrustUs" element={<TrustUs/>}/>
         <Route exact path="/ContactUs" element={<Contact/>}/>

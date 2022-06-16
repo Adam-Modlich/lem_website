@@ -79,7 +79,8 @@ export default function AboutUs(){
                           </div>
                   </div>
                 </div>
-                {/* <div className="parent3">
+                <div className="parent3">
+                  <div className='Container_55'>
                   <div className="Container_5">
                       <div className="image_3">
 
@@ -91,11 +92,12 @@ export default function AboutUs(){
                           </p>
                       </div>
                   </div>
-                </div> */}
-                {/* <div className="parent3">
+                  </div>
+                </div>
+                <div className="parent3">
                     <div className="Container_6">
                       <div className='parentText_4'>
-                      <h1 className='acapits'>Nasz Zespół</h1>
+                      {/* <h1 className='acapits'>Nasz Zespół</h1> */}
                       {departments.map((dep) => (
                         <div className='departmentsText' key={dep.id} style={{flexDirection: dep.styleT, textAlign: dep.styleTA, backgroundImage: dep.styleB }} >
                           <div className='depText'>
@@ -145,7 +147,7 @@ export default function AboutUs(){
                         </div>
                       </div>
                     </div>
-                  </div> */}
+                  </div>
                 <div className="parent3">
                   <div className="Container_5">
                       <div className="image_7">

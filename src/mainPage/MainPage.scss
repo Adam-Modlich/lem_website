@@ -242,7 +242,7 @@
     // }
 }
 
-@media screen and (min-width: $ultraWideLaptop){
+@media screen and (min-width: $laptop){
     #imageSSV{
        color: white;
        
@@ -250,7 +250,7 @@
            font-size: 80px !important;
            position: fixed;
            top: 50%;
-           right:2%;   
+           right:2% !important;   
        }
    }
 
@@ -261,7 +261,7 @@
            font-size: 80px !important;  
            position: fixed;
            top: 50%;
-           left:2%;   
+           left:2% !important;   
        }
    }
 
@@ -307,7 +307,7 @@
    
 } 
 
-@media screen and (max-width: $laptop){
+@media screen and (min-width: $Tablet){
      #imageSSV{
         color: white;
         
@@ -315,7 +315,7 @@
             font-size: 60px;
             position: fixed;
             top: 50%;
-            right:2%;   
+            right:2% !important;   
         }
     }
 
@@ -326,7 +326,7 @@
             font-size: 60px;  
             position: fixed;
             top: 50%;
-            left:2%;   
+            left:2% !important;   
         }
     }
 
