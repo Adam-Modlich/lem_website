@@ -1,49 +1,37 @@
 import '../AboutUs/aboutUs.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import tło from '../pictures/tłov7.jpg'
 import tłod from '../pictures/tłov7d.jpg'
 import tłor from '../pictures/tłov7r.jpg'
 import tłop from '../pictures/tłov7p.jpg'
 import tłob from '../pictures/tłov7b.jpg'
 
-import elek from '../AboutUs/Departments/R_elektronika.png';
-import prez from '../AboutUs/Departments/R_prezes_koła.png';
-import lider from '../AboutUs/Departments/R_lider_Photon.png';
-import kons from '../AboutUs/Departments/R_konstrukcja.png';
-import mark from '../AboutUs/Departments/R_marketing.png';
-import mech from '../AboutUs/Departments/R_mechanika.png';
-import zaw from '../AboutUs/Departments/R_zawieszenie.png';
-
-import elekImg from "../AboutUs/Boss/elektro_optimized.jpg"
-import zawImg from "../AboutUs/Boss/zawieszenie_optimized.jpg";
-import markImg from "../AboutUs/Boss/marketing_optimized.jpg";
-import konsImg from "../AboutUs/Boss/konstrukcja_optimized.jpg";
-import mechImg from "../AboutUs/Boss/mechanika_optimized.jpg";
-import prezImg from "../AboutUs/Boss/prezes1_optimized.jpg";
-import liderPhotonImg from "../AboutUs/Boss/photon_lider_optimized.jpg";
-import liderSSVImg from "../AboutUs/Boss/ssv_lider_optimized.jpg";
-
-
-
-import $ from 'jquery';
+import elekImg from "../AboutUs/Boss/Elektronika.JPG"
+import zawImg from "../AboutUs/Boss/Zawieszenie.JPG";
+import markImg from "../AboutUs/Boss/Marketing.JPG";
+import konsImg from "../AboutUs/Boss/Konstrukcja.JPG";
+import mechImg from "../AboutUs/Boss/Mechanika.JPG";
+import prezImg from "../AboutUs/Boss/Prezes.JPG";
 import Footer from '../Footer';
+import { useLocation } from 'react-router-dom';
 
-export default function AboutUs(){
+export default function AboutUs(props){
 
   const [departments, setDepartments] = useState([
-    { title: "Prezes Koła",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "Posiada kilkuletnie doświadczenie w pracy w wielu działach oraz umiejętność zarządzania zespołem. Jest przedstawicielem naszej organizacji zarówno w sferze uczelnianej, jak i w kontaktach z przedsiębiorstwami wspierającymi działalności studenckie. Przez koła naukowego dba o jego rozwój, zgłaszając organizację do udziału w międzynarodowych zawodach. Do jego obowiązków należy nadzór prac liderów poszczególnych działów oraz kontrola wszystkich projektów.", name: "Michał Skraburski", img: prezImg, id: 1},
-    // { title: "Lider Photon", text: "góno", name: "", img: liderPhotonImg, id: 2},
-    // { title: "Lider SSV", text: "góno", name: "", img: liderSSVImg, id: 3},
-    { title: "Elektronika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych.", name: "Piotr Wyszyński", img: elekImg, id: 4},
-    { title: "Marketing",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność. ", name: "Izabela Stanula", img: markImg, id: 8},
-    { title: "Zawieszenie",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter. ", name: "Damian Sazoński", img: zawImg, id: 5},
-    { title: "Konstrukcja",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie.", name: "Piotr Minta", img: konsImg, id: 7},
-    { title: "Mechanika",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem.", name: "Albert Iwanicki", img: mechImg, id: 6},
-    
-  ])
+    { title: "",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "", name: "", img: prezImg, id: 1},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: elekImg, id: 4},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "", name: "", img: markImg, id: 8},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: " ", name: "", img: zawImg, id: 5},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "", name: "", img: konsImg, id: 7},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: mechImg, id: 6},
+  ]);
+
+  const { state } = useLocation()
 
     return(
         <>
+        {props.lan ?
+        <div>
         <div className="about">
             <div className="aboutContent">
                 <div className="Container_1">
@@ -56,12 +44,9 @@ export default function AboutUs(){
 
                     </div>
                     <div className="text_1">
-                    <h1 className="acapits">Kim Jesteśmy?</h1>
+                    <h1 className="acapits">{ props.lan.aboutUs[0].paragraphs[0].header }</h1>
                         <p lang="en">
-                            Jesteśmy grupą 50 studentów działających jako Koło Naukowe Pojazdów i&nbsp;Robotów Mobilnych. 
-                            Tworzymy projekt Light Electric Motorcycle (LEM Wrocław) pod patronatem Politechniki Wrocławskiej.
-                            Projektujemy i&nbsp;budujemy od podstaw motocykle elektryczne, 
-                            jednak w&nbsp;tym roku postanowiliśmy stworzyć coś zupełnie nowego, czyli elektryczny pojazd terenowy typu buggy (projekt LEM SSV).
+                          { props.lan.aboutUs[0].paragraphs[0].pText }
                         </p>
                     </div>
                 </div>
@@ -72,9 +57,9 @@ export default function AboutUs(){
 
                       </div>
                       <div className="text_2">
-                      <h1 className="acapits">Co Robimy?</h1>
+                      <h1 className="acapits">{ props.lan.aboutUs[0].paragraphs[1].header }</h1>
                           <p lang="en">
-                          Nasz zespół głównie skupia się na przygotowaniach do międzynarodowych zawodów motocykli elektrycznych. Można nas spotkać na targach oraz eventach motocyklowych. Odwiedzamy różne tory, gdzie testujemy nasze projekty.  Prężnie się rozwijamy, biorąc udział w&nbsp;innych konkursach zarówno lokalnych, jak i&nbsp;zagranicznych. Działamy także charytatywnie.                          
+                            { props.lan.aboutUs[0].paragraphs[1].pText }
                           </p>
                           </div>
                   </div>
@@ -86,9 +71,9 @@ export default function AboutUs(){
 
                       </div>
                       <div className="text_3">
-                      <h1 className="acapits">Co w tym Roku?</h1>
+                      <h1 className="acapits">{ props.lan.aboutUs[0].paragraphs[2].header }</h1>
                           <p>
-                              W tym roku stworzyliśmy motocykl wyścigowy (LEM Photon), z którym pojechaliśmy na zawody MotoStudent (najbardziej prestiżowe zawody motocyklowe dla studentów na świecie, odpowiednik MotoGP). Dzięki pracy całego zespołu zdobyliśmy 1 miejsce w kategorii Best Rookie Team. 
+                            { props.lan.aboutUs[0].paragraphs[2].pText }                          
                           </p>
                       </div>
                   </div>
@@ -97,21 +82,20 @@ export default function AboutUs(){
                 <div className="parent3">
                     <div className="Container_6">
                       <div className='parentText_4'>
-                      {/* <h1 className='acapits'>Nasz Zespół</h1> */}
-                      {departments.map((dep) => (
+                      {departments.map((dep, index) => (
                         <div className='departmentsText' key={dep.id} style={{flexDirection: dep.styleT, textAlign: dep.styleTA, backgroundImage: dep.styleB }} >
                           <div className='depText'>
-                            <h1 className="acapits" id="depAcapit" style={{textAlign: dep.styleTA}}>{dep.title}</h1>
+                            <h1 className="acapits" id="depAcapit" style={{textAlign: dep.styleTA}}>{props.lan.aboutUs[0].bosses[index].header}</h1>
                               <div className='textContentBoss'>
-                                <h2 id="bossName">{dep.name}</h2>
-                                <p id='beginText'>{dep.text}</p>
+                                <h2 id="bossName">{props.lan.aboutUs[0].bosses[index].name}</h2>
+                                <p id='beginText'>{props.lan.aboutUs[0].bosses[index].description}</p>
                               </div>
                           </div>
                           <img src={dep.img} id="imgPlace"></img>
                         </div>))}
                       </div>
 
-                      <div className='departmentsTabletMobile'>
+                      {/* <div className='departmentsTabletMobile'>
                         <div className='prezIcon Icon'>
                           <h2>Prezes Koła</h2>
                           <img src={prezImg} alt="Zdjęcie Prezesa"></img>
@@ -145,7 +129,7 @@ export default function AboutUs(){
                           <h2>Mechanika</h2>
                           <img src={mechImg} alt="Zdjęcie Mechaniki"></img>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 <div className="parent3">
@@ -154,10 +138,9 @@ export default function AboutUs(){
 
                       </div>
                       <div className="text_3">
-                      <h1 className="acapits">Nasz Kierowca</h1>
+                      <h1 className="acapits">{ props.lan.aboutUs[0].lastParagraph[0].header }</h1>
                           <p lang="en">
-                          Szeregi projektu LEM Wrocław wspiera utalentowany i&nbsp;młody kierowca, Krzysztof Borys. Dzięki niemu zespół mógł podjąć się realizacji projektu LEM Photon, przy którego realizacji czerpali z&nbsp;jego wiedzy oraz doświadczenia.
-                          Kojarzony bardziej pod pseudonimem Mały Kris, swoją przygodę z&nbsp;motocyklami zaczął w&nbsp;wieku 5 lat. Szybko zmieniła się ona w&nbsp;pasję, a&nbsp;wkrótce w&nbsp;życie zawodowe Krisa. Tworzy rodzinną markę MotoKenner oraz oferuje rzetelne szkolenia motocyklowe na swoim torze.
+                            { props.lan.aboutUs[0].lastParagraph[0].pText }
                           </p>
                       </div>
                   </div>
@@ -165,7 +148,9 @@ export default function AboutUs(){
                 
             </div> 
         </div>
-        <Footer/>
+        <Footer len={props.lan.contactUs[0]}/>
+        </div>
+        : null}
         </>
     )
 }

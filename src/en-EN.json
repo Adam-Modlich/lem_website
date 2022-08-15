@@ -1,0 +1,222 @@
+{
+    "mainPage": 
+    [
+        {
+            "paragraph": "Powerful and environmentally friendly – that’s LEM SSV. For the first time, the LEM Wrocław team has developed a four-wheel off-road vehicle that represents a vision for the future of the zero-emission Dakar Rally. A creative process with a zero-waste rule and an end result that generates a powerful dose of emotion. Can it be better?"
+        },
+        {
+            "paragraph": "He conquered the Spanish MotorLand Aragón and already has a podium finish on the F1 circuit in Italy. However, it is possible that the prototype of the students reaches up to 200 km/h. Get to know the innovative LEM Photon project – the first Polish electric road motorcycle built entirely by students of the Technical University of Wroclaw."
+        }
+    ],
+
+    "aboutUs":
+    [
+        {
+            "paragraphs": 
+            [
+                {
+                    "header": "Who are we?",
+                    "pText": "We are a group of 50 students working as a research group for vehicles and mobile robots. We form the Light Electric Motorcycle (LEM Wrocław) project under the auspices of the Technical University of Wrocław. We design and build electric motorcycles from the ground up, but this year we decided to create something completely new, namely an electric off-road vehicle type Buggy (Project LEM SSV)."
+                },
+                {
+                    "header": "What do we do?",
+                    "pText": "Our team focuses mainly on preparing for international electric motorcycle competitions. You can meet us at fairs and motorcycle events. We visit different routes where we test our projects. We develop dynamically by participating in other competitions both locally and abroad. We are also charitable."
+                },
+                {
+                    "header": "What this year?",
+                    "pText": "This year we developed a racing motorcycle (LEM Photon) that we took to a MotoStudent competition (the most prestigious motorcycle competition in the world, the MotoGP equivalent). Thanks to the work of the whole team, we won 1st place in the Best Rookie Team category."
+                }
+            ],
+            "bosses":
+            [
+                {
+                    "header": "CEO",
+                    "name": "Michał Skraburski",
+                    "description": "He has many years of experience in several departments and has the ability to lead a team. He is a representative of our organisation both in the university and in dealing with companies that support student activities. Through the scientific community takes care of its development by the organization participating in international competitions. Its duties include supervising the work of the heads of the various departments and supervising all projects."
+                },
+                {
+                    "header": "The Electrical Department",
+                    "name": "Piotr Wyszyński",
+                    "description": "The Electrical Department deals with the assembly of electric drives, which are built from the ground up in our garage. We design and manufacture a battery of certain dimensions, connect it to the ECU and the motor, and then design the characteristics of the drive by changing the ECU settings. In addition, we deal with the creation of the entire electric beam, where our task includes the output of the voltage 12V required for the operation of the ECU, the programming of the display and the connection of the joystick or the control buttons."
+                },
+                {
+                    "header": "The marketing department",
+                    "name": "Wiktoria Budziar",
+                    "description": "The marketing department is not just social media. Our department monitors during contests and competitions and takes care of the image of the entire team. We are where all motorcycle fairs and events of all kinds are. We take care of the contact with the authorities of the Technical University of Wroclaw as well as with external companies that support our activities."
+                },
+                {
+                    "header": "The chassis department",
+                    "name": "Nikodem Kruk",
+                    "description": "The chassis department focuses on the design, construction and regulation of the chassis. The planning phase usually starts with our team. We decide which shock absorber and forks we use, what before analyzing the kinematics of the motorcycle, where we give it all the characteristic points and decide what character it will have."
+                },
+                {
+                    "header": "The design department",
+                    "name": "Michał Lentner",
+                    "description": "The design department specialises in all supporting structures, housings and fastenings. Our task is to design the components in such a way that the safety of both the driver and the sensitive interior components is maximized. In addition to design and modeling, we manufacture our own parts by preparing, welding or bending."
+                },
+                {
+                    "header": "The Department of Mechanics",
+                    "name": "Igor Radoch",
+                    "description": "The Department of Mechanics deals with the planning and execution of the drive system, the engine cooling system, and the ergonomics of the driver. We carry out both workshop work and preparation work for tests or races. Our aim is to achieve the best possible performance on the track with every further project."
+                }
+            ],
+            "lastParagraph": 
+            [
+                {
+                    "header": "Our Driver",
+                    "pText": "The lines of the LEM Wrocław project are supported by a talented and young rider, Krzysztof Borys. Thanks to him, the team was able to start the LEM Photon project, drawing on his knowledge and experience. Better known under the pseudonym Little Kris, his adventure with motorcycles began at the age of 5. It quickly developed into a passion and soon into a working life for Kris. He founded the family brand MotoKenner and offers sound motorcycle training on his race track."
+                }
+            ]
+        }
+    ],
+    "projects":
+    [
+        {
+            "header": "Photon",
+            "subHeader": "Electric motorcycle of class Moto3",
+            "paragraph": "The LEM Photon is the first electric road bike in Poland to be built entirely by students of the Technical University of Wroclaw. The prototype was developed for participation in the international MotoStudent 2021, the MotoGP equivalent for students. LEM Photon proved to be the pride of the LEM Wrocław project and helped the team win the title of the Scientific Circle of the Year 2021 after the student movement. The motorcycle has already visited many routes in Poland, including the Poznań route and the Krzywa route. In Spain at the Motorland Aragón and in Italy at the Autodromo Enzo e Dino Ferrari, where he made large deposits.",
+            "data": 
+            [
+                {
+                    "value": "kW",
+                    "text": "Power"
+                },
+                {
+                    "value": "km/h",
+                    "text": "Max. speed"
+                },
+                {
+                    "value": "kg",
+                    "text": "Weight"
+                },
+                {
+                    "value": "km",
+                    "text": "Range"
+                }
+            ]
+        },
+        {
+            "header": "Thunder v2",
+            "subHeader": "Off-road electric motorcycle",
+            "paragraph": "LEM Thunder v2 is an optimization of the previous project, i. e. the prototype of an electric cross motorcycle. It is a motorcycle made by students of the Technical University of Wroclaw themselves. It was dedicated to people who want to feel the emotions of rallies and off-road rides. He participated in several international competitions of the Smart Moto Challenge, where he achieved high marks in many categories. The LEM Thunder v2 project is also a proposal for state institutions such as the Border Guard, which guards the border in forest and mountainous regions, and the National Park Guard, which manages large forest areas where engines are not allowed. The LEM Wrocław project is also suitable for paved roads – it only needs to change the tyres. It classifies it for use under all conditions.",
+            "data": 
+            [
+                {
+                    "value": "kW",
+                    "text": "Power"
+                },
+                {
+                    "value": "km",
+                    "text": "Range"
+                },
+                {
+                    "value": "km/h",
+                    "text": "Max. speed"
+                },
+                {
+                    "value": "kg",
+                    "text": "Weight"
+                }
+            ]
+        },
+        {
+            "header": "LEM SSV",
+            "subHeader": "Side by side vehicle",
+            "paragraph": "Due to its four-wheeled character, the LEM SSV is a pioneer project in the ranks of the LEM Wrocław team. It requires using the zero-waste principles and giving the components used a second life in an innovative zero-emission design. The LEM SSV is a side-by-side electric off-road vehicle based on a Polaris frame. Equipped with a 4x4 drivetrain that can be switched to 2x4, the LEM SSV is able to master the challenges both off-road and on the road.",
+            "data": 
+            [
+                {
+                    "value": "s",
+                    "text": "Acceleration 0-100 km/h"
+                },
+                {
+                    "value": "Nm",
+                    "text": "Torque"
+                },
+                {
+                    "value": "kW",
+                    "text": "Power"
+                },
+                {
+                    "value": "",
+                    "text": "Horsepower"
+                }
+            ]
+        }
+    ],
+    "LRP":
+    [
+        {
+            "paragraphs": "The motor student was a big step forward when it came to the development of the science wheel. So far we built off-road motorcycles, but we decided to start in an engine-engine competition. We had to learn from the ground up how to build sports motorcycles, which are different in almost every way from what we know so far. After two years of work, we built the first Polish electric motorcycle, which won the 6th place in the competition and the title of the best debut team. This success was noticed by the Polish motorcycle community, so Marcin “Kosa' Kolanowski, the manager of the LRP Poland team*, approached us. On November 19, 2021, he came to us in the garage, told us about the team, what they were doing, and invited us to their garage in Warsaw."
+        },
+        {
+            "paragraphs": "(*LRP Poland – Polish team competing in the entire cycle of the FIM Endurance World Championship). On our first trip to the capital, Kosa showed us a motorcycle, introduced the team, taught us how to make pit feet and what can break a motorcycle during the race. We learned that he and Bartholomäus Lewandowski wanted to rejuvenate the team and train new mechanics. We have received an invitation for another arrival."
+        },
+        {
+            "paragraphs": "On the next 2-day excursion we practiced a lot of things, including the shock absorber change and the pit foot. At the end of the trip, Marcin selected some people who wanted to take them to Spain for a motorcycle test. At that time, we learned that he had chosen us – the members of the LEM Wrocław County – from many Polish universities he attended. The first test drive was fantastic, we got to know the team and the drivers. It was a test of our abilities and coping with stress. I think we passed it because Kosa invited us to a pre-test at Le Mans."
+        },
+        {
+            "paragraphs": "The race track in France is supernatural, legendary, and you can’t feel the atmosphere of racing when you’re in the pits. In my opinion, a part of our soul stays on him forever. It was a very challenging journey, we learned a lot and were ready for more. Finally, it’s time for the long-awaited race – the first lap of the 24 Hours of Le Mans. A week of preparation, testing, qualifying, sleepless nights, so that the bike is optimally prepared for the race. The fans singing the Marseillaise, the flags, the rakes, the planes, the growling engines, the tears of happiness, the excitement, it’s impossible to describe that wonderful feeling of being part of such an event."
+        },
+        {
+            "paragraphs": "3:00 p. m. You left. It started. The first 6 hours passed in no time, the worst fatigue came in the morning, but we did it, we did it! 23 feet, 801 laps! Our riders – Bartholomäus Lewandowski, Dominik Vincon and Stefan Kerschbaumer – were incredible! 6 in the EWC class and 14 in the overall classification! In May we were on a pretest in Belgium, a very difficult track in Spa, but the guys managed to prepare with bravour motorcycle for the second round of the World Championship."
+        },
+        {
+            "paragraphs": "Spa-Francorchamps – a route in the mountains, in the middle of the woods, incredibly demanding, considered one of the most difficult. We had a week to get to know him. This time already calmer, richer for more experiences on the track. We gave 1000%! After a serious accident in qualifying, Bartholomäus Lewandowski completed 40 laps during the race. The remaining 450 bikes were replaced by Dominik Vincon and Pepijn Bijsterbosch."
+        },
+        {
+            "paragraphs": "The race was unpredictable, sun, rain, 2 hours interruption of the competition on Sunday morning when one of the motorcycles spilled the oil on the wet road, but despite all odds, the riders of Team LRP Poland finished the competition in tenth place overall and ninth in the EWC class. Without LEM Wrocław we would not be part of the LRP Poland team. Thanks to the knowledge we have gathered in the scientific community and our passion, we have the opportunity to make dreams come true and acquire the knowledge we need to build new projects."
+        }
+    ],
+    "sponsors":
+    [
+        {
+            "header": "Sponsors",
+            "buttonTitle": "Become our partner"
+        }
+    ],
+    "contactUs":
+    [
+        {
+            "writeToUs": "WRITE TO US",
+            "phone": "PHONE",
+            "adress": "ADDRESS"
+        }
+    ],
+    "drag":
+    [
+        {
+            "drag": "Drag"
+        }
+    ],
+    "aboutUsPage":
+    [
+        {
+            "aboutUsPage": "About us"
+        }
+    ],
+    "projectsPage":
+    [
+        {
+            "projectsPage": "Projects"
+        }
+    ],
+    "LRPPage":
+    [
+        {
+            "LRPPage": "LRP - Le Mans"
+        }
+    ],
+    "trustUsPage":
+    [
+        {
+            "trustUsPage": "Trust us"
+        }
+    ],
+    "contactPage":
+    [
+        {
+            "contactPage": "Contact"
+        }
+    ]
+}

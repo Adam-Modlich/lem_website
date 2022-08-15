@@ -14,7 +14,12 @@ const linkStyle = {
   
   };
 
-export default function Nav(){
+export default function Nav({func}){
+
+    const pull_data = (data) => {
+        func(data)
+      }
+    
     const[hamburgerOpen, setHamburgerOpen] = useState(false);
 
     const toggleHamburger = () =>{
@@ -33,7 +38,7 @@ export default function Nav(){
                 <Hamburger isOpen={hamburgerOpen}/>
             </div>
             
-            <NavOptions isOpen={hamburgerOpen} isClosing={closeHamburger}/>
+            <NavOptions isOpen={hamburgerOpen} isClosing={closeHamburger} func={pull_data}/>
         </div>
         </div>
     )

@@ -1,0 +1,222 @@
+{
+    "mainPage": 
+    [
+        {
+            "paragraph": "Mocny i ekologiczny - taki jest właśnie LEM SSV. Zespół LEM Wrocław po raz pierwszy stworzył terenowy pojazd czterokołowy, będący wizją przyszłości zeroemisyjnych Rajdów Dakar. Proces twórczy przy zasadach zero waste, a efekt końcowy dający potężną dawkę emocji. Czy może być lepiej?"
+        },
+        {
+            "paragraph": "Podbił hiszpański MotorLand Aragón, a na koncie ma już podium na torze F1 we Włoszech. To jednak możliwe, że studencki prototyp wyciąga nawet 200km/h. Poznaj innowacyjny projekt LEM Photon - pierwszy polski elektryczny motocykl szosowy zbudowany w pełni przez studentów Politechniki Wrocławskiej."
+        }
+    ],
+
+    "aboutUs":
+    [
+        {
+            "paragraphs": 
+            [
+                {
+                    "header": "Kim Jesteśmy?",
+                    "pText": "Jesteśmy grupą 50 studentów działających jako Koło Naukowe Pojazdów i Robotów Mobilnych. Tworzymy projekt Light Electric Motorcycle (LEM Wrocław) pod patronatem Politechniki Wrocławskiej. Projektujemy ibudujemy od podstaw motocykle elektryczne, jednak wtym roku postanowiliśmy stworzyć coś zupełnie nowego, czyli elektryczny pojazd terenowy typu buggy (projekt LEM SSV)."
+                },
+                {
+                    "header": "Co Robimy?",
+                    "pText": "Nasz zespół głównie skupia się na przygotowaniach do międzynarodowych zawodów motocykli elektrycznych. Można nas spotkać na targach oraz eventach motocyklowych. Odwiedzamy różne tory, gdzie testujemy nasze projekty. Prężnie się rozwijamy, biorąc udział winnych konkursach zarówno lokalnych, jak i zagranicznych. Działamy także charytatywnie."
+                },
+                {
+                    "header": "Co w tym Roku?",
+                    "pText": "W tym roku stworzyliśmy motocykl wyścigowy (LEM Photon), z którym pojechaliśmy na zawody MotoStudent (najbardziej prestiżowe zawody motocyklowe dla studentów na świecie, odpowiednik MotoGP). Dzięki pracy całego zespołu zdobyliśmy 1 miejsce w kategorii Best Rookie Team."
+                }
+            ],
+            "bosses":
+            [
+                {
+                    "header": "Prezes Koła",
+                    "name": "Michał Skraburski",
+                    "description": "Posiada kilkuletnie doświadczenie w pracy w wielu działach oraz umiejętność zarządzania zespołem. Jest przedstawicielem naszej organizacji zarówno w sferze uczelnianej, jak i w kontaktach z przedsiębiorstwami wspierającymi działalności studenckie. Przez koła naukowego dba o jego rozwój, zgłaszając organizację do udziału w międzynarodowych zawodach. Do jego obowiązków należy nadzór prac liderów poszczególnych działów oraz kontrola wszystkich projektów."
+                },
+                {
+                    "header": "Elektronika",
+                    "name": "Piotr Wyszyński",
+                    "description": "Dział Elektro zajmuje się złożeniem napędów elektrycznych, tworzonych od podstaw w naszym garażu. Projektujemy i wykonujemy baterię o określonych wymiarach, łączymy ją ze sterownikiem i silnikiem, a następnie kształtujemy charakterystykę napędu poprzez zmianę ustawień sterownika. Ponadto, zajmujemy się tworzeniem całej wiązki elektrycznej, gdzie nasze zadanie obejmuje wyprowadzenie napięcia 12V potrzebnego do działania aparatury sterowniczej, zaprogramowanie wyświetlacza oraz połączenie manetki czy przycisków sterowniczych."
+                },
+                {
+                    "header": "Marketing",
+                    "name": "Wiktoria Budziar",
+                    "description": "Dział Marketingu to nie tylko media społecznościowe. Nasz dział czuwa podczas zawodów i konkursów, dbając o wizerunek całego zespołu. Jesteśmy tam, gdzie wszystkie targi motocyklowe oraz wszelkiego rodzaju eventy. Dbamy o kontakt zarówno z władzami Politechniki Wrocławskiej, jak i firmami zewnętrznymi, wspierającymi naszą działalność."
+                },
+                {
+                    "header": "Zawieszenie",
+                    "name": "Nikodem Kruk",
+                    "description": "Dział Zawieszenia koncentruje się na projekcie, budowie oraz regulacji układu jezdnego pojazdu. Fazę projektową zazwyczaj rozpoczyna nasz zespół. Decydujemy jakiego amortyzatora i widelców użyjemy, co poprzedzają analizy kinematyki motocykla, gdzie nadajemy mu wszystkie charakterystyczne punkty i decydujemy jaki będzie miał charakter."
+                },
+                {
+                    "header": "Konstrukcja",
+                    "name": "Michał Lentner",
+                    "description": "Dział Konstrukcji specjalizuje się we wszelkich konstrukcjach nośnych, obudowach czy mocowaniach. Naszym zadaniem jest projektowanie elementów pod kątem jak największego bezpieczeństwa zarówno naszego kierowcy, jak i wrażliwych komponentów wewnętrznych. Oprócz projektowania oraz modelowania sami wykonujemy nasze części poprzez przygotowanie, spawanie czy gięcie."
+                },
+                {
+                    "header": "Mechanika",
+                    "name": "Igor Radoch",
+                    "description": "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem."
+                }
+            ],
+            "lastParagraph": 
+            [
+                {
+                    "header": "Nasz Kierowca",
+                    "pText": "Szeregi projektu LEM Wrocław wspiera utalentowany imłody kierowca, Krzysztof Borys. Dzięki niemu zespół mógł podjąć się realizacji projektu LEM Photon, przy którego realizacji czerpali zjego wiedzy oraz doświadczenia.Kojarzony bardziej pod pseudonimem Mały Kris, swoją przygodę zmotocyklami zaczął wwieku 5 lat. Szybko zmieniła się ona w pasję, awkrótce wżycie zawodowe Krisa. Tworzy rodzinną markę MotoKenner oraz oferuje rzetelne szkolenia motocyklowe na swoim torze."
+                }
+            ]
+        }
+    ],
+    "projects":
+    [
+        {
+            "header": "Photon",
+            "subHeader": "Motocykl elektryczny klasy Moto3",
+            "paragraph": "LEM Photon jest pierwszym w Polsce elektrycznym motocyklem szosowym w pełni zbudowanym przez studentów Politechniki Wrocławskiej. Prototyp został zaprojektowany iskonstruowany zmyślą oudziale wmiędzynarodowych zawodach MotoStudent 2021, studenckiego odpowiednika MotoGP.LEM Photon okazał się być dumą projektu LEM Wrocław iprzyczynił się do zdobycia przez zespół tytułu Koła Naukowego Roku 2021 według Studenckiego Ruchu Naukowego.Motocykl odwiedził już wiele torów w Polsce, wtym Tor Poznań oraz Tor Krzywa. Podbił także te zagraniczne - w Hiszpanii na MotorLandzie Aragón oraz we Włoszech na Autodromo Enzo eDino Ferrari gdzie uzyskał wysokie lokaty.",
+            "data": 
+            [
+                {
+                    "value": "kW",
+                    "text": "Moc"
+                },
+                {
+                    "value": "km/h",
+                    "text": "Prędkość max."
+                },
+                {
+                    "value": "kg",
+                    "text": "Masa"
+                },
+                {
+                    "value": "km",
+                    "text": "Zasięg"
+                }
+            ]
+        },
+        {
+            "header": "Thunder v2",
+            "subHeader": "Terenowy motocykl elektryczny",
+            "paragraph": "LEM Thunder v2 jest optymalizacją poprzedzającego go projektu, czyli prototypu elektrycznego motocykla crossowego. Jest to motocykl własnoręcznie wykonany przez studentów Politechniki Wrocławskiej. Został dedykowany osobom pragnącym poczuć emocje towarzyszące rajdom oraz jeździe terenowej. Wziął wielokrotnie udział wmiędzynarodowych zawodach Smart Moto Challenge, gdzie osiągał wysokie noty wwielu kategoriach. Projekt LEM Thunder v2 to także propozycja dla instytucji państwowych takich jak Straż Graniczna, strzegąca granicy na terenach leśnych igórzystych oraz Straż Parków Narodowych, posiadająca pod opieką ogromne tereny leśne, wktórych silniki nie są dozwolone. Jednoślad projektu LEM Wrocław jest przeznaczony także do dróg asfaltowych - wymaga jedynie zmiany opon. To klasyfikuje go do użytku w każdych warunkach.",
+            "data": 
+            [
+                {
+                    "value": "kW",
+                    "text": "Moc"
+                },
+                {
+                    "value": "km",
+                    "text": "Zasięg"
+                },
+                {
+                    "value": "km/h",
+                    "text": "Prędkość max."
+                },
+                {
+                    "value": "kg",
+                    "text": "Masa"
+                }
+            ]
+        },
+        {
+            "header": "LEM SSV",
+            "subHeader": "Side by side vehicle",
+            "paragraph": "LEM SSV jest pionierskim projektem wszeregach zespołu LEM Wrocław zuwagi na czterokołowy charakter pojazdu. Zakłada on stosowanie w procesie realizacji zasad zero waste oraz dawanie używanym komponentom drugie życie winnowacyjnym, zero emisyjnym projekcie. LEM SSV to elektryczny pojazd terenowy side by side typu buggy, opierający swoją konstrukcję na ramie podarowanej od firmy Polaris. Wyposażony wnapęd 4x4 zmożliwością przełączenia na napęd 2x4, LEM SSV będzie wstanie sprostać wyzwaniom zarówno wterenie, jak ina szosie.",
+            "data": 
+            [
+                {
+                    "value": "s",
+                    "text": "Przyspieszenie 0-100 km/h"
+                },
+                {
+                    "value": "Nm",
+                    "text": "Moment obrotowy"
+                },
+                {
+                    "value": "kW",
+                    "text": "Moc"
+                },
+                {
+                    "value": "",
+                    "text": "KM"
+                }
+            ]
+        }
+    ],
+    "LRP":
+    [
+        {
+            "paragraphs": "Motostudent było wielkim krokiem naprzód, jeśli chodzi o rozwój koła naukowego, do tej pory budowaliśmy motocykle terenowe, ale postanowiliśmy wystartować w zawodach motostudent. Musieliśmy nauczyć się od podstaw jak budować motocykle sportowe, które różnią się praktycznie pod każdym względem od tego co było znane nam do tej pory. Po dwóch latach pracy skonstruowaliśmy pierwszy polski motocykl elektryczny, który zdobył 6 miejsce w zawodach oraz tytuł najlepszej debiutującej drużyny. Sukces ten odbił się echem wśród polskiej społeczności motocyklowej, dzięki czemu zwrócił się do nas Marcin 'Kosa' Kolanowski - manager Teamu LRP Poland*. 19 listopada 2021 przyjechał do nas na garaż, opowiedzieć o zespole, czym się zajmują i zaprosić nas do ich garażu do Warszawy."
+        },
+        {
+            "paragraphs": "(*LRP Poland - polski zespół ścigający się w pełnym cyklu motocyklowych mistrzostw świata FIM Endurance World Championship). Na pierwszym wyjeździe do stolicy, Kosa pokazał nam motocykl, przedstawił ekipę, nauczył jak robią pit stopy oraz co może się zepsuć w motocyklu podczas wyścigu. Dowiedzieliśmy się, że wraz z Bartłomiejem Lewandowskim chcą odmłodzić zespół i wyszkolić nowych mechaników. Dostaliśmy zaproszenie na kolejny przyjazd."
+        },
+        {
+            "paragraphs": "Na następnym, tym razem 2-dniowym wyjeździe, ćwiczyliśmy masę rzeczy, między innymi wymianę amortyzatora, czy pit stopy. Pod koniec wyjazdu Marcin wytypował kilka osób, które chciałyby zabrać na testy motocykla do Hiszpanii. Dowiedzieliśmy się wtedy, że z wielu uczelni w Polsce, które odwiedził, wybrał właśnie nas - członków koła LEM Wrocław. Pierwszy wyjazd na testy był niesamowity, poznaliśmy cały team i kierowców. Był to sprawdzian naszych umiejętności oraz radzenia sobie ze stresem. Chyba udało się go zdać, dlatego, że Kosa zaprosił nas na pretesty do Le Mans."
+        },
+        {
+            "paragraphs": "Tor we Francji jest nieziemski, legendarny, nie da się nie czuć atmosfery wyścigów stojąc w boxie. Według mnie część naszej duszy już na zawsze na nim zostaje. Był to bardzo wymagający wyjazd, wiele się nauczyliśmy i byliśmy gotowi na więcej. Nareszcie przyszedł czas na długo wyczekiwany wyścig- pierwszą rundę 24- godzinnego wyścigu w Le Mans. Cały tydzień przygotowań, testów, kwalifikacji, nieprzespanych nocy, żeby motocykl był jak najlepiej przygotowany na wyścig. Kibice śpiewający Marsyliankę, flagi, race, samoloty, warkot silników, łzy szczęścia, podekscytowanie, nie da się opisać tego wspaniałego uczucia bycia częścią takiego wydarzenia."
+        },
+        {
+            "paragraphs": "15:00 Ruszyli. Zaczęło się. Pierwsze 6 godzin minęło w mgnieniu oka, najgorsze zmęczenie przyszło z samego rana, ale udało się, zrobiliśmy to! 23 pit stopy, 801 okrążeń! Nasi kierowcy - Bartłomiej Lewandowski, Dominik Vincon i Stefan Kerschbaumer byli niesamowici! 6 miejsce w klasie EWC i 14 w klasyfikacji generalnej! W maju byliśmy na pretestach w Belgii, bardzo trudny tor w Spa, ale chłopaki dali sobie radę, śpiewająco przygotowali motocykl na drugą rundę mistrzostw świata."
+        },
+        {
+            "paragraphs": "Spa-Francorchamps - tor w górach, w środku lasu, niesamowicie wymagający, mający opinię jednego z najtrudniejszych. Mieliśmy tydzień, żeby się z nim zaznajomić. Tym razem już spokojniejsi, bogatsi o kolejne doświadczenia z toru. Daliśmy z siebie 1000%! Po groźnym wypadku w kwalifikacjach, mocno obolały Bartłomiej Lewandowski był w stanie pokonać podczas wyścigu 40 okrążeń. Pozostałych 450 kółek przejechali na przemian Dominik Vincon i Pepijn Bijsterbosch."
+        },
+        {
+            "paragraphs": "Wyścig był nieprzewidywalny, słońce, deszcz, przerwanie rywalizacji na 2 godziny w niedzielę nad ranem, kiedy jeden z motocykli rozlał olej na mokrej nawierzchni, ale mimo wszystkich przeciwności, kierowcy Teamu LRP Poland ukończyli rywalizację na dziesiątym miejscu w klasyfikacji generalnej oraz dziewiątym w klasie EWC. Gdyby nie LEM Wrocław, nie bylibyśmy częścią zespołu LRP Poland. Dzięki wiedzy zebranej w kole naukowym i naszej pasji mamy szanse spełniać marzenia oraz dobywać wiedzę potrzebną do budowy nowych projektów."
+        }
+    ],
+    "sponsors":
+    [
+        {
+            "header": "Partnerzy",
+            "buttonTitle": "Zostań naszym partnerem"
+        }
+    ],
+    "contactUs":
+    [
+        {
+            "writeToUs": "NAPISZ DO NAS",
+            "phone": "TELEFON",
+            "adress": "ADRES"
+        }
+    ],
+    "drag":
+    [
+        {
+            "drag": "Przeciągnij"
+        }
+    ],
+    "aboutUsPage":
+    [
+        {
+            "aboutUsPage": "O nas"
+        }
+    ],
+    "projectsPage":
+    [
+        {
+            "projectsPage": "Projekty"
+        }
+    ],
+    "LRPPage":
+    [
+        {
+            "LRPPage": "LRP - Le Mans"
+        }
+    ],
+    "trustUsPage":
+    [
+        {
+            "trustUsPage": "Wspierają nas"
+        }
+    ],
+    "contactPage":
+    [
+        {
+            "contactPage": "Kontakt"
+        }
+    ]
+}

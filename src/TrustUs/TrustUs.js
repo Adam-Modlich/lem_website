@@ -6,14 +6,14 @@ import autocamp from '../TrustUs/Sponsors/autocomp.jpg';
 import fogo from '../TrustUs/Sponsors/fogo.jpg';
 import formanski from '../TrustUs/Sponsors/formanski.jpg';
 import leoni from '../TrustUs/Sponsors/leoni.jpg';
+import sonel from '../TrustUs/Sponsors/sonel.jpg';
 import mesco from '../TrustUs/Sponsors/mesco.jpg';
 import fracht from '../TrustUs/Sponsors/fracht.png';
 import fronius from '../TrustUs/Sponsors/fronius.png';
 import grupaSpeed from '../TrustUs/Sponsors/grupa-sped.png';
-import kisielewski from '../TrustUs/Sponsors/kisielewski.png';
-import lockhard from '../TrustUs/Sponsors/lockhard.png';
 import phuinstel from '../TrustUs/Sponsors/phuinstel.png';
 import solid from '../TrustUs/Sponsors/solidexpert.png';
+import polaris from '../TrustUs/Sponsors/Polaris_Logo_Blue_RGB-min.png'
 import spoina from '../TrustUs/Sponsors/spoina.png';
 import ssab from '../TrustUs/Sponsors/ssab.png';
 import stigal from '../TrustUs/Sponsors/stigal.png';
@@ -25,19 +25,22 @@ import motokenner from '../TrustUs/Sponsors/motokenner.jpeg'
 import ng from '../TrustUs/Sponsors/ng.png'
 import electreecity from '../TrustUs/Sponsors/electreecity.png'
 import Footer from '../Footer';
+import { useLocation } from 'react-router';
 
 
-export default function TrustUs(){
+export default function TrustUs(props){
 
     return(
         <>
+        {props.lan ?
+        <div>
             <div className='tuContainer'>
                 <div className='tuTitle'> 
-                    <h1>Partnerzy</h1>
+                    <h1>{ props.lan.sponsors[0].header }</h1>
                 </div>
                 <div className='tuSponsorFlexBox'>
                     <div className='paTitle'>
-                        <h2><a href={partnerShip} target="_blank">Zostań naszym partnerem</a></h2>
+                        <h2><a href={partnerShip} target="_blank">{ props.lan.sponsors[0].buttonTitle }</a></h2>
                     </div>
                     <div className='SponsorBox'>
                         <div>
@@ -54,6 +57,11 @@ export default function TrustUs(){
                     <div className='SponsorBox'>
                         <a href="https://solidexpert.com/" target="_blank">
                             <img src={solid}></img>
+                        </a>
+                    </div>
+                    <div className='SponsorBox'>
+                        <a href="https://www.polarisatv.pl/" target="_blank">
+                            <img src={polaris}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
@@ -77,11 +85,6 @@ export default function TrustUs(){
                         </a>
                     </div>
                     <div className='SponsorBox'>
-                        <a href="https://kisielewski.pl/" target="_blank">
-                            <img src={kisielewski}></img>
-                        </a>
-                    </div>
-                    <div className='SponsorBox'>
                         <a href="https://fracht.pl/" target="_blank">
                             <img src={fracht}></img>
                         </a>
@@ -94,6 +97,11 @@ export default function TrustUs(){
                     <div className='SponsorBox'>
                         <a href="https://electreecity.pro/" target="_blank">
                             <img src={electreecity}></img>
+                        </a>
+                    </div>
+                    <div className='SponsorBox'>
+                        <a href="https://www.sonel.pl/pl/" target="_blank">
+                            <img src={sonel}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
@@ -114,11 +122,6 @@ export default function TrustUs(){
                     <div className='SponsorBox'>
                         <a href="https://phuinstel.eu/" target="_blank">
                             <img src={phuinstel}></img>
-                        </a>
-                    </div>
-                    <div className='SponsorBox'>
-                        <a href="https://lockhard.pl/" target="_blank">
-                            <img src={lockhard}></img>
                         </a>
                     </div>
                     <div className='SponsorBox'>
@@ -160,8 +163,9 @@ export default function TrustUs(){
                 </div>
 
             </div>
-        <Footer/>
-        
+        <Footer len={props.lan.contactUs[0]}/>
+        </div>
+        : null}
         </>
         
     )

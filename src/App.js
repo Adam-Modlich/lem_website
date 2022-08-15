@@ -12,29 +12,32 @@ import {
   Route,
 } from "react-router-dom";
 import Achievements from './Achievements/Achievements.js';
+import { useState } from 'react';
 
 function App() {
 
-  // document.body.style = 'background: linear-gradient(90deg, rgba(26,45,68,1) 10%, rgba(42,59,80,1) 24%, rgba(61,80,101,1) 38%, rgba(84,105,129,1) 53%, rgba(111,136,162,1) 70%, rgba(172,189,209,1) 92%);'
-  // function hamburger()
-  // document.body.style = "background:linear-gradient(to right, #000000 65%, #0066ff 100%)";
-  // document.body.style = "    background: linear-gradient(to right, #000000 63%, #3333cc 100%)";
+  const [lan,setLan] = useState();
+
   document.body.style = "background:black"
+
+  const pull_data_again = (data) => {
+    setLan(data)
+  }
 
   return (
     <>
     <HashRouter> 
-    <Nav/>
+    <Nav func={pull_data_again}/>
       <div style={{height: "100%"}}>
       <Routes>
-        <Route exact path="/" element={<MainPage/>}/>
-        <Route exact path="/aboutus" element={<AboutUs/>}/>
-        <Route exact path="/Achievements" element={<Achievements/>}/>
-        <Route exact path="/Wojcik" element={<Wojcik/>}/>
-        <Route exact path="/LRP" element={<LRP/>}/>
-        <Route exact path="/Projects" element={<Projects/>}/>
-        <Route exact path="/TrustUs" element={<TrustUs/>}/>
-        <Route exact path="/ContactUs" element={<Contact/>}/>
+        <Route exact path="/" element={<MainPage lan={lan}/>}/>
+        <Route exact path="/aboutUs" element={<AboutUs lan={lan}/>}/>
+        <Route exact path="/Achievements" element={<Achievements lan={lan}/>}/>
+        <Route exact path="/Wojcik" element={<Wojcik lan={lan}/>}/>
+        <Route exact path="/LRP" element={<LRP lan={lan}/>}/>
+        <Route exact path="/Projects" element={<Projects lan={lan}/>}/>
+        <Route exact path="/TrustUs" element={<TrustUs lan={lan}/>}/>
+        <Route exact path="/ContactUs" element={<Contact lan={lan}/>}/>
 
       </Routes>
       </div>
