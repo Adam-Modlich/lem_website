@@ -38,7 +38,7 @@ export default function NavOptions({isOpen, isClosing, func}){
 
   const [lenBtn, setLenBtn] = useState(pl);
   const [lan, setLan] = useState("PL")
-  const [iconSrc, setIconSrc] = useState(polandIcon)
+  const [iconSrc, setIconSrc] = useState(englandIcon)
 
   func(lenBtn)
 
