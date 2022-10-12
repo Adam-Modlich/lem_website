@@ -23,6 +23,7 @@ import yato from '../TrustUs/Sponsors/yato.jpg';
 import zaopatrzenie24 from '../TrustUs/Sponsors/zaopatrzenie24.png';
 import motokenner from '../TrustUs/Sponsors/motokenner.jpeg'
 import ng from '../TrustUs/Sponsors/ng.png'
+import w10 from '../TrustUs/Sponsors/w10_logo.png'
 import electreecity from '../TrustUs/Sponsors/electreecity.png'
 import Footer from '../Footer';
 import { useLocation } from 'react-router';
@@ -41,6 +42,13 @@ export default function TrustUs(props){
                 <div className='tuSponsorFlexBox'>
                     <div className='paTitle'>
                         <h2><a href={partnerShip} target="_blank">{ props.lan.sponsors[0].buttonTitle }</a></h2>
+                    </div>
+                    <div className='SponsorBox'>
+                        <div>
+                            <a href="https://wm.pwr.edu.pl/" target="_blank">
+                                <img src={w10}></img>
+                            </a>
+                        </div>
                     </div>
                     <div className='SponsorBox'>
                         <div>

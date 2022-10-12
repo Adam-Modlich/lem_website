@@ -14,8 +14,8 @@ export default function Footer(len){
                 <h3>Michał&nbsp;Skraburski&nbsp;(Team&nbsp;Leader)</h3>
                 <h4>skraburski.michal@gmail.com</h4>
 
-                <h3>Iza&nbsp;Stanula&nbsp;(Marketing Leader)</h3>
-                <h4>izabellastanula@gmail.com</h4>
+                <h3>Wiktoria&nbsp;Budziar&nbsp;(Marketing Leader)</h3>
+                <h4>w.budziar@gmail.com</h4>
             </div>
 
                 <div className='contactRight'> 

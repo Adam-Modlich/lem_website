@@ -9,6 +9,9 @@ import tłob from '../pictures/tłov7b.jpg'
 import elekImg from "../AboutUs/Boss/Elektronika.JPG"
 import zawImg from "../AboutUs/Boss/Zawieszenie.JPG";
 import markImg from "../AboutUs/Boss/Marketing.JPG";
+import kompImg from "../AboutUs/Boss/Kompozyty.JPG";
+import lider1Img from "../AboutUs/Boss/Lider1.JPG";
+import lider2Img from "../AboutUs/Boss/Lider2.JPG";
 import konsImg from "../AboutUs/Boss/Konstrukcja.JPG";
 import mechImg from "../AboutUs/Boss/Mechanika.JPG";
 import prezImg from "../AboutUs/Boss/Prezes.JPG";
@@ -19,11 +22,14 @@ export default function AboutUs(props){
 
   const [departments, setDepartments] = useState([
     { title: "",styleT: "row-reverse",styleTA: "right", styleB: `url(${tłor})`, text: "", name: "", img: prezImg, id: 1},
-    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: elekImg, id: 4},
-    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "", name: "", img: markImg, id: 8},
-    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: " ", name: "", img: zawImg, id: 5},
-    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "", name: "", img: konsImg, id: 7},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: elekImg, id: 2},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "", name: "", img: markImg, id: 3},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: " ", name: "", img: zawImg, id: 4},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "", name: "", img: konsImg, id: 5},
     { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: mechImg, id: 6},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłob})`, text: "", name: "", img: kompImg, id: 7},
+    { title: "",styleT: "row",styleTA: "left",styleB: `url(${tłod})`, text: "", name: "", img: lider1Img, id: 8},
+    { title: "",styleT: "row-reverse",styleTA: "right",styleB: `url(${tłop})`, text: "", name: "", img: lider2Img, id: 9},
   ]);
 
   const { state } = useLocation()

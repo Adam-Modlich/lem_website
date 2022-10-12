@@ -2,6 +2,7 @@ import { useLocation } from 'react-router';
 import '../Contact/Contact.scss';
 // import $ from 'jquery';
 import pwr from '../logoPwr.png';
+import w10 from '../TrustUs/Sponsors/w10-white.png'
 
 
 export default function Contact(props){
@@ -17,8 +18,8 @@ export default function Contact(props){
                 <h3>Michał&nbsp;Skraburski <br/>(Team Leader)</h3>
                 <h4>skraburski.michal@gmail.com</h4>
 
-                <h3>Iza&nbsp;Stanula <br/>(Marketing Leader)</h3>
-                <h4>izabellastanula@gmail.com</h4>
+                <h3>Wiktoria&nbsp;Budziar <br/>(Marketing Leader)</h3>
+                <h4>w.budziar@gmail.com</h4>
             </div>
 
                 <div className='contactRight'> 
@@ -44,7 +45,8 @@ export default function Contact(props){
                     </div>
                 </div>
                 <div className='icon3'>
-                    <img src={pwr}></img>
+                    <img class="pwrImg" src={pwr}></img>
+                    <img class="w10Img" src={w10}></img>
                 </div>
                 <div className='copyright'>Copyright© 2021 Designed by Adam Modlich +48 500 474 573</div>
         </div>

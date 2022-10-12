@@ -54,12 +54,19 @@
         }
 
         .icon3{
+            display: flex;
+            flex-direction: column;
             width: 20%;
             margin: 0% 5% 0% 0%;
             height: auto;
 
-            img{
-                height: 450px!important;
+            .pwrImg{
+                height: 150px!important;
+                margin-bottom: 5%;
+            }
+
+            .w10Img{
+                height: 150px!important;
                 margin-bottom: 5%;
             }
         }
@@ -213,13 +220,22 @@
         }
 
         .icon3{
-            width: 20%;
-            margin: 0% 5% 0% 0%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25% !important;
+            margin: 5% 0% 0% 0%;
             height: auto;
 
-            img{
-                height: 350px;
+            .pwrImg{
+                height: auto !important;
+                width: 50% !important;
                 margin-bottom: 5%;
+            }
+
+            .w10Img{
+                height: auto!important;
+                margin-bottom: 10%;
             }
         }
 
@@ -371,15 +387,24 @@
 
         .icon3{
             display: flex;
+            flex-direction: row;
             text-align: center;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: auto;
+            margin-bottom: 5%;
 
-            img{
-                height: 20vw;
-                padding-bottom: 5%;
+            .pwrImg{
+                height: 20vw !important;
+                width: auto !important;
+                margin-bottom: 5%;
+            }
+
+            .w10Img{
+                height: 20vw!important;
+                width: auto !important;
+                margin-bottom: 5%;
             }
         }
 
@@ -550,15 +575,22 @@
 
         .icon3{
             display: flex;
+            flex-direction: row;
             text-align: center;
             align-items: center;
             justify-content: center;
             width: 100%;
             height: auto;
+            margin-bottom: 5%;
 
-            img{
-                height: 40vw;
-                margin-bottom: 5%;
+            .pwrImg{
+                height: 30vw !important;
+                width: auto !important;
+            }
+
+            .w10Img{
+                height: 30vw!important;
+                width: auto !important;
             }
         }
 

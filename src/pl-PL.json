@@ -58,6 +58,21 @@
                     "header": "Mechanika",
                     "name": "Igor Radoch",
                     "description": "Dział Mechaniki zajmuje się projektowaniem oraz wykonaniem układu przeniesienia napędu, układu chłodzenia silnika, ergonomią kierowcy. Wykonujemy zarówno prace warsztatowe, jak i te przygotowawcze do testów czy wyścigów. Naszym celem jest uzyskanie jak najlepszych osiągów na torze z każdym kolejnym projektem."
+                },
+                {
+                    "header": "Kompozyty",
+                    "name": "Marta Grońska",
+                    "description": ""
+                },
+                {
+                    "header": "Lider Projektu SSV",
+                    "name": "Wiktoria Polczyńska",
+                    "description": ""
+                },
+                {
+                    "header": "Lider Projektu Tachyon",
+                    "name": "Piotr Minta",
+                    "description": ""
                 }
             ],
             "lastParagraph": 
